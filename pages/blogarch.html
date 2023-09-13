@@ -5,6 +5,25 @@
 table, th, td {
   border:1px solid black;
 }
+.blog-entries {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.blog-entries > h1, .blog-entry {
+  margin: 10px;
+  padding: 5px;
+}
+
+.blog-entry {
+  background: white;
+}
+
+.blog-entry > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
 </style>
 	<title>Alex Zee Comedy - Blog Archive</title>
 	<meta charset="UTF-8">
@@ -34,9 +53,13 @@ table, th, td {
 	<li><a href="https://alexzeecomedy.github.io/pages/dates.html">Dates</a></li>
 </ol>
 <h2>Blog</h2>
-<dl>
-	<dt><a href="https://alexzeecomedy.github.io/pages/blog/dan-alten-ashlynn-lutz-madison-alabama.html">9/13/23 - What a Show! presents comedian Dan Alten feat. Ashlynn Lutz 9/16/23 Madison, AL</a></dt>
-	<dd>Nationally touring comedian Dan Alten struts his stuff at Boxcar Bar and Grill in Madison, AL on Saturday September 16th starting at 7:30 PM! Featuring beloved Huntsville comedian Ashlynn Lutz!</dd>
-</dl>
+
+<article class="blog-entries">
+  <h1>Blog Entries</h1>
+  <article class="blog-entry">
+    <h2><a href="https://alexzeecomedy.github.io/pages/blog/dan-alten-ashlynn-lutz-madison-alabama.html">9/13/23 - What a Show! presents comedian Dan Alten feat. Ashlynn Lutz 9/16/23 Madison, AL</a></h2>
+    <p>Nationally touring comedian Dan Alten struts his stuff at Boxcar Bar and Grill in Madison, AL on Saturday September 16th starting at 7:30 PM! Featuring beloved Huntsville comedian Ashlynn Lutz!</p>
+  </article>
+</article>
 </body>
 </html>
