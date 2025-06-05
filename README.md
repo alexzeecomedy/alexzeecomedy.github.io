@@ -8,10 +8,10 @@ This is the Github repository for the online landing page of me, stand-up comedi
 
 ## Community Forum 
 
-This repository's **Issues** section also serves as our community forum. It's a place to ask questions, discuss shows, and share ideas.
+This repository's **Discussioin** section serves as our community forum. It's a place to ask questions, discuss shows, and share ideas.
 
 ### How to Participate
 
-1.  **[Search existing issues](https://github.com/alexzeecomedy/alexzeecomedy.github.io/issues)** to see if your topic is already being discussed.
-2.  If not, **[start a new discussion](https://github.com/alexzeecomedy/alexzeecomedy.github.io/issues/new/choose)**.
+1.  **[Search existing discussion](https://github.com/alexzeecomedy/alexzeecomedy.github.io/discussions)** to see if your topic is already being discussed.
+2.  If not, **[start a new discussion](https://github.com/alexzeecomedy/alexzeecomedy.github.io/discussions/new/choose)**.
 3.  Please be respectful and follow our **[Code of Conduct](CODE_OF_CONDUCT.md)**.
