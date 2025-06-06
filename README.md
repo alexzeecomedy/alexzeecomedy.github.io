@@ -1,6 +1,6 @@
 # alexzeecomedy.com
 
-This is the Github repository for the online landing page of me, stand-up comedian, Alex Zee. It's built with HTML.
+This is the GitHub repository for the online landing page of me, stand-up comedian, Alex Zee. It's built with HTML.
 
 <img src="https://img.shields.io/liberapay/receives/alexzeecomedy.svg?logo=liberapay">
 
@@ -8,7 +8,7 @@ This is the Github repository for the online landing page of me, stand-up comedi
 
 ## Community Forum 
 
-This repository's **Discussioin** section serves as our community forum. It's a place to ask questions, discuss shows, and share ideas.
+This repository's **Discussions** section serves as our community forum. It's a place to ask questions, discuss shows, and share ideas.
 
 ### How to Participate
 
