@@ -16,3 +16,33 @@ img {
   max-width: 100%;
   height: auto;
 }
+.copy-button {
+  background-color: var(--primary, #6c5ce7);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: var(--secondary, #5a4fcf);
+}
+
+.copy-button.copied {
+  background-color: #2ecc71;
+}
+
+.crypto-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8f8f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .crypto-item {
+    background: #2a2a2a;
+  }
+}
