@@ -4,8 +4,8 @@ body {
 table.center {
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black; /* Just for visibility */
-  width: 50%; /* Example width */
+  border: 1px solid black;
+  width: 50%;
 }
 table,
 th,
@@ -45,4 +45,247 @@ img {
   .crypto-item {
     background: #2a2a2a;
   }
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.social-item {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid;
+}
+
+.social-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-item i {
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.social-item h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.social-item a {
+  display: block;
+  word-break: break-all;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-item a:hover {
+  text-decoration: underline;
+}
+.mastodon {
+  border-color: #6364ff;
+  color: #6364ff;
+}
+
+.bluesky {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.pixelfed {
+  border-color: #e64980;
+  color: #e64980;
+}
+
+.peertube {
+  border-color: #f1680d;
+  color: #f1680d;
+}
+
+.twitter {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.threads {
+  border-color: #000000;
+  color: #000000;
+}
+
+.github {
+  border-color: #333333;
+  color: #333333;
+}
+
+.instagram {
+  border-color: #e1306c;
+  color: #e1306c;
+}
+
+.facebook {
+  border-color: #4267b2;
+  color: #4267b2;
+}
+
+.tiktok {
+  border-color: #000000;
+  color: #000000;
+}
+
+.youtube {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.twitch {
+  border-color: #6441a4;
+  color: #6441a4;
+}
+
+.lemmy {
+  border-color: #00c853;
+  color: #00c853;
+}
+
+.reddit {
+  border-color: #ff4500;
+  color: #ff4500;
+}
+@media (prefers-color-scheme: dark) {
+  .social-item {
+    background: #2a2a2a;
+    color: #f0f0f0;
+  }
+}
+
+@media (max-width: 500px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("fonts/UbuntuMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Base colors */
+  --hacker-black: #0a0a0a;
+  --hacker-dark: #1a1a1a;
+  --hacker-gray: #2a2a2a;
+
+  /* Accent colors */
+  --neon-green: #39ff14;
+  --terminal-green: #3aff9e;
+  --cyber-blue: #0084ff;
+  --warning-amber: #ffb700;
+  --error-red: #ff3355;
+
+  /* Text colors */
+  --text-primary: #f0f0f0;
+  --text-secondary: #b3b3b3;
+}
+
+body {
+  background-color: var(--hacker-black);
+  background-image: linear-gradient(
+    to bottom,
+    var(--hacker-black),
+    var(--hacker-dark)
+  );
+  color: var(--text-primary);
+  font-family: "Ubuntu Mono", monospace;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 1px;
+  color: var(--neon-green);
+}
+
+code,
+.crypto-address,
+.terminal-text {
+  font-family: "JetBrains Mono", monospace;
+  background: var(--hacker-gray);
+  border-left: 3px solid var(--terminal-green);
+  padding: 0.5em;
+}
+
+/* Cards and containers */
+.social-item,
+.crypto-item {
+  background: var(--hacker-gray);
+  border: 1px solid rgba(57, 255, 20, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.social-item:hover {
+  border-color: var(--neon-green);
+  box-shadow: 0 5px 20px rgba(57, 255, 20, 0.2);
+}
+
+/* Links and buttons */
+a {
+  color: var(--cyber-blue);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--cyber-blue);
+}
+
+a:hover {
+  color: var(--neon-green);
+  border-bottom-color: var(--neon-green);
+}
+
+/* Buttons */
+button,
+.cta-button {
+  font-family: "JetBrains Mono", monospace;
+  background: var(--hacker-gray);
+  color: var(--terminal-green);
+  border: 1px solid var(--terminal-green);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover,
+.cta-button:hover {
+  background: var(--terminal-green);
+  color: var(--hacker-black);
 }
