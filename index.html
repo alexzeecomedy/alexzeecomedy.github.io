@@ -226,32 +226,25 @@
 </footer>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Find all copy buttons
     const copyButtons = document.querySelectorAll('.copy-button');
     
     copyButtons.forEach(button => {
       button.addEventListener('click', function() {
-        // Get the address from data attribute
         const address = this.getAttribute('data-address');
         
-        // Create a temporary input element
         const tempInput = document.createElement('input');
         tempInput.value = address;
         document.body.appendChild(tempInput);
         
-        // Select and copy the text
         tempInput.select();
         document.execCommand('copy');
         
-        // Remove the temporary element
         document.body.removeChild(tempInput);
         
-        // Show feedback
         const originalText = this.textContent;
         this.textContent = 'Copied!';
         this.classList.add('copied');
         
-        // Reset button text after 2 seconds
         setTimeout(() => {
           this.textContent = originalText;
           this.classList.remove('copied');
