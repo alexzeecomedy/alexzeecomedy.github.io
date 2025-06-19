@@ -92,7 +92,6 @@ a:hover {
   border-bottom-color: var(--neon-green);
 }
 
-/* General Grid Layouts */
 .social-grid,
 .support-grid,
 .community-grid,
@@ -110,7 +109,6 @@ a:hover {
   contain-intrinsic-size: 1px 5000px;
 }
 
-/* General Card/Item Styles */
 .social-item,
 .support-item,
 .community-item,
@@ -264,7 +262,6 @@ button:hover,
   border-color: var(--neon-green);
 }
 
-/* QR code placeholder */
 .qr-placeholder {
   height: 100px;
   margin: 0.5rem 0;
@@ -280,7 +277,6 @@ button:hover,
   color: var(--text-secondary);
 }
 
-/* Legacy table styles (kept for specific use cases) */
 table.center {
   margin-left: auto;
   margin-right: auto;
@@ -410,8 +406,6 @@ nav a:hover::after {
   transform-origin: bottom left;
 }
 
-/* Platform-specific colors (grouped by type for brevity) */
-/* Social Media Icons */
 .mastodon {
   border-color: #6364ff;
   color: #6364ff;
@@ -498,7 +492,6 @@ nav a:hover::after {
   color: #0088cc;
 }
 
-/* Support/Payment Icons */
 .wishlist {
   border-color: #ff9800;
   color: #ff9800;
@@ -560,7 +553,6 @@ nav a:hover::after {
   color: #ff6600;
 }
 
-/* Contact specific colors */
 .contact-item.email {
   border-color: var(--cyber-blue);
   color: var(--cyber-blue);
@@ -594,14 +586,12 @@ nav a:hover::after {
   color: var(--neon-green);
 }
 
-/* Adjust iframe size for responsiveness */
 .contact-item iframe {
   max-width: 100%;
   height: 600px; /* Or adjust as needed */
   border: none;
 }
 
-/* Media queries */
 @media (prefers-color-scheme: dark) {
   .social-item,
   .crypto-item {
