@@ -1,11 +1,6 @@
 /* Font declarations */
 @font-face {
   font-family: "JetBrains Mono";
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
   src: url("fonts/JetBrainsMono-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -97,13 +92,14 @@ a:hover {
   border-bottom-color: var(--neon-green);
 }
 
-/* Grid layouts (shared properties) */
+/* General Grid Layouts */
 .social-grid,
 .support-grid,
 .community-grid,
 .media-grid,
 .podcast-social-grid,
-.hsv-social-grid {
+.hsv-social-grid,
+.contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -114,11 +110,12 @@ a:hover {
   contain-intrinsic-size: 1px 5000px;
 }
 
-/* Card items (shared properties) */
+/* General Card/Item Styles */
 .social-item,
 .support-item,
 .community-item,
-.media-item {
+.media-item,
+.contact-item {
   background: var(--hacker-gray);
   padding: 1.5rem;
   border-radius: 8px;
@@ -129,12 +126,16 @@ a:hover {
   border-top: 4px solid;
   border: 1px solid rgba(57, 255, 20, 0.3);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
 }
 
 .social-item:hover,
 .support-item:hover,
 .community-item:hover,
-.media-item:hover {
+.media-item:hover,
+.contact-item:hover {
   transform: translateY(-5px);
   border-color: var(--neon-green);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -143,7 +144,8 @@ a:hover {
 .social-item i,
 .support-item i,
 .community-item i,
-.media-item i {
+.media-item i,
+.contact-item i {
   margin-bottom: 1rem;
   color: inherit;
 }
@@ -151,7 +153,8 @@ a:hover {
 .social-item h4,
 .support-item h4,
 .community-item h4,
-.media-item h4 {
+.media-item h4,
+.contact-item h4 {
   margin-top: 0;
   margin-bottom: 0.75rem;
   font-size: 1.25rem;
@@ -173,16 +176,21 @@ a:hover {
 .media-item a {
   display: inline-block;
   word-break: break-all;
-  text-decoration: none;
   font-weight: 500;
 }
 
 .support-item a {
   display: block;
   word-break: break-all;
-  text-decoration: none;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+
+.contact-item a {
+  display: block;
+  word-break: break-all;
+  font-weight: 500;
+  color: var(--text-primary); /* Default link color for hacker aesthetic */
 }
 
 .social-item a:hover,
@@ -192,12 +200,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Support-specific styles */
-.support-item {
-  display: flex;
-  flex-direction: column;
+.contact-item a:hover {
+  color: var(--neon-green); /* Hover color matching the aesthetic */
+  text-decoration: underline;
 }
 
+/* Support-specific styles */
 .support-item .amount {
   margin-top: auto;
   font-weight: bold;
@@ -272,7 +280,7 @@ button:hover,
   color: var(--text-secondary);
 }
 
-/* Legacy table styles */
+/* Legacy table styles (kept for specific use cases) */
 table.center {
   margin-left: auto;
   margin-right: auto;
@@ -339,11 +347,9 @@ nav {
 .hamburger-icon {
   top: 13px;
 }
-
 .hamburger-icon:before {
   top: -8px;
 }
-
 .hamburger-icon:after {
   bottom: -8px;
 }
@@ -351,12 +357,10 @@ nav {
 .nav-toggle.active .hamburger-icon {
   background-color: transparent;
 }
-
 .nav-toggle.active .hamburger-icon:before {
   transform: rotate(45deg);
   top: 0;
 }
-
 .nav-toggle.active .hamburger-icon:after {
   transform: rotate(-45deg);
   bottom: 0;
@@ -406,7 +410,8 @@ nav a:hover::after {
   transform-origin: bottom left;
 }
 
-/* Platform-specific colors */
+/* Platform-specific colors (grouped by type for brevity) */
+/* Social Media Icons */
 .mastodon {
   border-color: #6364ff;
   color: #6364ff;
@@ -426,7 +431,7 @@ nav a:hover::after {
 .twitter {
   border-color: #1da1f2;
   color: #1da1f2;
-}
+} /* Reusing Bluesky color as X is similar */
 .threads {
   border-color: #000000;
   color: #000000;
@@ -472,6 +477,28 @@ nav a:hover::after {
   border-color: #3a76f0;
   color: #3a76f0;
 }
+.rss {
+  border-color: #f26522;
+  color: #f26522;
+}
+.clips {
+  border-color: #ff4500;
+  color: #ff4500;
+} /* Reuse Reddit orange */
+.loops {
+  border-color: #9146ff;
+  color: #9146ff;
+}
+.discord {
+  border-color: #5865f2;
+  color: #5865f2;
+}
+.telegram {
+  border-color: #0088cc;
+  color: #0088cc;
+}
+
+/* Support/Payment Icons */
 .wishlist {
   border-color: #ff9800;
   color: #ff9800;
@@ -532,25 +559,46 @@ nav a:hover::after {
   border-color: #ff6600;
   color: #ff6600;
 }
-.rss {
-  border-color: #f26522;
-  color: #f26522;
+
+/* Contact specific colors */
+.contact-item.email {
+  border-color: var(--cyber-blue);
+  color: var(--cyber-blue);
 }
-.clips {
-  border-color: #ff4500;
-  color: #ff4500;
+.contact-item.email a {
+  color: var(--cyber-blue);
 }
-.loops {
-  border-color: #9146ff;
-  color: #9146ff;
+.contact-item.email a:hover {
+  color: var(--neon-green);
 }
-.discord {
-  border-color: #5865f2;
-  color: #5865f2;
+
+.contact-item.matrix {
+  border-color: #0dbd8b;
+  color: #0dbd8b;
 }
-.telegram {
-  border-color: #0088cc;
-  color: #0088cc;
+.contact-item.matrix a {
+  color: #0dbd8b;
+}
+.contact-item.matrix a:hover {
+  color: var(--neon-green);
+}
+
+.contact-item.signal {
+  border-color: var(--cyber-blue);
+  color: var(--cyber-blue);
+}
+.contact-item.signal a {
+  color: var(--cyber-blue);
+}
+.contact-item.signal a:hover {
+  color: var(--neon-green);
+}
+
+/* Adjust iframe size for responsiveness */
+.contact-item iframe {
+  max-width: 100%;
+  height: 600px; /* Or adjust as needed */
+  border: none;
 }
 
 /* Media queries */
@@ -559,7 +607,6 @@ nav a:hover::after {
   .crypto-item {
     background: #2a2a2a;
   }
-
   .threads,
   .github,
   .tiktok {
@@ -571,7 +618,6 @@ nav a:hover::after {
   .nav-toggle {
     display: block;
   }
-
   .nav-links {
     flex-direction: column;
     align-items: center;
@@ -581,12 +627,10 @@ nav a:hover::after {
     padding: 0;
     margin: 0;
   }
-
   .nav-links.active {
-    max-height: 500px; /* Adjust based on your number of links */
+    max-height: 500px;
     padding: 1rem;
   }
-
   nav a {
     width: 100%;
     text-align: center;
@@ -601,7 +645,8 @@ nav a:hover::after {
   .community-grid,
   .media-grid,
   .podcast-social-grid,
-  .hsv-social-grid {
+  .hsv-social-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 }
