@@ -69,22 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
       "Nav toggle or nav links not found. Hamburger menu may not function."
     );
   }
-
-  // --- Random Hero Image Functionality ---
-  const heroImageElement = document.querySelector(".hero-image");
-  if (heroImageElement) {
-    // Adjust these paths to correctly point to your hero images
-    const images = [
-      "/phatsammys1.webp",
-      "/images/hero/second-hero-image.webp", // Example path
-      "/images/hero/third-hero-image.webp", // Example path
-    ];
-
-    // Select a random image
-    const randomIndex = Math.floor(Math.random() * images.length);
-    // Set the src attribute, ensuring it's a valid path
-    heroImageElement.src = images[randomIndex];
-  } else {
-    console.warn("Hero image element not found.");
-  }
 }); // End of DOMContentLoaded
