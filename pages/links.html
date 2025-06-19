@@ -66,16 +66,27 @@
       <h3>Favorite links of stand-up comedian, Alex Zee</h3>
     </header>
     <nav>
-      <a href="https://alexzeecomedy.com">Home</a> |
-      <a href="https://alexzeecomedy.com/pages/about">About</a> |
-      <a href="https://rant.li/alexzeecomedy/">Blog</a> |
-      <a href="https://mobilizon.us/@alex_zee_comedy_tour">Tour</a> |
-      <a href="https://alexzeecomedy.com/pages/community">Community</a> |
-      <a href="https://pixelfed.social/alexzeecomedy">Images</a> |
-      <a href="https://spectra.video/c/alexzeecomedy_channel/videos">Videos</a>
-      | <a href="https://alexzeecomedy.com/pages/portfolio">Portfolio</a> |
-      <a href="https://alexzeecomedy.com/pages/links">Links</a> |
-      <a href="https://alexzeecomedy.com/pages/contact">Contact</a>
+      <div class="nav-header">
+        <span class="site-title">Alex Zee Comedy</span>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger-icon"></span>
+        </button>
+      </div>
+
+      <div class="nav-links">
+        <a href="https://alexzeecomedy.com">Home</a>
+        <a href="https://alexzeecomedy.com/pages/about">About</a>
+        <a href="https://rant.li/alexzeecomedy/">Blog</a>
+        <a href="https://mobilizon.us/@alex_zee_comedy_tour">Tour</a>
+        <a href="https://alexzeecomedy.com/pages/community">Community</a>
+        <a href="https://pixelfed.social/alexzeecomedy">Images</a>
+        <a href="https://spectra.video/c/alexzeecomedy_channel/videos"
+          >Videos</a
+        >
+        <a href="https://alexzeecomedy.com/pages/portfolio">Portfolio</a>
+        <a href="https://alexzeecomedy.com/pages/links">Links</a>
+        <a href="https://alexzeecomedy.com/pages/contact">Contact</a>
+      </div>
     </nav>
     <section>
       <h2>Links</h2>
@@ -120,5 +131,23 @@
         </a>
       </p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (navToggle && navLinks) {
+          navToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            navToggle.classList.toggle("active");
+
+            // Accessibility
+            const expanded =
+              navToggle.getAttribute("aria-expanded") === "true" || false;
+            navToggle.setAttribute("aria-expanded", !expanded);
+          });
+        }
+      });
+    </script>
   </body>
 </html>

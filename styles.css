@@ -282,16 +282,85 @@ td {
 /* Navigation */
 nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+  flex-direction: column;
   background: var(--hacker-gray);
   border: 1px solid var(--neon-green);
   border-radius: 4px;
   margin: 1.5rem 0;
   font-family: "JetBrains Mono", monospace;
   box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+  overflow: hidden;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.site-title {
+  color: var(--neon-green);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger-icon, 
+.hamburger-icon:before, 
+.hamburger-icon:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--neon-green);
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon {
+  top: 13px;
+}
+
+.hamburger-icon:before {
+  top: -8px;
+}
+
+.hamburger-icon:after {
+  bottom: -8px;
+}
+
+.nav-toggle.active .hamburger-icon {
+  background-color: transparent;
+}
+
+.nav-toggle.active .hamburger-icon:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle.active .hamburger-icon:after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 nav a {
@@ -331,185 +400,85 @@ nav a:hover::after {
 }
 
 /* Platform-specific colors */
-.mastodon {
-  border-color: #6364ff;
-  color: #6364ff;
-}
-.bluesky {
-  border-color: #1da1f2;
-  color: #1da1f2;
-}
-.pixelfed {
-  border-color: #e64980;
-  color: #e64980;
-}
-.peertube {
-  border-color: #f1680d;
-  color: #f1680d;
-}
-.twitter {
-  border-color: #1da1f2;
-  color: #1da1f2;
-}
-.threads {
-  border-color: #000000;
-  color: #000000;
-}
-.github {
-  border-color: #333333;
-  color: #333333;
-}
-.instagram {
-  border-color: #e1306c;
-  color: #e1306c;
-}
-.facebook {
-  border-color: #4267b2;
-  color: #4267b2;
-}
-.tiktok {
-  border-color: #000000;
-  color: #000000;
-}
-.youtube,
-.media-item.youtube {
-  border-color: #ff0000;
-  color: #ff0000;
-}
-.twitch {
-  border-color: #6441a4;
-  color: #6441a4;
-}
-.lemmy {
-  border-color: #00c853;
-  color: #00c853;
-}
-.reddit {
-  border-color: #ff4500;
-  color: #ff4500;
-}
-.matrix {
-  border-color: #0dbd8b;
-  color: #0dbd8b;
-}
-.signal {
-  border-color: #3a76f0;
-  color: #3a76f0;
-}
-.wishlist {
-  border-color: #ff9800;
-  color: #ff9800;
-}
-.amazon {
-  border-color: #ff9900;
-  color: #ff9900;
-}
-.liberapay {
-  border-color: #f6c915;
-  color: #f6c915;
-}
-.patreon {
-  border-color: #f96854;
-  color: #f96854;
-}
-.cashapp {
-  border-color: #00d632;
-  color: #00d632;
-}
-.venmo {
-  border-color: #3d95ce;
-  color: #3d95ce;
-}
-.paypal {
-  border-color: #003087;
-  color: #003087;
-}
-.coffee {
-  border-color: #ffdd00;
-  color: #ffdd00;
-}
-.kofi {
-  border-color: #ff5e5b;
-  color: #ff5e5b;
-}
-.tuta {
-  border-color: #87b534;
-  color: #87b534;
-}
-.ente {
-  border-color: #22c55e;
-  color: #22c55e;
-}
-.dub {
-  border-color: #6366f1;
-  color: #6366f1;
-}
-.bitcoin {
-  border-color: #f7931a;
-  color: #f7931a;
-}
-.lightning {
-  border-color: #fbdd11;
-  color: #fbdd11;
-}
-.monero {
-  border-color: #ff6600;
-  color: #ff6600;
-}
-.rss {
-  border-color: #f26522;
-  color: #f26522;
-}
-.clips {
-  border-color: #ff4500;
-  color: #ff4500;
-}
-.loops {
-  border-color: #9146ff;
-  color: #9146ff;
-}
-.discord {
-  border-color: #5865f2;
-  color: #5865f2;
-}
-.telegram {
-  border-color: #0088cc;
-  color: #0088cc;
-}
+.mastodon { border-color: #6364ff; color: #6364ff; }
+.bluesky { border-color: #1da1f2; color: #1da1f2; }
+.pixelfed { border-color: #e64980; color: #e64980; }
+.peertube { border-color: #f1680d; color: #f1680d; }
+.twitter { border-color: #1da1f2; color: #1da1f2; }
+.threads { border-color: #000000; color: #000000; }
+.github { border-color: #333333; color: #333333; }
+.instagram { border-color: #e1306c; color: #e1306c; }
+.facebook { border-color: #4267b2; color: #4267b2; }
+.tiktok { border-color: #000000; color: #000000; }
+.youtube, .media-item.youtube { border-color: #ff0000; color: #ff0000; }
+.twitch { border-color: #6441a4; color: #6441a4; }
+.lemmy { border-color: #00c853; color: #00c853; }
+.reddit { border-color: #ff4500; color: #ff4500; }
+.matrix { border-color: #0dbd8b; color: #0dbd8b; }
+.signal { border-color: #3a76f0; color: #3a76f0; }
+.wishlist { border-color: #ff9800; color: #ff9800; }
+.amazon { border-color: #ff9900; color: #ff9900; }
+.liberapay { border-color: #f6c915; color: #f6c915; }
+.patreon { border-color: #f96854; color: #f96854; }
+.cashapp { border-color: #00d632; color: #00d632; }
+.venmo { border-color: #3d95ce; color: #3d95ce; }
+.paypal { border-color: #003087; color: #003087; }
+.coffee { border-color: #ffdd00; color: #ffdd00; }
+.kofi { border-color: #ff5e5b; color: #ff5e5b; }
+.tuta { border-color: #87b534; color: #87b534; }
+.ente { border-color: #22c55e; color: #22c55e; }
+.dub { border-color: #6366f1; color: #6366f1; }
+.bitcoin { border-color: #f7931a; color: #f7931a; }
+.lightning { border-color: #fbdd11; color: #fbdd11; }
+.monero { border-color: #ff6600; color: #ff6600; }
+.rss { border-color: #f26522; color: #f26522; }
+.clips { border-color: #ff4500; color: #ff4500; }
+.loops { border-color: #9146ff; color: #9146ff; }
+.discord { border-color: #5865f2; color: #5865f2; }
+.telegram { border-color: #0088cc; color: #0088cc; }
 
 /* Media queries */
 @media (prefers-color-scheme: dark) {
-  .social-item,
-  .crypto-item {
+  .social-item, .crypto-item {
     background: #2a2a2a;
   }
-
-  .threads,
-  .github,
-  .tiktok {
+  
+  .threads, .github, .tiktok {
     color: #ffffff;
   }
 }
 
 @media (max-width: 768px) {
-  nav {
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-links {
     flex-direction: column;
     align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0;
+    margin: 0;
   }
-
+  
+  .nav-links.active {
+    max-height: 500px; /* Adjust based on your number of links */
+    padding: 1rem;
+  }
+  
   nav a {
     width: 100%;
     text-align: center;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
   }
 }
 
 @media (max-width: 600px) {
-  .social-grid,
-  .support-grid,
-  .community-grid,
-  .media-grid,
-  .podcast-social-grid,
-  .hsv-social-grid {
+  .social-grid, .support-grid, .community-grid, .media-grid,
+  .podcast-social-grid, .hsv-social-grid {
     grid-template-columns: 1fr;
   }
 }
