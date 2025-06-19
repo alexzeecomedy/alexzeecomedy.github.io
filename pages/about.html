@@ -284,22 +284,6 @@
         </a>
       </p>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navToggle = document.querySelector(".nav-toggle");
-        const navLinks = document.querySelector(".nav-links");
-
-        if (navToggle && navLinks) {
-          navToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-            navToggle.classList.toggle("active");
-
-            const expanded =
-              navToggle.getAttribute("aria-expanded") === "true" || false;
-            navToggle.setAttribute("aria-expanded", !expanded);
-          });
-        }
-      });
-    </script>
+    <script src="/assets/js/scripts.js" defer></script>
   </body>
 </html>

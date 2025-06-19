@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Stylesheets and Preloads -->
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
     <link
       rel="stylesheet"
@@ -14,9 +15,10 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="/styles.css" as="style" />
+
     <title>Alex Zee Comedy - Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -28,6 +30,8 @@
     />
     <meta name="author" content="Alex Zee" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="fb:app_id" content="983370977104769" />
     <meta property="og:url" content="https://alexzeecomedy.com" />
     <meta property="og:type" content="website" />
@@ -47,6 +51,8 @@
     <meta property="og:site_name" content="Alex Zee Comedy" />
     <meta property="og:locale" content="en_US" />
     <meta property="article:author" content="Alex Zee" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@alexzeecomedy" />
     <meta name="twitter:creator" content="@alexzeecomedy" />
@@ -65,9 +71,13 @@
       content="Alex Zee cheekily tipping his cap in bisexual lighting."
     />
     <meta name="twitter:dnt" content="on" />
+
+    <!-- Mobile Web App -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Privacy & Security -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
       http-equiv="Content-Security-Policy"
@@ -103,8 +113,9 @@
       </div>
     </nav>
     <section class="hero">
+      <!-- The src will be dynamically set by JavaScript -->
       <img
-        src="phatsammys1.webp"
+        src=""
         alt="Flier for Phat Sammy's Phusion Comedy Open Mic, every Wednesday at 8:30pm in Huntsville, Alabama"
         class="hero-image"
         loading="lazy"
@@ -384,49 +395,7 @@
         </a>
       </p>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const copyButtons = document.querySelectorAll(".copy-button");
-
-        copyButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const address = this.getAttribute("data-address");
-
-            const tempInput = document.createElement("input");
-            tempInput.value = address;
-            document.body.appendChild(tempInput);
-
-            tempInput.select();
-            document.execCommand("copy");
-
-            document.body.removeChild(tempInput);
-
-            const originalText = this.textContent;
-            this.textContent = "Copied!";
-            this.classList.add("copied");
-
-            setTimeout(() => {
-              this.textContent = originalText;
-              this.classList.remove("copied");
-            }, 2000);
-          });
-        });
-      });
-      document.addEventListener("DOMContentLoaded", function () {
-        const navToggle = document.querySelector(".nav-toggle");
-        const navLinks = document.querySelector(".nav-links");
-
-        if (navToggle && navLinks) {
-          navToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-            navToggle.classList.toggle("active");
-
-            const expanded =
-              navToggle.getAttribute("aria-expanded") === "true" || false;
-            navToggle.setAttribute("aria-expanded", !expanded);
-          });
-        }
-      });
-    </script>
+    <!-- Link to external JavaScript file -->
+    <script src="/assets/js/scripts.js" defer></script>
   </body>
 </html>

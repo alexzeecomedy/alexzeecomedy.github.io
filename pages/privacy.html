@@ -122,7 +122,13 @@
         >
       </p>
       <p><a href="https://njal.la/privacy-policy/">Njalla Privacy Policy</a></p>
-      <p>See also: our .</p>
+      <p>
+        See also: our
+        <a
+          href="https://github.com/alexzeecomedy/alexzeecomedy.github.io/security/policy"
+          >Security Policy</a
+        >.
+      </p>
     </section>
     <footer>
       <p>
@@ -175,22 +181,6 @@
         </a>
       </p>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navToggle = document.querySelector(".nav-toggle");
-        const navLinks = document.querySelector(".nav-links");
-
-        if (navToggle && navLinks) {
-          navToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-            navToggle.classList.toggle("active");
-
-            const expanded =
-              navToggle.getAttribute("aria-expanded") === "true" || false;
-            navToggle.setAttribute("aria-expanded", !expanded);
-          });
-        }
-      });
-    </script>
+    <script src="/assets/js/scripts.js" defer></script>
   </body>
 </html>
