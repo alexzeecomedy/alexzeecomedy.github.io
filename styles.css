@@ -564,7 +564,7 @@ nav a:hover::after {
 }
 .coffee {
   border-color: #ffdd00;
-  color: #ffdd00;
+  color: #000000;
 }
 .kofi {
   border-color: #ff6433;
@@ -587,8 +587,8 @@ nav a:hover::after {
   color: #f7931a;
 }
 .lightning {
-  border-color: #fbdd11;
-  color: #fbdd11;
+  border-color: #f6c915;
+  color: #f6c915;
 }
 .monero {
   border-color: #ff6600;
