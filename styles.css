@@ -297,7 +297,6 @@ button:hover,
   color: var(--text-secondary);
 }
 
-/* Style for the actual QR code image */
 .qr-code-img {
   max-width: 95%;
   max-height: 95%; /* Make sure it fits within the placeholder */
@@ -305,14 +304,12 @@ button:hover,
   object-fit: contain; /* Scale the image to fit while preserving aspect ratio */
 }
 
-/* If an image fails to load, the ::before content will appear */
 .qr-placeholder img:not([src]) ~ ::before,
 .qr-placeholder img[src=""] ~ ::before,
 .qr-placeholder img:error ~ ::before {
   display: block; /* Show "QR Code" if image is missing or fails */
 }
 
-/* Hide the placeholder text if image is loaded */
 .qr-placeholder
   img[src]:not([src=""]):not([src="about:blank"]):not([src="error"])
   ~ ::before {
@@ -452,6 +449,18 @@ nav a:hover::after {
   border-color: #858afa;
   color: #6364ff;
 }
+.writefreely {
+  border-color: #ffffff;
+  color: #000000;
+}
+.mobilizon {
+  border-color: #ffd599;
+  color: #fda62a;
+}
+.gumroad {
+  border-color: #ffc900;
+  color: #ff90e8;
+}
 .bluesky {
   border-color: #1da1f2;
   color: #1da1f2;
@@ -477,7 +486,7 @@ nav a:hover::after {
   color: #000000;
 }
 .instagram {
-  border-color: #e1306c;
+  border-color: #d100c3;
   color: #e1306c;
 }
 .facebook {
@@ -523,7 +532,7 @@ nav a:hover::after {
 }
 .loops {
   border-color: #ffe500;
-  color: #ffe500;
+  color: #000000;
 }
 .discord {
   border-color: #7289da;
@@ -587,22 +596,33 @@ nav a:hover::after {
   color: #f7931a;
 }
 .lightning {
-  border-color: #f6c915;
-  color: #f6c915;
+  border-color: #fbdd11;
+  color: #000000;
 }
 .monero {
   border-color: #ff6600;
   color: #ff6600;
 }
 
-.contact-item.email {
+.contact-item.tuta {
   border-color: #850122;
   color: #850122;
 }
-.contact-item.email a {
+.contact-item.tuta a {
   color: #850122;
 }
-.contact-item.email a:hover {
+.contact-item.tuta a:hover {
+  color: var(--neon-green);
+}
+
+.contact-item.proton {
+  border-color: #6d4aff;
+  color: #6d4aff;
+}
+.contact-item.proton a {
+  color: #6d4aff;
+}
+.contact-item.proton a:hover {
   color: var(--neon-green);
 }
 
