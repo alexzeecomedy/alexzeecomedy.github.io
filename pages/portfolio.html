@@ -70,17 +70,18 @@
       name="twitter:image:alt"
       content="Alex Zee cheekily tipping his cap in bisexual lighting."
     />
-    <meta name="twitter:dnt" content="on" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta http-equiv="Content-Security-Policy" content=" default-src 'self';
-    script-src 'self' 'unsafe-inline' https://milkyway.moe; style-src 'self'
-    'unsafe-inline' https://milkyway.moe; img-src 'self' data:
-    https://img.shields.io https://nonbot.org https://nitter.net
-    https://inv.nadeko.net; font-src 'self'; connect-src 'self'; frame-src
-    'self' https://nitter.net https://inv.nadeko.net; />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline' https://milkyway.moe; 
+    style-src 'self' 'unsafe-inline' https://milkyway.moe; /* Added milkyway.moe here for consistency */
+    img-src 'self' data: https://img.shields.io https://nonbot.org https://nitter.net https://inv.nadeko.net; 
+    font-src 'self'; 
+    connect-src 'self';
+    frame-src 'self' https://nitter.net https://inv.nadeko.net; /* <-- ADD THIS LINE */
+  "
+    />
   </head>
   <body>
     <header>
