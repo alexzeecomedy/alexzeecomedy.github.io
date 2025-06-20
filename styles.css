@@ -434,7 +434,7 @@ nav a:hover::after {
   color: #6364ff;
 }
 .bluesky {
-  border-color: #ffffff;
+  border-color: #1da1f2;
   color: #1da1f2;
 }
 .pixelfed {
@@ -442,7 +442,7 @@ nav a:hover::after {
   color: #000000;
 }
 .peertube {
-  border-color: #ffffff;
+  border-color: #f1680d;
   color: #f1680d;
 }
 .twitter {
@@ -458,11 +458,11 @@ nav a:hover::after {
   color: #000000;
 }
 .instagram {
-  border-color: #ffffff;
+  border-color: #e1306c;
   color: #e1306c;
 }
 .facebook {
-  border-color: #ffffff;
+  border-color: #0865fe;
   color: #0865fe;
 }
 .tiktok {
@@ -471,7 +471,7 @@ nav a:hover::after {
 }
 .youtube,
 .media-item.youtube {
-  border-color: #ffffff;
+  border-color: #ff0000;
   color: #ff0000;
 }
 .twitch {
@@ -480,63 +480,63 @@ nav a:hover::after {
 }
 .lemmy {
   border-color: #ffffff;
-  color: #00c853;
+  color: #000000;
 }
 .reddit {
-  border-color: #ffffff;
+  border-color: #ff4500;
   color: #ff4500;
 }
 .matrix {
-  border-color: #ffffff;
+  border-color: #0dbd8b;
   color: #0dbd8b;
 }
 .signal {
-  border-color: #ffffff;
+  border-color: #3b45fd;
   color: #3b45fd;
 }
 .rss {
-  border-color: #ffffff;
-  color: #f26522;
+  border-color: #f8b700;
+  color: #f87900;
 }
 .clips {
-  border-color: #ffffff;
+  border-color: #ff0000;
   color: #ff0000;
 }
 .loops {
-  border-color: #ffffff;
+  border-color: #ffe500;
   color: #ffe500;
 }
 .discord {
-  border-color: #ffffff;
+  border-color: #7289da;
   color: #7289da;
 }
 .telegram {
-  border-color: #ffffff;
+  border-color: #24a1de;
   color: #24a1de;
 }
 
 .wishlist {
-  border-color: #ffffff;
+  border-color: #6435c9;
   color: #6435c9;
 }
 .amazon {
-  border-color: #f2f2f2;
+  border-color: #ff9900;
   color: #ff9900;
 }
 .liberapay {
-  border-color: #ffffff;
+  border-color: #f6c915;
   color: #f6c915;
 }
 .patreon {
-  border-color: #ffffff;
+  border-color: #f96854;
   color: #f96854;
 }
 .cashapp {
-  border-color: #ffffff;
+  border-color: #00cf31;
   color: #00cf31;
 }
 .venmo {
-  border-color: #ffffff;
+  border-color: #008cff;
   color: #008cff;
 }
 .paypal {
@@ -544,19 +544,19 @@ nav a:hover::after {
   color: #003087;
 }
 .coffee {
-  border-color: #ffffff;
+  border-color: #ffdd00;
   color: #ffdd00;
 }
 .kofi {
-  border-color: #ffffff;
+  border-color: #ff6433;
   color: #ff6433;
 }
 .tuta {
-  border-color: #ffffff;
+  border-color: #850122;
   color: #850122;
 }
 .ente {
-  border-color: #ffffff;
+  border-color: #00c600;
   color: #00c600;
 }
 .dub {
@@ -564,7 +564,7 @@ nav a:hover::after {
   color: #000000;
 }
 .bitcoin {
-  border-color: #ffffff;
+  border-color: #f7931a;
   color: #f7931a;
 }
 .lightning {
@@ -572,7 +572,7 @@ nav a:hover::after {
   color: #fbdd11;
 }
 .monero {
-  border-color: #ffffff;
+  border-color: #ff6600;
   color: #ff6600;
 }
 
