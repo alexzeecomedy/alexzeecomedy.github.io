@@ -14,11 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .catch((err) => {
             console.error("Failed to copy text: ", err);
-            // Fallback for environments that might not support Clipboard API fully
             fallbackCopyTextToClipboard(address, this);
           });
       } else {
-        // Fallback for older browsers
         fallbackCopyTextToClipboard(address, this);
       }
     });
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
       showCopyFeedback(buttonElement);
     } catch (err) {
       console.error("Unable to copy text using execCommand: ", err);
-      // Optionally provide user feedback that copy failed
     }
     document.body.removeChild(tempInput);
   }
@@ -69,13 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "Nav toggle or nav links not found. Hamburger menu may not function."
     );
   }
-}); // End of DOMContentLoaded
 
-document.addEventListener("DOMContentLoaded", function () {
+  // --- Theme Toggle Functionality ---
   const themeToggle = document.getElementById("theme-toggle");
   const body = document.body;
 
-  // Helper: set theme
   function setTheme(theme) {
     body.classList.remove("light", "dark");
     if (theme === "light") body.classList.add("light");
@@ -83,46 +78,46 @@ document.addEventListener("DOMContentLoaded", function () {
     // else: auto, no class, use system
   }
 
-  // Load saved theme or auto
-  const savedTheme = localStorage.getItem("theme");
-  setTheme(savedTheme);
+  function updateThemeButton(theme) {
+    themeToggle.innerHTML =
+      theme === "auto"
+        ? '<i class="fa-solid fa-circle-half-stroke"></i>'
+        : theme === "dark"
+        ? '<i class="fa-solid fa-circle"></i>'
+        : '<i class="fa-solid fa-sun"></i>';
+  }
 
-  // Toggle logic
-  themeToggle.addEventListener("click", function () {
-    let current = body.classList.contains("dark")
+  if (themeToggle) {
+    // Load saved theme or auto
+    const savedTheme = localStorage.getItem("theme");
+    setTheme(savedTheme);
+
+    // Set initial button icon
+    let initial = body.classList.contains("dark")
       ? "dark"
       : body.classList.contains("light")
       ? "light"
       : "auto";
+    updateThemeButton(initial);
 
-    let next;
-    if (current === "auto") next = "dark";
-    else if (current === "dark") next = "light";
-    else next = "auto";
+    // Toggle logic
+    themeToggle.addEventListener("click", function () {
+      let current = body.classList.contains("dark")
+        ? "dark"
+        : body.classList.contains("light")
+        ? "light"
+        : "auto";
 
-    setTheme(next);
-    if (next === "auto") localStorage.removeItem("theme");
-    else localStorage.setItem("theme", next);
+      let next;
+      if (current === "auto") next = "dark";
+      else if (current === "dark") next = "light";
+      else next = "auto";
 
-    // Optionally update button text/icon
-    themeToggle.textContent =
-      next === "auto"
-        ? '<i class="fa-solid fa-circle-half-stroke"></i>'
-        : next === "dark"
-        ? '<i class="fa-solid fa-circle"></i>'
-        : '<i class="fa-solid fa-sun"></i>';
-  });
+      setTheme(next);
+      if (next === "auto") localStorage.removeItem("theme");
+      else localStorage.setItem("theme", next);
 
-  // Set initial button icon
-  let initial = body.classList.contains("dark")
-    ? "dark"
-    : body.classList.contains("light")
-    ? "light"
-    : "auto";
-  themeToggle.textContent =
-    initial === "auto"
-      ? '<i class="fa-solid fa-circle-half-stroke"></i>'
-      : initial === "dark"
-      ? '<i class="fa-solid fa-circle"></i>'
-      : '<i class="fa-solid fa-sun"></i>';
+      updateThemeButton(next);
+    });
+  }
 });
