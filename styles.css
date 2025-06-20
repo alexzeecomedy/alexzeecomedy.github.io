@@ -299,8 +299,8 @@ button:hover,
 
 /* Style for the actual QR code image */
 .qr-code-img {
-  max-width: 100%;
-  max-height: 100%; /* Make sure it fits within the placeholder */
+  max-width: 95%;
+  max-height: 95%; /* Make sure it fits within the placeholder */
   display: block; /* Remove extra space below the image */
   object-fit: contain; /* Scale the image to fit while preserving aspect ratio */
 }
@@ -596,11 +596,11 @@ nav a:hover::after {
 }
 
 .contact-item.email {
-  border-color: var(--cyber-blue);
-  color: var(--cyber-blue);
+  border-color: #850122;
+  color: #850122;
 }
 .contact-item.email a {
-  color: var(--cyber-blue);
+  color: #850122;
 }
 .contact-item.email a:hover {
   color: var(--neon-green);
@@ -618,11 +618,11 @@ nav a:hover::after {
 }
 
 .contact-item.signal {
-  border-color: var(--cyber-blue);
-  color: var(--cyber-blue);
+  border-color: #3b45fd;
+  color: #3b45fd;
 }
 .contact-item.signal a {
-  color: var(--cyber-blue);
+  color: #3b45fd;
 }
 .contact-item.signal a:hover {
   color: var(--neon-green);
