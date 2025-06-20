@@ -553,7 +553,7 @@ nav a:hover::after {
 }
 .liberapay {
   border-color: #f6c915;
-  color: #f6c915;
+  color: #000000;
 }
 .patreon {
   border-color: #f96854;
@@ -602,6 +602,11 @@ nav a:hover::after {
 .monero {
   border-color: #ff6600;
   color: #ff6600;
+}
+
+.stream {
+  border-color: #53fc18;
+  color: #53fc18;
 }
 
 .contact-item.tuta {
