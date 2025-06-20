@@ -56,6 +56,34 @@ body {
   line-height: 1.6;
 }
 
+body {
+  background: var(--hacker-black);
+  color: var(--text-primary);
+}
+
+/* Dark mode: either via .dark class or system preference */
+body.dark,
+@media (prefers-color-scheme: dark) {
+  --hacker-black: #0a0a0a;
+  --hacker-gray: #181818;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b3b3b3;
+  /* ...other dark variables... */
+  background: var(--hacker-black);
+  color: var(--text-primary);
+}
+
+/* Light mode: via .light class */
+body.light {
+  --hacker-black: #f0f0f0;
+  --hacker-gray: #e0e0e0;
+  --text-primary: #181818;
+  --text-secondary: #444;
+  /* ...other light variables... */
+  background: var(--hacker-black);
+  color: var(--text-primary);
+}
+
 img {
   max-width: 100%;
   height: auto;

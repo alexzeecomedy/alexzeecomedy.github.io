@@ -70,3 +70,59 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 }); // End of DOMContentLoaded
+
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  // Helper: set theme
+  function setTheme(theme) {
+    body.classList.remove("light", "dark");
+    if (theme === "light") body.classList.add("light");
+    else if (theme === "dark") body.classList.add("dark");
+    // else: auto, no class, use system
+  }
+
+  // Load saved theme or auto
+  const savedTheme = localStorage.getItem("theme");
+  setTheme(savedTheme);
+
+  // Toggle logic
+  themeToggle.addEventListener("click", function () {
+    let current = body.classList.contains("dark")
+      ? "dark"
+      : body.classList.contains("light")
+      ? "light"
+      : "auto";
+
+    let next;
+    if (current === "auto") next = "dark";
+    else if (current === "dark") next = "light";
+    else next = "auto";
+
+    setTheme(next);
+    if (next === "auto") localStorage.removeItem("theme");
+    else localStorage.setItem("theme", next);
+
+    // Optionally update button text/icon
+    themeToggle.textContent =
+      next === "auto"
+        ? '<i class="fa-solid fa-circle-half-stroke"></i>'
+        : next === "dark"
+        ? '<i class="fa-solid fa-circle"></i>'
+        : '<i class="fa-solid fa-sun"></i>';
+  });
+
+  // Set initial button icon
+  let initial = body.classList.contains("dark")
+    ? "dark"
+    : body.classList.contains("light")
+    ? "light"
+    : "auto";
+  themeToggle.textContent =
+    initial === "auto"
+      ? '<i class="fa-solid fa-circle-half-stroke"></i>'
+      : initial === "dark"
+      ? '<i class="fa-solid fa-circle"></i>'
+      : '<i class="fa-solid fa-sun"></i>';
+});
