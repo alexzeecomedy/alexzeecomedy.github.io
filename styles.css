@@ -263,18 +263,41 @@ button:hover,
 }
 
 .qr-placeholder {
-  height: 100px;
+  height: 100px; /* Keep this for the placeholder height */
   margin: 0.5rem 0;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  overflow: hidden; /* Ensures the image fits within rounded corners */
 }
 
 .qr-placeholder::before {
-  content: "QR Code";
+  content: "QR Code"; /* This text will only show if the img fails to load or is missing */
   color: var(--text-secondary);
+}
+
+/* Style for the actual QR code image */
+.qr-code-img {
+  max-width: 100%;
+  max-height: 100%; /* Make sure it fits within the placeholder */
+  display: block; /* Remove extra space below the image */
+  object-fit: contain; /* Scale the image to fit while preserving aspect ratio */
+}
+
+/* If an image fails to load, the ::before content will appear */
+.qr-placeholder img:not([src]) ~ ::before,
+.qr-placeholder img[src=""] ~ ::before,
+.qr-placeholder img:error ~ ::before {
+  display: block; /* Show "QR Code" if image is missing or fails */
+}
+
+/* Hide the placeholder text if image is loaded */
+.qr-placeholder
+  img[src]:not([src=""]):not([src="about:blank"]):not([src="error"])
+  ~ ::before {
+  display: none;
 }
 
 table.center {
