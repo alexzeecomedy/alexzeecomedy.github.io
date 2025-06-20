@@ -58,6 +58,8 @@ body {
 }
 
 body.light {
+  --neon-green: #2ecc40;
+  --terminal-green: #00bfae;
   --hacker-black: #f0f0f0;
   --hacker-dark: #e0e0e0;
   --hacker-gray: #e0e0e0;
