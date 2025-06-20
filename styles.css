@@ -54,34 +54,23 @@ body {
   color: var(--text-primary);
   font-family: "Ubuntu Mono", monospace;
   line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
-body {
-  background: var(--hacker-black);
-  color: var(--text-primary);
-}
-
-/* Dark mode: either via .dark class or system preference */
-body.dark,
-@media (prefers-color-scheme: dark) {
-  --hacker-black: #0a0a0a;
-  --hacker-gray: #181818;
-  --text-primary: #f0f0f0;
-  --text-secondary: #b3b3b3;
-  /* ...other dark variables... */
-  background: var(--hacker-black);
-  color: var(--text-primary);
-}
-
-/* Light mode: via .light class */
 body.light {
   --hacker-black: #f0f0f0;
+  --hacker-dark: #e0e0e0;
   --hacker-gray: #e0e0e0;
   --text-primary: #181818;
   --text-secondary: #444;
-  /* ...other light variables... */
-  background: var(--hacker-black);
-  color: var(--text-primary);
+}
+
+body.dark {
+  --hacker-black: #0a0a0a;
+  --hacker-dark: #1a1a1a;
+  --hacker-gray: #181818;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b3b3b3;
 }
 
 img {
@@ -644,14 +633,21 @@ nav a:hover::after {
 }
 
 @media (prefers-color-scheme: dark) {
-  .social-item,
-  .crypto-item {
-    background: #2a2a2a;
+  :root {
+    --hacker-black: #0a0a0a;
+    --hacker-dark: #1a1a1a;
+    --hacker-gray: #181818;
+    --text-primary: #f0f0f0;
+    --text-secondary: #b3b3b3;
   }
-  .threads,
-  .github,
-  .tiktok {
-    color: #ffffff;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --hacker-black: #f0f0f0;
+    --hacker-dark: #e0e0e0;
+    --hacker-gray: #e0e0e0;
+    --text-primary: #181818;
+    --text-secondary: #444;
   }
 }
 
