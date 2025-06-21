@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Alex Zee Comedy Blog</title>
+    <link>https://alexzeecomedy.com/</link>
+    <description>The blog of stand-up comedian, Alex Zee.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Jun 2025 07:49:47 CDT</lastBuildDate>
+
+    <item>
+      <title>Welcome</title>
+      <link>https://alexzeecomedy.com/pages/blog/posts/post1.html</link>
+      <description>Welcome</description>
+      <pubDate>Fri, 20 Jun 2025 12:00:00 CDT</pubDate>
+      <guid>https://alexzeecomedy.com/pages/blog/posts/post1.html</guid>
+    </item>
+
+    <!-- Add more <item> blocks for each post -->
+  </channel>
+</rss>
