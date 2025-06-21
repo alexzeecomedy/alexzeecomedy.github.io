@@ -656,6 +656,17 @@ nav a:hover::after {
   color: var(--neon-green);
 }
 
+.contact-item.mailvelope {
+  border-color: #ff004f;
+  color: #ff004f;
+}
+.contact-item.mailvelope a {
+  color: #ff004f;
+}
+.contact-item.mailvelope a:hover {
+  color: var(--neon-green);
+}
+
 .contact-item iframe {
   max-width: 100%;
   height: 600px; /* Or adjust as needed */
