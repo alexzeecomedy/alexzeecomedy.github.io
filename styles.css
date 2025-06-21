@@ -832,3 +832,12 @@ body.dark .icon-black {
     margin-left: 0.25rem;
   }
 }
+
+#onlinewire-webring {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional, for vertical centering if the widget is tall */
+  width: 100%;
+  margin: 1.5rem 0; /* optional, for spacing */
+  text-align: center; /* fallback for inline content */
+}
