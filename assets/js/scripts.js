@@ -120,4 +120,50 @@ document.addEventListener("DOMContentLoaded", function () {
       updateThemeButton(next);
     });
   }
+
+  // Add to your DOMContentLoaded event listener
+  function generateBreadcrumbs() {
+    const path = window.location.pathname;
+    const breadcrumbNav = document.querySelector(".breadcrumb-nav");
+
+    if (!breadcrumbNav) return;
+
+    const pathSegments = path.split("/").filter((segment) => segment);
+    const breadcrumbList = breadcrumbNav.querySelector(".breadcrumb-list");
+
+    // Clear existing breadcrumbs
+    breadcrumbList.innerHTML = "";
+
+    // Always start with Home
+    const homeItem = document.createElement("li");
+    homeItem.className = "breadcrumb-item";
+    homeItem.innerHTML = '<a href="https://alexzeecomedy.com">Home</a>';
+    breadcrumbList.appendChild(homeItem);
+
+    // Build breadcrumb path
+    let currentPath = "";
+    pathSegments.forEach((segment, index) => {
+      currentPath += "/" + segment;
+
+      const item = document.createElement("li");
+      item.className = "breadcrumb-item";
+
+      // Format segment name
+      let displayName = segment.charAt(0).toUpperCase() + segment.slice(1);
+      if (displayName === "Index") displayName = "Blog";
+
+      const isLast = index === pathSegments.length - 1;
+
+      if (isLast) {
+        item.innerHTML = `<a href="https://alexzeecomedy.com${currentPath}" aria-current="page">${displayName}</a>`;
+      } else {
+        item.innerHTML = `<a href="https://alexzeecomedy.com${currentPath}">${displayName}</a>`;
+      }
+
+      breadcrumbList.appendChild(item);
+    });
+  }
+
+  // Call the function
+  generateBreadcrumbs();
 });

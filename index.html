@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Alex Zee Comedy",
+        "url": "https://alexzeecomedy.com",
+        "description": "The official website of stand-up comedian Alex Zee, featuring tour dates, videos, and comedy content",
+        "author": {
+          "@type": "Person",
+          "name": "Alex Zee"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://alexzeecomedy.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Alex Zee",
+          "url": "https://alexzeecomedy.com/pages/about"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://alexzeecomedy.com"
+          }
+        ]
+      }
+    </script>
+    <link
+      rel="preload"
+      href="/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
+    <link rel="dns-prefetch" href="//milkyway.moe" />
+    <link rel="dns-prefetch" href="//img.shields.io" />
+    <link rel="preconnect" href="https://milkyway.moe" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
     <link
@@ -106,6 +156,10 @@
         <a href="https://alexzeecomedy.com/pages/links">Links</a>
         <a href="https://alexzeecomedy.com/pages/contact">Contact</a>
       </div>
+    </nav>
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+      <ol class="breadcrumb-list">
+      </ol>
     </nav>
     <section class="hero">
       <img
