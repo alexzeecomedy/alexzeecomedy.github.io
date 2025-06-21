@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "Ubuntu Mono";
-  src: url("fonts/UbuntuMono-Regular.woff2") format("woff2");
+  src: url("fonts/UbuntuSansMono-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -664,6 +664,17 @@ nav a:hover::after {
   color: #ff004f;
 }
 .contact-item.mailvelope a:hover {
+  color: var(--neon-green);
+}
+
+.contact-item.pobox {
+  border-color: #303066;
+  color: #303066;
+}
+.contact-item.pobox a {
+  color: #303066;
+}
+.contact-item.pobox a:hover {
   color: var(--neon-green);
 }
 

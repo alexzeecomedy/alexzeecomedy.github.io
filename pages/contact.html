@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://milkyway.moe; style-src 'self' 'unsafe-inline' https://milkyway.moe; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -65,6 +69,13 @@
       title="RSS"
       href="/rss.xml"
     />
+    -
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Blog"
+      href="/atom.xml"
+    />
     <link rel="dns-prefetch" href="//milkyway.moe" />
     <link rel="preconnect" href="https://milkyway.moe" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
@@ -75,7 +86,7 @@
     />
     <link
       rel="preload"
-      href="fonts/JetBrainsMono-Regular.woff2"
+      href="/fonts/JetBrainsMono-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -139,10 +150,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://milkyway.moe; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
-    />
   </head>
   <body>
     <header>
@@ -217,17 +224,13 @@
           <h4>
             <a
               href="https://keys.mailvelope.com/pks/lookup?op=get&search=alexzeecomedy@gmail.com"
-              >Gmail*</a
+              >Gmail</a
             >
           </h4>
           <a href="mailto:alexzeecomedy@gmail.com">alexzeecomedy@gmail.com</a>
-        </div>
-      </div>
-      <p>
-        *
-        <button
-          class="copy-button"
-          data-address="-----BEGIN PGP PUBLIC KEY BLOCK-----
+          <button
+            class="copy-button"
+            data-address="-----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: Mailvelope v6.1.0
 Comment: https://mailvelope.com
 
@@ -285,11 +288,21 @@ hjoNRtqS/dk/iKQReGoxihAkcLIy0PV+Sb4S10Yqok6CyOMUdC+0nHcQ2CcO
 =TTqZ
 -----END PGP PUBLIC KEY BLOCK-----
 "
-        >
-          <i class="fas fa-copy"></i> Copy PGP Key
-        </button>
-      </p>
+          >
+            <i class="fas fa-copy"></i> Copy PGP Key
+          </button>
+        </div>
 
+        <div class="contact-item pobox">
+          <i class="fa-brands fa-usps fa-2x"></i>
+          <h4>PO Box</h4>
+          <address>
+            Alejandro Y Zee<br />
+            PO Box 1012<br />
+            Madison, AL 35756<br />
+          </address>
+        </div>
+      </div>
       <pre id="pgp-key">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: Mailvelope v6.1.0
@@ -349,13 +362,6 @@ hjoNRtqS/dk/iKQReGoxihAkcLIy0PV+Sb4S10Yqok6CyOMUdC+0nHcQ2CcO
 =TTqZ
 -----END PGP PUBLIC KEY BLOCK-----
       </pre>
-
-      <h2>PO Box</h2>
-      <address>
-        Alejandro Y Zee<br />
-        PO Box 1012<br />
-        Madison, AL 35756<br />
-      </address>
     </section>
     <footer>
       <p>
@@ -397,6 +403,18 @@ hjoNRtqS/dk/iKQReGoxihAkcLIy0PV+Sb4S10Yqok6CyOMUdC+0nHcQ2CcO
         <a href="https://fediring.net/random">Random</a>
       </p>
       <p>
+        <a
+          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
+          target="_blank"
+        >
+          <img
+            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
+            src="/assets/artwork/nonbot_pledged_logo.svg"
+            alt="Human-made Content"
+          />
+        </a>
+      </p>
+      <p>
         <a href="https://fedoraproject.org/" title="Get Fedora">
           <img
             src="/assets/artwork/fedora.gif"
@@ -422,16 +440,6 @@ hjoNRtqS/dk/iKQReGoxihAkcLIy0PV+Sb4S10Yqok6CyOMUdC+0nHcQ2CcO
             width="88"
             height="31"
             alt="Get VLC media player"
-          />
-        </a>
-        <a
-          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
-          target="_blank"
-        >
-          <img
-            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
-            src="/assets/artwork/nonbot_pledged_logo.svg"
-            alt="Human-made Content"
           />
         </a>
 

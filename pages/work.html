@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+	    default-src 'self'; 
+	    script-src 'self' 'unsafe-inline' https://milkyway.moe; 
+	    style-src 'self' 'unsafe-inline' https://milkyway.moe;
+	    img-src 'self' data: https://img.shields.io https://nonbot.org https://nitter.net https://inv.nadeko.net; 
+	    font-src 'self'; 
+	    connect-src 'self';
+	    frame-src 'self' https://nitter.net https://inv.nadeko.net;"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -108,6 +119,13 @@
       title="RSS"
       href="/rss.xml"
     />
+    -
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Blog"
+      href="/atom.xml"
+    />
     <link rel="dns-prefetch" href="//milkyway.moe" />
     <link rel="preconnect" href="https://milkyway.moe" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
@@ -118,7 +136,7 @@
     />
     <link
       rel="preload"
-      href="fonts/JetBrainsMono-Regular.woff2"
+      href="/fonts/JetBrainsMono-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -174,18 +192,6 @@
       name="twitter:image:alt"
       content="Alex Zee cheekily tipping his cap in bisexual lighting."
     />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
-    default-src 'self'; 
-    script-src 'self' 'unsafe-inline' https://milkyway.moe; 
-    style-src 'self' 'unsafe-inline' https://milkyway.moe; /* Added milkyway.moe here for consistency */
-    img-src 'self' data: https://img.shields.io https://nonbot.org https://nitter.net https://inv.nadeko.net; 
-    font-src 'self'; 
-    connect-src 'self';
-    frame-src 'self' https://nitter.net https://inv.nadeko.net; /* <-- ADD THIS LINE */
-  "
-    />
   </head>
   <body>
     <header>
@@ -239,7 +245,7 @@
           src="https://inv.nadeko.net/embed/videoseries?si=7VYnnzMsgEnZPQRb&amp;list=PLZD2Wdxutj1ETBl3-cc-Kd32KD5SF3jLt"
           title="Invidious video player"
           frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
@@ -440,6 +446,18 @@
         <a href="https://fediring.net/random">Random</a>
       </p>
       <p>
+        <a
+          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
+          target="_blank"
+        >
+          <img
+            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
+            src="/assets/artwork/nonbot_pledged_logo.svg"
+            alt="Human-made Content"
+          />
+        </a>
+      </p>
+      <p>
         <a href="https://fedoraproject.org/" title="Get Fedora">
           <img
             src="/assets/artwork/fedora.gif"
@@ -465,16 +483,6 @@
             width="88"
             height="31"
             alt="Get VLC media player"
-          />
-        </a>
-        <a
-          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
-          target="_blank"
-        >
-          <img
-            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
-            src="/assets/artwork/nonbot_pledged_logo.svg"
-            alt="Human-made Content"
           />
         </a>
 

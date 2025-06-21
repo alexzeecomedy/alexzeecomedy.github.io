@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://milkyway.moe https://liberapay.com; style-src 'self' 'unsafe-inline' https://milkyway.moe; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -47,6 +51,12 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <link
+      rel="preload"
+      href="/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
     <link
       rel="alternate"
@@ -54,10 +64,16 @@
       title="RSS"
       href="/rss.xml"
     />
+    -
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Blog"
+      href="/atom.xml"
+    />
     <link rel="dns-prefetch" href="//milkyway.moe" />
     <link rel="dns-prefetch" href="//img.shields.io" />
     <link rel="preconnect" href="https://milkyway.moe" crossorigin />
-    <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
     <link
       rel="stylesheet"
@@ -65,21 +81,14 @@
     />
     <link
       rel="preload"
-      href="fonts/JetBrainsMono-Regular.woff2"
+      href="/fonts/JetBrainsMono-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
-    <link rel="preload" href="/styles.css" as="style" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>Alex Zee Comedy - Home</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link
-      rel="sitemap"
-      type="application/xml"
-      title="Sitemap"
-      href="/sitemap.xml"
-    />
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -136,10 +145,6 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" href="/cheekyzee.webp" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://milkyway.moe; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
-    />
   </head>
   <body>
     <header>
@@ -274,10 +279,7 @@
         on the various listed applications and viewers like you. Thank you!
       </p>
       <div class="liberapay-container">
-        <script
-          src="https://liberapay.com/alexzeecomedy/widgets/button.js"
-          defer
-        ></script>
+        <script src="https://liberapay.com/alexzeecomedy/widgets/button.js"></script>
         <noscript
           ><a href="https://liberapay.com/alexzeecomedy/donate"
             ><img
@@ -469,7 +471,7 @@
         <a href="https://fediring.net/previous?host=alexzeecomedy.com">←</a>
         <a href="https://fediring.net/"
           ><img
-            src="fediring.gif"
+            src="/fediring.gif"
             alt="Fediring badge by TheCozyCat"
             loading="lazy"
         /></a>
@@ -504,6 +506,18 @@
         <a href="https://fediring.net/random">Random</a>
       </p>
       <p>
+        <a
+          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
+          target="_blank"
+        >
+          <img
+            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
+            src="/assets/artwork/nonbot_pledged_logo.svg"
+            alt="Human-made Content"
+          />
+        </a>
+      </p>
+      <p>
         <a href="https://fedoraproject.org/" title="Get Fedora">
           <img
             src="/assets/artwork/fedora.gif"
@@ -529,16 +543,6 @@
             width="88"
             height="31"
             alt="Get VLC media player"
-          />
-        </a>
-        <a
-          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
-          target="_blank"
-        >
-          <img
-            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
-            src="/assets/artwork/nonbot_pledged_logo.svg"
-            alt="Human-made Content"
           />
         </a>
 

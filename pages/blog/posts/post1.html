@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://milkyway.moe; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -68,6 +72,13 @@
       title="RSS"
       href="/rss.xml"
     />
+    -
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Blog"
+      href="/atom.xml"
+    />
     <link rel="dns-prefetch" href="//milkyway.moe" />
     <link rel="preconnect" href="https://milkyway.moe" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
@@ -78,7 +89,7 @@
     />
     <link
       rel="preload"
-      href="fonts/JetBrainsMono-Regular.woff2"
+      href="/fonts/JetBrainsMono-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -145,10 +156,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://milkyway.moe; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
-    />
     <meta name="fediverse:creator" content="@alexzeecomedy@mastodon.social" />
   </head>
   <body>
@@ -225,6 +232,18 @@
         <a href="https://fediring.net/random">Random</a>
       </p>
       <p>
+        <a
+          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
+          target="_blank"
+        >
+          <img
+            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
+            src="/assets/artwork/nonbot_pledged_logo.svg"
+            alt="Human-made Content"
+          />
+        </a>
+      </p>
+      <p>
         <a href="https://fedoraproject.org/" title="Get Fedora">
           <img
             src="/assets/artwork/fedora.gif"
@@ -250,16 +269,6 @@
             width="88"
             height="31"
             alt="Get VLC media player"
-          />
-        </a>
-        <a
-          href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
-          target="_blank"
-        >
-          <img
-            style="height: 128px; margin-top: 10px; margin-bottom: 10px"
-            src="/assets/artwork/nonbot_pledged_logo.svg"
-            alt="Human-made Content"
           />
         </a>
 

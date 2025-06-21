@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Alex Zee Comedy Blog</title>
+  <link href="https://alexzeecomedy.com/pages/blog/index"/>
+  <updated>2025-06-20T12:00:00Z</updated>
+  <id>https://alexzeecomedy.com/</id>
+  <entry>
+    <title>Welcome</title>
+    <link href="https://alexzeecomedy.com/pages/blog/posts/post1"/>
+    <id>https://alexzeecomedy.com/pages/blog/posts/post1</id>
+    <updated>2025-06-20T12:00:00Z</updated>
+    <summary>Welcome.</summary>
+  </entry>
+</feed>
