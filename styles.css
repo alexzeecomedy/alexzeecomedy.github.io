@@ -603,10 +603,13 @@ nav a:hover::after {
   border-color: #ff6600;
   color: #ff6600;
 }
-
 .stream {
-  border-color: #53fc18;
+  border-color: #ffffff;
   color: #000000;
+}
+.chalcocabana {
+  border-color: #ffffff;
+  color: #414141;
 }
 
 .contact-item.tuta {
