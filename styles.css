@@ -856,3 +856,65 @@ body.dark .icon-black {
   border-radius: 50%;
   margin-bottom: 1em;
 }
+.blog-post,
+.h-entry {
+  background: var(--hacker-gray);
+  border: 1px solid var(--neon-green);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  font-family: "JetBrains Mono", "Ubuntu Mono", monospace;
+}
+
+.blog-post h1,
+.h-entry h1 {
+  color: var(--neon-green);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .meta,
+.h-entry .meta {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.blog-post .p-summary,
+.h-entry .p-summary {
+  color: var(--terminal-green);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.blog-post .e-content,
+.h-entry .e-content {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.blog-post a.p-author,
+.h-entry a.p-author {
+  color: var(--cyber-blue);
+  border-bottom: 1px dotted var(--cyber-blue);
+  text-decoration: none;
+  transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+.blog-post a.p-author:hover,
+.h-entry a.p-author:hover {
+  color: var(--neon-green);
+  border-bottom-color: var(--neon-green);
+}
+@media (max-width: 600px) {
+  .blog-post,
+  .h-entry {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+}
