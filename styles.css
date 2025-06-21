@@ -841,3 +841,18 @@ body.dark .icon-black {
   margin: 1.5rem 0; /* optional, for spacing */
   text-align: center; /* fallback for inline content */
 }
+
+.h-card {
+  max-width: 350px;
+  margin: 2em auto;
+  text-align: center;
+  background: var(--hacker-gray);
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.h-card img.u-photo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
