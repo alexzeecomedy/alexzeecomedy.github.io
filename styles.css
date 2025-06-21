@@ -659,6 +659,20 @@ nav a:hover::after {
   border: none;
 }
 
+.icon-black {
+  color: #000000 !important;
+}
+
+body.dark .icon-black {
+  color: #ffffff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light) .icon-black {
+    color: #ffffff !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --hacker-black: #0a0a0a;
@@ -721,19 +735,5 @@ nav a:hover::after {
   .hsv-social-grid,
   .contact-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-.icon-black {
-  color: #000000;
-}
-
-body.dark .icon-black {
-  color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  .icon-black {
-    color: #ffffff;
   }
 }
