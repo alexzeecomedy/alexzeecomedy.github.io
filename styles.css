@@ -727,7 +727,11 @@ nav a:hover::after {
 .icon-black {
   color: #000000;
 }
-body.dark .icon-black,
+
+body.dark .icon-black {
+  color: #ffffff;
+}
+
 @media (prefers-color-scheme: dark) {
   .icon-black {
     color: #ffffff;
