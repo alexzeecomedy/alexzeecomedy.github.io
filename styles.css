@@ -125,7 +125,6 @@ a:hover {
   margin: 2rem auto;
   padding: 0 1rem;
   content-visibility: auto;
-  contain-intrinsic-size: 1px 5000px;
 }
 
 .social-item,
@@ -306,10 +305,6 @@ button:hover,
 
 .qr-placeholder img:not([src]) ~ ::before,
 .qr-placeholder img[src=""] ~ ::before,
-.qr-placeholder img:error ~ ::before {
-  display: block; /* Show "QR Code" if image is missing or fails */
-}
-
 .qr-placeholder
   img[src]:not([src=""]):not([src="about:blank"]):not([src="error"])
   ~ ::before {
