@@ -723,3 +723,13 @@ nav a:hover::after {
     grid-template-columns: 1fr;
   }
 }
+
+.icon-black {
+  color: #000000;
+}
+body.dark .icon-black,
+@media (prefers-color-scheme: dark) {
+  .icon-black {
+    color: #ffffff;
+  }
+}
