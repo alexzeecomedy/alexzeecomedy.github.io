@@ -586,6 +586,10 @@ nav a:hover::after {
   border-color: #ffffff;
   color: #000000;
 }
+.redact {
+  border-color: #ffffff;
+  color: #000000;
+}
 .bitcoin {
   border-color: #f7931a;
   color: #f7931a;
