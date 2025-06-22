@@ -509,6 +509,10 @@ nav a:hover::after {
   border-color: #ff4500;
   color: #ff4500;
 }
+.letterboxd {
+  border-color: #ffffff;
+  color: #000000;
+}
 .matrix {
   border-color: #0dbd8b;
   color: #0dbd8b;
@@ -541,6 +545,14 @@ nav a:hover::after {
 .wishlist {
   border-color: #6435c9;
   color: #6435c9;
+}
+.steam {
+  border-color: #c5c3c0;
+  color: #c5c3c0;
+}
+.gog {
+  border-color: #9146ff;
+  color: #9146ff;
 }
 .amazon {
   border-color: #ff9900;
@@ -916,4 +928,54 @@ body.dark .icon-black {
     padding: 1rem 0.5rem;
     max-width: 98vw;
   }
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.hero-headline {
+  color: var(--neon-green, #2ecc40);
+  font-family: "JetBrains Mono", "Ubuntu Mono", monospace;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0 4px 24px #000, 0 1px 0 #222;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  border-radius: 12px;
+  padding: 0.5em 1em;
+  pointer-events: auto;
+}
+@media (max-width: 600px) {
+  .hero-overlay {
+    padding: 1rem;
+  }
+  .hero-overlay h2 {
+    font-size: 1.2rem;
+  }
+  .hero-overlay h3 {
+    font-size: 1rem;
+  }
+}
+.hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9; /* or whatever ratio you want */
+  overflow: hidden;
+  min-height: 300px; /* fallback for browsers that don't support aspect-ratio */
+  max-height: 80vh;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
