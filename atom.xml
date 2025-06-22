@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Alex Zee Comedy Blog</title>
+  <subtitle>Blog of stand-up comedian, Alex Zee</subtitle>
   <link href="https://alexzeecomedy.com/pages/blog/index"/>
+  <link href="https://alexzeecomedy.com/atom.xml" rel="self"/>
   <updated>2025-06-20T12:00:00Z</updated>
   <id>https://alexzeecomedy.com/</id>
+  <author>
+    <name>Alex Zee</name>
+    <email>alex@alexzeecomedy.com</email>
+  </author>
+
   <entry>
     <title>Welcome</title>
     <link href="https://alexzeecomedy.com/pages/blog/posts/post1"/>
     <id>https://alexzeecomedy.com/pages/blog/posts/post1</id>
     <updated>2025-06-20T12:00:00Z</updated>
     <summary>Welcome.</summary>
+    <content type="html">
+      <![CDATA[
+        <p>Welcome.</p>
+      ]]>
+    </content>
+    <author>
+      <name>Alex Zee</name>
+      <email>alex@alexzeecomedy.com</email>
+    </author>
   </entry>
+
+  <!-- Add more entries, each with its own <author> -->
 </feed>
