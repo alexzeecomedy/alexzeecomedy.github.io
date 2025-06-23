@@ -651,15 +651,14 @@ nav a:hover::after {
   border-color: #f60;
   color: #f60;
 }
-
-.chalcocabana,
 .stream {
   border-color: #fff;
   color: #000;
 }
 
 .chalcocabana {
-  color: #414141;
+  border-color: #fff;
+  color: #555;
 }
 
 .contact-item.tuta a {
@@ -872,15 +871,6 @@ body.dark .icon-black {
   .breadcrumb-item:not(:last-child)::after {
     margin-left: 0.25rem;
   }
-}
-
-#onlinewire-webring {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 1.5rem 0;
-  text-align: center;
 }
 
 .blog-post,

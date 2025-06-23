@@ -3,7 +3,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://milkyway.moe https://liberapay.com; style-src 'self' 'unsafe-inline' https://milkyway.moe; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
     />
     <script type="application/ld+json">
       {
@@ -44,14 +44,10 @@
       title="Alex Zee Comedy Blog"
       href="/atom.xml"
     />
-    <link rel="dns-prefetch" href="//milkyway.moe" />
-    <link rel="preconnect" href="https://milkyway.moe" crossorigin />
+
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://milkyway.moe/onlinewire/onionring.css"
-    />
+
     <link
       rel="preload"
       href="/fonts/JetBrainsMono-Regular.woff2"
@@ -229,18 +225,7 @@
           <a href="https://xn--sr8hvo.ws/random">🎲</a>
           <a href="https://xn--sr8hvo.ws/next">→</a>
         </p>
-        <div id="onlinewire-webring">
-          <script
-            type="text/javascript"
-            src="https://milkyway.moe/onlinewire/onionring-variables.js"
-            defer
-          ></script>
-          <script
-            type="text/javascript"
-            src="https://milkyway.moe/onlinewire/onionring-widget.js"
-            defer
-          ></script>
-        </div>
+
         <p>
           <a href="https://alexzeecomedy.com">Home</a> |
           <a href="https://alexzeecomedy.com/pages/contact">Contact</a> |
@@ -303,11 +288,15 @@
             src="/assets/artwork/alexzeecomedybutton.png"
             alt="alexzeecomedy.com"
             title="alexzeecomedy.com"
+            width="88"
+            height="31"
           />
           <img
             src="/assets/artwork/dietcoke.png"
             alt="Made with Diet Coke"
             title="Made with Diet Coke"
+            width="88"
+            height="31"
           />
           <a href="https://liberapay.com/alexzeecomedy/donate"
             ><img
@@ -321,6 +310,8 @@
             ><img
               src="/assets/artwork/valid-rss-rogers.png"
               alt="[Valid RSS]"
+              width="88"
+              height="31"
               title="Validate my RSS feed"
           /></a>
           <a
@@ -329,6 +320,8 @@
             ><img
               src="/assets/artwork/valid-atom.png"
               alt="[Valid Atom 1.0]"
+              width="88"
+              height="31"
               title="Validate my Atom 1.0 feed"
           /></a>
           <a
@@ -338,6 +331,8 @@
             <img
               style="border: 0; width: 88px; height: 31px"
               src="/assets/artwork/vcss.png"
+              width="88"
+              height="31"
               alt="Valid CSS!"
             />
           </a>
@@ -347,12 +342,19 @@
           >
             <img
               style="border: 0; width: 88px; height: 31px"
+              width="88"
+              height="31"
               src="/assets/artwork/microformats88x31-flat.png"
               alt="Microformats"
             />
           </a>
           <a href="https://fediring.net/" title="Fediring badge by TheCozyCat">
-            <img src="/fediring.gif" alt="Fediring badge by TheCozyCat" />
+            <img
+              width="88"
+              height="31"
+              src="/fediring.gif"
+              alt="Fediring badge by TheCozyCat"
+            />
           </a>
           <a href="https://indieweb.org/" title="IndieWeb">
             <img
