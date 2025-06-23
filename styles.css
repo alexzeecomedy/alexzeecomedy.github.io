@@ -120,8 +120,9 @@ a:hover {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1.2em;
   max-width: 1200px;
+  margin-top: 1.5em;
   margin: 2rem auto;
   padding: 0 1rem;
   content-visibility: auto;
@@ -134,14 +135,16 @@ a:hover {
 .contact-item {
   background: var(--hacker-gray);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 6px;
+  color: var(--text-primary);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
+  padding: 1em;
   position: relative;
   overflow: hidden;
   border-top: 4px solid;
   border: 1px solid rgba(57, 255, 20, 0.3);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
@@ -501,6 +504,14 @@ nav a:hover::after {
   border-color: #9146ff;
   color: #9146ff;
 }
+.kick {
+  border-color: #53fc18;
+  color: #53fc18;
+}
+.trovo {
+  border-color: #19d66b;
+  color: #19d66b;
+}
 .lemmy {
   border-color: #ffffff;
   color: #000000;
@@ -512,6 +523,10 @@ nav a:hover::after {
 .letterboxd {
   border-color: #ffffff;
   color: #000000;
+}
+.linkedin {
+  border-color: #0a66c2;
+  color: #0a66c2;
 }
 .matrix {
   border-color: #0dbd8b;
@@ -855,11 +870,13 @@ body.dark .icon-black {
 
 .h-card {
   max-width: 350px;
+  flex: 0 0 350px;
   margin: 2em auto;
   text-align: center;
   background: var(--hacker-gray);
   border-radius: 8px;
   padding: 1.5em;
+  color: var(--text-primary);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .h-card img.u-photo {
@@ -978,4 +995,36 @@ body.dark .icon-black {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.main-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  justify-content: center; /* Optional: centers the content horizontally */
+  gap: 2rem; /* Space between h-card and about section */
+  margin: 2em auto;
+  max-width: 1200px;
+  padding: 0 1em;
+}
+.about-section {
+  flex: 1 1 0;
+  margin: 2em auto;
+  text-align: center;
+  background: var(--hacker-gray);
+  border-radius: 8px;
+  padding: 1.5em;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: fit-content;
+}
+@media (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 98vw;
+  }
+  .h-card,
+  .about-section {
+    width: fit-content;
+    max-width: 100%;
+  }
 }
