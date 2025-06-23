@@ -6,33 +6,32 @@
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
     />
     <script type="application/ld+json">
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": "Welcome",
-          "description": "Welcome blog post of stand-up comedian, Alex Zee",
-          "author": {
-            "@type": "Person",
-            "name": "Alex Zee",
-            "url": "https://alexzeecomedy.com"
-          },
-          "publisher": {
-            "@type": "Person",
-            "name": "Alex Zee",
-            "url": "https://alexzeecomedy.com"
-          },
-          "datePublished": "2025-06-20",
-          "dateModified": "2025-06-20",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://alexzeecomedy.com/pages/blog/posts/post1"
-          },
-          "image": "https://alexzeecomedy.com/cheekyzee.webp",
-          "articleBody": "Welcome.",
-          "wordCount": 1,
-          "genre": "Comedy Blog"
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{TITLE}}",
+        "description": "{{SUMMARY}}",
+        "author": {
+          "@type": "Person",
+          "name": "Alex Zee",
+          "url": "https://alexzeecomedy.com"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Alex Zee",
+          "url": "https://alexzeecomedy.com"
+        },
+        "datePublished": "{{DATE}}",
+        "dateModified": "{{DATE}}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{POST_URL}}"
+        },
+        "image": "https://alexzeecomedy.com/cheekyzee.webp",
+        "articleBody": "{{ARTICLE_BODY}}",
+        "wordCount": {{WORD_COUNT}},
+        "genre": "Comedy Blog"
+      }
     </script>
     <link
       rel="preload"
@@ -64,12 +63,12 @@
       crossorigin
     />
     <link rel="preload" href="/styles.css" as="style" />
-    <title>Alex Zee Comedy - Blog - Template</title>
+    <title>Alex Zee Comedy - Blog</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Favorite blog post template of stand-up comedian, Alex Zee."
+      content="A blog post of stand-up comedian, Alex Zee."
     />
     <meta
       name="keywords"
@@ -91,7 +90,7 @@
     />
     <meta
       property="og:description"
-      content="Favorite blog post template of stand-up comedian, Alex Zee."
+      content="A blog post of stand-up comedian, Alex Zee."
     />
     <meta property="og:site_name" content="Alex Zee Comedy" />
     <meta property="og:locale" content="en_US" />
@@ -103,7 +102,7 @@
     <meta name="twitter:title" content="Alex Zee Comedy - Links" />
     <meta
       name="twitter:description"
-      content="Favorite blog post template of stand-up comedian, Alex Zee."
+      content="A blog post of stand-up comedian, Alex Zee."
     />
     <meta
       name="twitter:image"
@@ -122,8 +121,8 @@
   </head>
   <body>
     <header>
-      <h1>Alex Zee Comedy - Blog -</h1>
-      <h3>Favorite blog post template of stand-up comedian, Alex Zee.</h3>
+      <h1>Alex Zee Comedy - Blog - {{TITLE}}</h1>
+      <h3>"{{SUMMARY}}"</h3>
     </header>
     <nav>
       <div class="nav-header">
@@ -164,21 +163,19 @@
     </nav>
     <section>
       <article class="h-entry blog-post">
-        <h1 class="p-name">Welcome</h1>
+        <h1 class="p-name">{{TITLE}}</h1>
         <p class="meta">
           Published by
           <a class="p-author h-card" href="https://alexzeecomedy.com"
             >Alex Zee</a
           >
           on
-          <time class="dt-published" datetime="2025-06-20T12:00:00"
-            >June 20, 2025</time
+          <time class="dt-published" datetime="{{DATE_ISO}}"
+            >{{DATE_HUMAN}}</time
           >
         </p>
-        <p class="p-summary">Welcome.</p>
-        <div class="e-content">
-          <p>Welcome.</p>
-        </div>
+        <p class="p-summary">{{SUMMARY}}</p>
+        <div class="e-content">{{HTML_CONTENT}}</div>
       </article>
     </section>
     <div id="site-footer"></div>
@@ -259,21 +256,21 @@
             title="Creative Commons Attribution-ShareAlike 4.0 International license"
           >
             <img
-              src="/assets/artwork/by-sa.png"
+              src="/assets/artwork/by-sa.webp"
               width="88"
               height="31"
               alt="Creative Commons Attribution-ShareAlike 4.0 International license"
             />
           </a>
           <img
-            src="/assets/artwork/alexzeecomedybutton.png"
+            src="/assets/artwork/alexzeecomedybutton.webp"
             alt="alexzeecomedy.com"
             title="alexzeecomedy.com"
             width="88"
             height="31"
           />
           <img
-            src="/assets/artwork/dietcoke.png"
+            src="/assets/artwork/dietcoke.webp"
             alt="Made with Diet Coke"
             title="Made with Diet Coke"
             width="88"
@@ -289,7 +286,7 @@
           <a
             href="http://validator.w3.org/feed/check.cgi?url=https%3A//alexzeecomedy.com/rss.xml"
             ><img
-              src="/assets/artwork/valid-rss-rogers.png"
+              src="/assets/artwork/valid-rss-rogers.webp"
               alt="[Valid RSS]"
               width="88"
               height="31"
@@ -299,7 +296,7 @@
             href="http://validator.w3.org/feed/check.cgi?url=http%3A//alexzeecomedy.com/atom.xml"
             title="Validate my Atom 1.0 feed"
             ><img
-              src="/assets/artwork/valid-atom.png"
+              src="/assets/artwork/valid-atom.webp"
               alt="[Valid Atom 1.0]"
               width="88"
               height="31"
@@ -311,7 +308,7 @@
           >
             <img
               style="border: 0; width: 88px; height: 31px"
-              src="/assets/artwork/vcss.png"
+              src="/assets/artwork/vcss.webp"
               width="88"
               height="31"
               alt="Valid CSS!"
@@ -325,7 +322,7 @@
               style="border: 0; width: 88px; height: 31px"
               width="88"
               height="31"
-              src="/assets/artwork/microformats88x31-flat.png"
+              src="/assets/artwork/microformats88x31-flat.webp"
               alt="Microformats"
             />
           </a>
@@ -333,13 +330,13 @@
             <img
               width="88"
               height="31"
-              src="/fediring.gif"
+              src="/assets/artwork/fediring.webp"
               alt="Fediring badge by TheCozyCat"
             />
           </a>
           <a href="https://indieweb.org/" title="IndieWeb">
             <img
-              src="/assets/artwork/indieweb88x31-retro-gif.gif"
+              src="/assets/artwork/indieweb88x31-retro-gif.webp"
               width="88"
               height="31"
               alt="IndieWeb"
@@ -347,7 +344,7 @@
           </a>
           <a href="https://fedoraproject.org/" title="Powered by Fedora">
             <img
-              src="/assets/artwork/fedora.gif"
+              src="/assets/artwork/fedora.webp"
               width="88"
               height="31"
               alt="Powered by Fedora"
@@ -355,7 +352,7 @@
           </a>
           <a href="https://www.opensuse.org/" title="Powered by openSUSE">
             <img
-              src="/assets/artwork/pwsuse.gif"
+              src="/assets/artwork/pwsuse.webp"
               width="88"
               height="31"
               alt="Powered by openSUSE"
@@ -363,7 +360,7 @@
           </a>
           <a href="https://brave.com/" title="Get Brave">
             <img
-              src="/assets/artwork/brave.gif"
+              src="/assets/artwork/brave.webp"
               width="88"
               height="31"
               alt="Get Brave"
@@ -371,7 +368,7 @@
           </a>
           <a href="https://vscodium.com/" title="Made with VSCodium">
             <img
-              src="/assets/artwork/vscodium100.gif"
+              src="/assets/artwork/vscodium100.webp"
               width="88"
               height="31"
               alt="Made with VSCodium"
@@ -379,7 +376,7 @@
           </a>
           <a href="https://fediverse.info/" title="Join the Fediverse">
             <img
-              src="/assets/artwork/fediverse.gif"
+              src="/assets/artwork/fediverse.webp"
               width="88"
               height="31"
               alt="Join the Fediverse"
@@ -390,7 +387,7 @@
             title="Join Mastodon"
           >
             <img
-              src="/assets/artwork/mastodon_button_1.gif"
+              src="/assets/artwork/mastodon_button_1.webp"
               width="88"
               height="31"
               alt="Join Mastodon"
@@ -398,7 +395,7 @@
           </a>
           <a href="https://archive.org/" title="Internet Archive">
             <img
-              src="/assets/artwork/internetarchive.gif"
+              src="/assets/artwork/internetarchive.webp"
               width="88"
               height="31"
               alt="Internet Archive"
@@ -406,7 +403,7 @@
           </a>
           <a href="https://wikipedia.org/" title="Wikipedia">
             <img
-              src="/assets/artwork/wikipedia.gif"
+              src="/assets/artwork/wikipedia.webp"
               width="88"
               height="31"
               alt="Wikipedia"
@@ -414,7 +411,7 @@
           </a>
           <a href="https://nextcloud.com/" title="Get Nextcloud">
             <img
-              src="/assets/artwork/nextcloud.gif"
+              src="/assets/artwork/nextcloud.webp"
               width="88"
               height="31"
               alt="Get Nextcloud"
@@ -425,7 +422,7 @@
             title="DuckDuckGo - Always use protection"
           >
             <img
-              src="/assets/artwork/ddg.gif"
+              src="/assets/artwork/ddg.webp"
               width="88"
               height="31"
               border="0"
@@ -433,7 +430,7 @@
           /></a>
           <a href="https://www.torproject.org/" title="Tor">
             <img
-              src="/assets/artwork/tor.gif"
+              src="/assets/artwork/tor.webp"
               width="88"
               height="31"
               border="0"
@@ -444,7 +441,7 @@
             title="Friend me on Steam"
           >
             <img
-              src="/assets/artwork/steam.gif"
+              src="/assets/artwork/steam.webp"
               width="88"
               height="31"
               border="0"
@@ -455,7 +452,7 @@
             title="Get VLC media player - It plays, it streams, it kills WiMPs!!"
           >
             <img
-              src="/assets/artwork/getvlcnow.png"
+              src="/assets/artwork/getvlcnow.webp"
               width="88"
               height="31"
               alt="Get VLC media player"
@@ -464,7 +461,7 @@
 
           <a href="https://www.7-zip.org/" title="Get 7-Zip">
             <img
-              src="/assets/artwork/7z_am.gif"
+              src="/assets/artwork/7z_am.webp"
               width="88"
               height="31"
               border="0"
@@ -472,7 +469,7 @@
           /></a>
           <a href="https://www.bitwarden.com/" title="Get Bitwarden">
             <img
-              src="/assets/artwork/bitwarden.gif"
+              src="/assets/artwork/bitwarden.webp"
               width="88"
               height="31"
               border="0"
@@ -480,7 +477,7 @@
           /></a>
           <a href="https://gimp.org/" title="Get GIMP">
             <img
-              src="/assets/artwork/gimp2.gif"
+              src="/assets/artwork/gimp2.webp"
               width="88"
               height="31"
               border="0"
@@ -488,7 +485,7 @@
           /></a>
           <a href="https://blender.org/" title="Get blender">
             <img
-              src="/assets/artwork/blender.gif"
+              src="/assets/artwork/blender.webp"
               width="88"
               height="31"
               border="0"
@@ -496,7 +493,7 @@
           /></a>
           <a href="https://xkcd.com/" title="XKCD">
             <img
-              src="/assets/artwork/xkcd.gif"
+              src="/assets/artwork/xkcd.webp"
               width="88"
               height="31"
               border="0"
@@ -504,7 +501,7 @@
           /></a>
           <a href="https://theonion.com/" title="The Onion">
             <img
-              src="/assets/artwork/onionlink1098.gif"
+              src="/assets/artwork/onionlink1098.webp"
               width="88"
               height="31"
               border="0"
@@ -512,7 +509,7 @@
           /></a>
           <a href="https://destiny.gg/" title="Watch Destiny">
             <img
-              src="/assets/artwork/destiny.gif"
+              src="/assets/artwork/destiny.webp"
               width="88"
               height="31"
               border="0"
@@ -520,7 +517,7 @@
           /></a>
           <a href="https://endof10.org/" title="I hate Microsoft">
             <img
-              src="/assets/artwork/hatems.gif"
+              src="/assets/artwork/hatems.webp"
               width="88"
               height="31"
               alt="I hate Microsoft"
@@ -531,63 +528,63 @@
             title="Take a stand against Google"
           >
             <img
-              src="/assets/artwork/google_stand.gif"
+              src="/assets/artwork/google_stand.webp"
               width="88"
               height="31"
               alt="Take a stand against Google"
             />
           </a>
           <img
-            src="/assets/artwork/fckfb.gif"
+            src="/assets/artwork/fckfb.webp"
             width="88"
             height="31"
             alt="Muck Meta"
             title="Muck Meta"
           />
           <img
-            src="/assets/artwork/dbd.gif"
+            src="/assets/artwork/dbd.webp"
             width="88"
             height="31"
             alt="Eliminate DRM"
             title="Eliminate DRM"
           />
           <img
-            src="/assets/artwork/pgp-now.gif"
+            src="/assets/artwork/pgp-now.webp"
             width="88"
             height="31"
             alt="PGP Now"
             title="PGP Now"
           />
           <img
-            src="/assets/artwork/right_to_repair_01.jpg"
+            src="/assets/artwork/right_to_repair_01.webp"
             width="88"
             height="31"
             alt="I support the right to repair"
             title="I support the right to repair"
           />
           <img
-            src="/assets/artwork/email.gif"
+            src="/assets/artwork/email.webp"
             width="88"
             height="31"
             alt="Questions or comments? Email."
             title="Questions or comments? alex@alexzeecomedy.com"
           />
           <img
-            src="/assets/artwork/penguins.gif"
+            src="/assets/artwork/penguins.webp"
             width="88"
             height="31"
             alt="Powered by Penguins"
             title="Powered by Penguins"
           />
           <img
-            src="/assets/artwork/88x31-your-ad.gif"
+            src="/assets/artwork/88x31-your-ad.webp"
             width="88"
             height="31"
             alt="Your ad here"
             title="Your ad here"
           />
           <img
-            src="/assets/artwork/nocookie.gif"
+            src="/assets/artwork/nocookie.webp"
             width="88"
             height="31"
             alt="This website is 100% cookie free"
