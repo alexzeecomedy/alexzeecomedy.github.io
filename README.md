@@ -2,7 +2,7 @@
 
 This is the GitHub repository for the online landing page of me, stand-up comedian, Alex Zee. It's built with HTML.
 
-<img src="https://img.shields.io/liberapay/receives/alexzeecomedy.svg?logo=liberapay">
+<img alt="Liberapay patrons" src="https://img.shields.io/liberapay/patrons/alexzeecomedy?style=for-the-badge&logo=liberapay">
 
 ---
 
