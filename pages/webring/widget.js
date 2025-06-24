@@ -3,7 +3,7 @@
 
   const WEBRING_DATA_URL =
     "https://alexzeecomedy.com/pages/webring/members.json";
-  const WEBRING_HOME = "https://alexzeecomedy.com/pages/webring/";
+  const WEBRING_HOME = "https://alexzeecomedy.com/pages/webring";
 
   // Get current site's domain
   function getCurrentDomain() {
@@ -49,12 +49,11 @@
     widget.innerHTML = `
       <div class="webring-content">
         <div class="webring-nav">
-          <button onclick="comedyWebring.navigate('prev')"><i class="fa-solid fa-backward-step"></i
+          <button onclick="comedyWebring.navigate('prev')">⏮️</i
         ></button>
-          <a href="${WEBRING_HOME}" target="_blank"><i class="fa-solid fa-yin-yang"></i> <strong>${webringData.webring.name}</strong></a>
-          <button onclick="comedyWebring.navigate('random')"><i class="fa-solid fa-shuffle"></i
-        ></button>
-          <button onclick="comedyWebring.navigate('next')"><i class="fa-solid fa-forward-step"></i
+          <a href="${WEBRING_HOME}" target="_blank"><strong>${webringData.webring.name}</strong></a> ⛩️
+          <button onclick="comedyWebring.navigate('random')">🔀</button>
+          <button onclick="comedyWebring.navigate('next')">⏭️</i
         ></button>
         </div>
       </div>
