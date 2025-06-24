@@ -48,12 +48,11 @@
     widget.className = "comedy-webring-widget";
     widget.innerHTML = `
       <div class="webring-content">
-        <p class="webring-title"><i class="fa-solid fa-yin-yang"></i> <strong>${webringData.webring.name}</strong></p>
         <div class="webring-nav">
           <button onclick="comedyWebring.navigate('prev')"><i class="fa-solid fa-backward-step"></i
         ></button>
-          <a href="${WEBRING_HOME}" target="_blank"><i class="fa-solid fa-house"></i> Directory</a>
-          <button onclick="comedyWebring.navigate('random')">i class="fa-solid fa-shuffle"></i
+          <a href="${WEBRING_HOME}" target="_blank"><i class="fa-solid fa-yin-yang"></i> <strong>${webringData.webring.name}</strong></a>
+          <button onclick="comedyWebring.navigate('random')"><i class="fa-solid fa-shuffle"></i
         ></button>
           <button onclick="comedyWebring.navigate('next')"><i class="fa-solid fa-forward-step"></i
         ></button>
