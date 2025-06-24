@@ -1,6 +1,18 @@
 ## alexzeecomedy.com
 
-This is the GitHub repository for the online landing page of me, stand-up comedian, Alex Zee. It's built with HTML.
+This is the GitHub repository for the online landing page of me, stand-up comedian, Alex Zee. It's built with HTML, CSS, and Javascript.
+
+![Static Badge](https://img.shields.io/badge/html-%23E34F26?style=for-the-badge&logo=html5&logoColor=%23fff)
+![Static Badge](https://img.shields.io/badge/css-%23663399?style=for-the-badge&logo=css&logoColor=%23fff)
+![Static Badge](https://img.shields.io/badge/javascript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23000)
+
+## Community Wiki
+
+This repository's Codeberg mirror's **Wiki** section serves as our community wiki.
+
+**[Click here to visit](https://codeberg.org/alexzeecomedy/pages/wiki)**
+
+![Static Badge](https://img.shields.io/badge/codeberg-%232185D0?style=for-the-badge&logo=codeberg&logoColor=%23fff)
 
 ## Community Forum
 
