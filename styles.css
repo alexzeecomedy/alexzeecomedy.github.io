@@ -1066,10 +1066,11 @@ nav a:hover {
     border-top: 1px solid var(--neon-green);
   }
   /* Show nav when checkbox is checked */
-  .nav-toggle-checkbox:checked ~ .nav-links {
+  nav #nav-toggle-checkbox:checked ~ .nav-links {
     max-height: 85vh;
     overflow-y: auto;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
