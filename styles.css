@@ -365,16 +365,14 @@ nav {
   bottom: -8px;
 }
 
-.nav-toggle.active .hamburger-icon {
+#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon {
   background-color: transparent;
 }
-
-.nav-toggle.active .hamburger-icon:before {
+#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon:before {
   transform: rotate(45deg);
   top: 0;
 }
-
-.nav-toggle.active .hamburger-icon:after {
+#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon:after {
   transform: rotate(-45deg);
   bottom: 0;
 }
@@ -738,41 +736,6 @@ nav a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-    padding: 0;
-    margin: 0;
-    background-color: var(--hacker-gray);
-    border-top: 1px solid var(--neon-green);
-  }
-
-  .nav-links.active {
-    max-height: 85vh;
-    overflow-y: auto;
-    padding: 1rem;
-  }
-
-  nav a {
-    width: 100%;
-    text-align: center;
-    padding: 0.75rem 1rem;
-    margin: 0.25rem 0;
-  }
-
-  .nav-header {
-    border-bottom: 1px solid var(--neon-green);
-  }
-}
-
 @media (max-width: 600px) {
   .community-grid,
   .contact-grid,
@@ -1055,17 +1018,6 @@ nav a:hover {
   border: none; /* Remove default border */
   display: block; /* Remove any extra space below the iframe */
   border-radius: 6px; /* Slightly smaller radius to fit inside the container padding */
-}
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
 }
 
 .hamburger-icon,
