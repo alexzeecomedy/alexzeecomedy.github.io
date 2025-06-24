@@ -1063,3 +1063,22 @@ body.dark .icon-black {
   vertical-align: middle;
   object-fit: contain;
 }
+.video-container {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--hacker-dark);
+  border-radius: 8px;
+  padding: 1.5em;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.video-container iframe {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--hacker-dark);
+  border-radius: 8px;
+  padding: 1.5em;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
