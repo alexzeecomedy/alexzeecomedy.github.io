@@ -1056,3 +1056,82 @@ nav a:hover {
   display: block; /* Remove any extra space below the iframe */
   border-radius: 6px; /* Slightly smaller radius to fit inside the container padding */
 }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--neon-green);
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon {
+  top: 13px;
+}
+
+.hamburger-icon:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+
+.hamburger-icon:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    padding: 0;
+    margin: 0;
+    background-color: var(--hacker-gray);
+    border-top: 1px solid var(--neon-green);
+  }
+  /* Show nav when checkbox is checked */
+  .nav-toggle-checkbox:checked ~ .nav-links {
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    max-height: none !important;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

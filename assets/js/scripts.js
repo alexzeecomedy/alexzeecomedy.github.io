@@ -43,23 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
       buttonElement.classList.remove("copied");
     }, 2000);
   }
-
-  // --- Navigation Toggle Functionality ---
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-
-  if (navToggle && navLinks) {
-    navToggle.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
-      navToggle.classList.toggle("active");
-
-      const expanded =
-        navToggle.getAttribute("aria-expanded") === "true" || false;
-      navToggle.setAttribute("aria-expanded", !expanded);
-    });
-  } else {
-    console.warn(
-      "Nav toggle or nav links not found. Hamburger menu may not function."
-    );
-  }
 });
