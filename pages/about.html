@@ -5,7 +5,7 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
     />
-    <script src="/assets/js/scripts.js" defer></script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -192,14 +192,12 @@
         <span class="site-title"
           ><a href="https://alexzeecomedy.com">Alex Zee Comedy</a>
           <span class="liberapay-container">
-            <script src="https://liberapay.com/alexzeecomedy/widgets/button.js"></script>
-            <noscript
-              ><a href="https://liberapay.com/alexzeecomedy/donate"
-                ><img
-                  alt="Donate using Liberapay"
-                  src="/assets/artwork/donate.svg"
-                  width="88"
-                  height="31" /></a></noscript></span
+            <a href="https://liberapay.com/alexzeecomedy/donate"
+              ><img
+                alt="Donate using Liberapay"
+                src="/assets/artwork/donate.svg"
+                width="88"
+                height="31" /></a></span
         ></span>
         <button id="theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-circle-half-stroke"></i>
@@ -222,8 +220,15 @@
         <a href="https://alexzeecomedy.com/pages/about.html#socials">Socials</a>
       </div>
     </nav>
-    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-      <ol class="breadcrumb-list"></ol>
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/pages/about" aria-current="page">About</a>
+        </li>
+      </ol>
     </nav>
     <section>
       <div class="main-container">
@@ -509,8 +514,8 @@
           </div>
 
           <div class="social-item pixelfed">
-            <i class="fa-solid fa-camera-retro fa-2x icon-black"></i>
-            <h4 class="icon-black">
+            <i class="fa-solid fa-camera-retro fa-2x"></i>
+            <h4 class="">
               <a href="https://pixelfed.social/">Pixelfed</a>
             </h4>
             <a href="https://pixelfed.social/alexzeecomedy"
@@ -527,16 +532,16 @@
           </div>
 
           <div class="social-item writefreely">
-            <i class="fa-solid fa-blog fa-2x icon-black"></i>
-            <h4 class="icon-black">
+            <i class="fa-solid fa-blog fa-2x"></i>
+            <h4 class="">
               <a href="https://rant.li/invite/DJbBYC">WriteFreely</a>
             </h4>
             <a href="https://rant.li/alexzeecomedy">alexzeecomedy@rant.li</a>
           </div>
 
           <div class="social-item twitter">
-            <i class="fa-brands fa-x-twitter fa-2x icon-black"></i>
-            <h4 class="icon-black">X (Formerly Twitter)</h4>
+            <i class="fa-brands fa-x-twitter fa-2x"></i>
+            <h4 class="">X (Formerly Twitter)</h4>
             <a href="https://twitter.com/alexzeecomedy">@alexzeecomedy</a>
             <img
               alt="X (formerly Twitter) Follow"
@@ -545,16 +550,16 @@
           </div>
 
           <div class="social-item threads">
-            <i class="fa-brands fa-threads fa-2x icon-black"></i>
-            <h4 class="icon-black">Threads</h4>
+            <i class="fa-brands fa-threads fa-2x"></i>
+            <h4 class="">Threads</h4>
             <a href="https://threads.net/@alexzeecomedy"
               >alexzeecomedy@threads.net</a
             >
           </div>
 
           <div class="social-item github">
-            <i class="fa-brands fa-github fa-2x icon-black"></i>
-            <h4 class="icon-black">GitHub</h4>
+            <i class="fa-brands fa-github fa-2x"></i>
+            <h4 class="">GitHub</h4>
             <a href="https://github.com/alexzeecomedy">alexzeecomedy</a>
             <img
               alt="GitHub followers"
@@ -577,8 +582,8 @@
           </div>
 
           <div class="social-item tiktok">
-            <i class="fa-brands fa-tiktok fa-2x icon-black"></i>
-            <h4 class="icon-black">TikTok</h4>
+            <i class="fa-brands fa-tiktok fa-2x"></i>
+            <h4 class="">TikTok</h4>
             <a href="https://tiktok.com/@alexzeecomedy">@alexzeecomedy</a>
           </div>
 
@@ -619,8 +624,8 @@
           </div>
 
           <div class="social-item lemmy">
-            <i class="fa-solid fa-comments fa-2x icon-black"></i>
-            <h4 class="icon-black">
+            <i class="fa-solid fa-comments fa-2x"></i>
+            <h4 class="">
               <a href="https://getvoyager.app/">Lemmy</a>
             </h4>
             <a href="https://lemmy.world/u/alexzeecomedy">u/alexzeecomedy</a>
@@ -636,8 +641,8 @@
             />
           </div>
           <div class="social-item letterboxd">
-            <i class="fa-brands fa-letterboxd fa-2x icon-black"></i>
-            <h4 class="icon-black">Letterboxd</h4>
+            <i class="fa-brands fa-letterboxd fa-2x"></i>
+            <h4 class="">Letterboxd</h4>
             <a href="https://letterboxd.com/alexzeecomedy/">alexzeecomedy</a>
           </div>
           <div class="social-item linkedin">

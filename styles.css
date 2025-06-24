@@ -49,22 +49,6 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-body.light {
-  --hacker-black: #f0f0f0;
-  --hacker-dark: #e0e0e0;
-  --hacker-gray: #e0e0e0;
-  --text-primary: #181818;
-  --text-secondary: #444;
-}
-
-body.dark {
-  --hacker-black: #0a0a0a;
-  --hacker-dark: #1a1a1a;
-  --hacker-gray: #181818;
-  --text-primary: #f0f0f0;
-  --text-secondary: #b3b3b3;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -443,7 +427,7 @@ nav a:hover::after {
 
 .writefreely {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .mobilizon {
@@ -463,7 +447,7 @@ nav a:hover::after {
 
 .pixelfed {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .peertube {
@@ -475,7 +459,7 @@ nav a:hover::after {
 .threads,
 .twitter {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .instagram {
@@ -490,7 +474,7 @@ nav a:hover::after {
 
 .tiktok {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .media-item.youtube,
@@ -516,7 +500,7 @@ nav a:hover::after {
 
 .lemmy {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .reddit {
@@ -526,7 +510,7 @@ nav a:hover::after {
 
 .letterboxd {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .linkedin {
@@ -556,7 +540,7 @@ nav a:hover::after {
 
 .loops {
   border-color: #ffe500;
-  color: #000;
+  color: #fff;
 }
 
 .discord {
@@ -591,7 +575,7 @@ nav a:hover::after {
 
 .liberapay {
   border-color: #f6c915;
-  color: #000;
+  color: #fff;
 }
 
 .patreon {
@@ -616,7 +600,7 @@ nav a:hover::after {
 
 .coffee {
   border-color: #fd0;
-  color: #000;
+  color: #fff;
 }
 
 .kofi {
@@ -638,7 +622,7 @@ nav a:hover::after {
 .dub,
 .redact {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .bitcoin {
@@ -648,7 +632,7 @@ nav a:hover::after {
 
 .lightning {
   border-color: #fbdd11;
-  color: #000;
+  color: #fff;
 }
 
 .monero {
@@ -657,7 +641,7 @@ nav a:hover::after {
 }
 .stream {
   border-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .chalcocabana {
@@ -728,14 +712,6 @@ nav a:hover {
   max-width: 100%;
   height: 600px;
   border: 0;
-}
-
-.icon-black {
-  color: #000 !important;
-}
-
-body.dark .icon-black {
-  color: #fff !important;
 }
 
 @media (prefers-color-scheme: dark) {

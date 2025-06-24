@@ -5,7 +5,7 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
     />
-    <script src="/assets/js/scripts.js" defer></script>
+
     <link
       rel="preload"
       href="/styles.css"
@@ -101,14 +101,12 @@
         <span class="site-title"
           ><a href="https://alexzeecomedy.com">Alex Zee Comedy</a>
           <span class="liberapay-container">
-            <script src="https://liberapay.com/alexzeecomedy/widgets/button.js"></script>
-            <noscript
-              ><a href="https://liberapay.com/alexzeecomedy/donate"
-                ><img
-                  alt="Donate using Liberapay"
-                  src="/assets/artwork/donate.svg"
-                  width="88"
-                  height="31" /></a></noscript></span
+            <a href="https://liberapay.com/alexzeecomedy/donate"
+              ><img
+                alt="Donate using Liberapay"
+                src="/assets/artwork/donate.svg"
+                width="88"
+                height="31" /></a></span
         ></span>
         <button id="theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-circle-half-stroke"></i>
@@ -130,8 +128,15 @@
         <a href="https://alexzeecomedy.com/pages/about.html#socials">Socials</a>
       </div>
     </nav>
-    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-      <ol class="breadcrumb-list"></ol>
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/pages/webring" aria-current="page">Webring</a>
+        </li>
+      </ol>
     </nav>
     <section>
       <h2>Members</h2>

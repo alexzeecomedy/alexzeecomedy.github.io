@@ -5,7 +5,7 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
     />
-    <script src="/assets/js/scripts.js" defer></script>
+
     <link
       rel="preload"
       href="/styles.css"
@@ -107,14 +107,12 @@
         <span class="site-title"
           ><a href="https://alexzeecomedy.com">Alex Zee Comedy</a>
           <span class="liberapay-container">
-            <script src="https://liberapay.com/alexzeecomedy/widgets/button.js"></script>
-            <noscript
-              ><a href="https://liberapay.com/alexzeecomedy/donate"
-                ><img
-                  alt="Donate using Liberapay"
-                  src="/assets/artwork/donate.svg"
-                  width="88"
-                  height="31" /></a></noscript></span
+            <a href="https://liberapay.com/alexzeecomedy/donate"
+              ><img
+                alt="Donate using Liberapay"
+                src="/assets/artwork/donate.svg"
+                width="88"
+                height="31" /></a></span
         ></span>
         <button id="theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-circle-half-stroke"></i>
@@ -136,8 +134,15 @@
         <a href="https://alexzeecomedy.com/pages/about.html#socials">Socials</a>
       </div>
     </nav>
-    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-      <ol class="breadcrumb-list"></ol>
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/pages/support" aria-current="page">Support</a>
+        </li>
+      </ol>
     </nav>
     <section>
       <div class="support-grid">
@@ -182,8 +187,8 @@
         </div>
 
         <div class="support-item liberapay">
-          <i class="fa-solid fa-heart fa-2x icon-black"></i>
-          <h4 class="icon-black">Liberapay</h4>
+          <i class="fa-solid fa-heart fa-2x"></i>
+          <h4 class="">Liberapay</h4>
           <a rel="me" href="https://liberapay.com/alexzeecomedy/"
             >@alexzeecomedy</a
           >
@@ -228,10 +233,10 @@
         </div>
 
         <div class="support-item coffee">
-          <i class="fa-solid fa-coffee fa-2x icon-black"></i>
-          <h4 class="icon-black">Buy Me a Coffee</h4>
+          <i class="fa-solid fa-coffee fa-2x"></i>
+          <h4 class="">Buy Me a Coffee</h4>
           <a rel="me" href="https://coff.ee/alexzeecomedy">Alex Zee Comedy</a>
-          <div class="amount; icon-black">$0</div>
+          <div class="amount;">$0</div>
         </div>
 
         <div class="support-item kofi">
@@ -263,22 +268,22 @@
         </div>
 
         <div class="support-item dub">
-          <i class="fa-solid fa-link fa-2x icon-black"></i>
-          <h4 class="icon-black">Dub.co</h4>
+          <i class="fa-solid fa-link fa-2x"></i>
+          <h4 class="">Dub.co</h4>
           <a href="https://refer.dub.co/alex-zee"
             >New users get 20% off for 3 months</a
           >
-          <div class="amount; icon-black">0 referral(s)</div>
+          <div class="amount;">0 referral(s)</div>
         </div>
 
         <div class="support-item redact">
-          <i class="fa-solid fa-eraser fa-2x icon-black"></i>
-          <h4 class="icon-black">Redact.dev</h4>
+          <i class="fa-solid fa-eraser fa-2x"></i>
+          <h4 class="">Redact.dev</h4>
           <button class="copy-button" data-address="ZEE">
             <i class="fas fa-copy"></i> Copy Code
           </button>
           <a href="https://redact.dev">Use promo code: ZEE at checkout</a>
-          <div class="amount; icon-black">0 referral(s)</div>
+          <div class="amount;">0 referral(s)</div>
         </div>
 
         <div class="support-item crypto bitcoin">
@@ -320,8 +325,8 @@
         </div>
 
         <div class="support-item stream">
-          <i class="fa-solid fa-headset fa-2x icon-black"></i>
-          <h4 class="icon-black">On Stream</h4>
+          <i class="fa-solid fa-headset fa-2x"></i>
+          <h4 class="">On Stream</h4>
           <a rel="me" href="https://streamelements.com/alexzeecomedy/tip"
             >Twitch</a
           >
@@ -337,11 +342,11 @@
           <a rel="me" href="https://streamelements.com/alexzeecomedy-27325/tip"
             >Trovo</a
           >
-          <div class="amount; icon-black">$1</div>
+          <div class="amount;">$1</div>
         </div>
         <div class="support-item github">
-          <i class="fa-brands fa-github fa-2x icon-black"></i>
-          <h4 class="icon-black">Github Sponsors</h4>
+          <i class="fa-brands fa-github fa-2x"></i>
+          <h4 class="">Github Sponsors</h4>
           <a href="https://github.com/sponsors/alexzeecomedy">alexzeecomedy</a>
           <div class="amount;">
             <img
