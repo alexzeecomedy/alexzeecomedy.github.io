@@ -1,8 +1,9 @@
 (function () {
   "use strict";
 
-  const WEBRING_DATA_URL = "https://alexzeecomedy.com/webring/members.json";
-  const WEBRING_HOME = "https://alexzeecomedy.com/webring/";
+  const WEBRING_DATA_URL =
+    "https://alexzeecomedy.com/pages/webring/members.json";
+  const WEBRING_HOME = "https://alexzeecomedy.com/pages/webring/";
 
   // Get current site's domain
   function getCurrentDomain() {
