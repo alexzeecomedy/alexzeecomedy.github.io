@@ -1056,3 +1056,10 @@ body.dark .icon-black {
     max-width: 100%;
   }
 }
+.as-seen-on img {
+  height: 64px;
+  width: auto;
+  margin: 0 12px;
+  vertical-align: middle;
+  object-fit: contain;
+}
