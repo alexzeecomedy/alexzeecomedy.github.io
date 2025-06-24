@@ -1,0 +1,21 @@
+{
+  "webring": {
+    "name": "Mandarin House Webring",
+    "description": "A webring connecting independent comedians, writers, and performers",
+    "host": "https://alexzeecomedy.com",
+    "members": [
+      {
+        "name": "Alex Zee Comedy",
+        "url": "https://alexzeecomedy.com",
+        "description": "Stand-up comedian, video editor, writer, and artist",
+        "owner": "Alex Zee"
+      },
+      {
+        "name": "chalcocabana",
+        "url": "https://chalcocabana.codeberg.page",
+        "description": "A coal bearing cabana",
+        "owner": "chalcocabana"
+      }
+    ]
+  }
+}

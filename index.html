@@ -3,7 +3,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com https://alexzeecomedy.com; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me;  style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
     />
     <meta charset="UTF-8" />
     <script src="/assets/js/scripts.js" defer></script>
@@ -836,6 +836,9 @@
     </section>
 
     <footer>
+      <div id="webring-widget">
+        <script src="https://alexzeecomedy.com/pages/webring/widget.js"></script>
+      </div>
       <p>
         <a href="https://fediring.net/previous?host=alexzeecomedy.com"
           ><i class="fa-solid fa-backward-step"></i
@@ -868,6 +871,13 @@
         <a href="https://hotlinewebring.club/alexzeecomedy/next"
           ><i class="fa-solid fa-forward-step"></i
         ></a>
+      </p>
+      <p>
+        <iframe
+          id="bucket-webring"
+          style="width: 90%; height: 3rem; border: none"
+          src="https://webring.bucketfish.me/embed.html?name=alexzeecomedy"
+        ></iframe>
       </p>
       <p>
         <a href="https://alexzeecomedy.com">Home</a> |

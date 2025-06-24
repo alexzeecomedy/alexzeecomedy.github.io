@@ -1064,21 +1064,19 @@ body.dark .icon-black {
   object-fit: contain;
 }
 .video-container {
-  flex: 1 1 0;
-  min-width: 0;
+  max-width: 800px; /* Set a max-width to prevent it from being huge */
+  width: 100%; /* Ensure it shrinks on smaller screens */
+  margin: 1.5em auto; /* Center the container horizontally */
   background: var(--hacker-dark);
   border-radius: 8px;
-  padding: 1.5em;
-  color: var(--text-primary);
+  padding: 1em; /* Optional: adds a small frame */
   box-sizing: border-box;
 }
 
 .video-container iframe {
-  flex: 1 1 0;
-  min-width: 0;
-  background: var(--hacker-dark);
-  border-radius: 8px;
-  padding: 1.5em;
-  color: var(--text-primary);
-  box-sizing: border-box;
+  width: 100%; /* Fill the container */
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  border: none; /* Remove default border */
+  display: block; /* Remove any extra space below the iframe */
+  border-radius: 6px; /* Slightly smaller radius to fit inside the container padding */
 }
