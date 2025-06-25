@@ -989,42 +989,58 @@ nav a:hover {
   bottom: -8px;
 }
 
-/* Show hamburger on mobile */
+/* Mobile styles */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
   }
+
   .nav-links {
     flex-direction: column;
     align-items: center;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-    padding: 0;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0 1rem;
     margin: 0;
     background-color: var(--hacker-gray);
     border-top: 1px solid var(--neon-green);
   }
+
   /* Show nav when checkbox is checked */
-  nav #nav-toggle-checkbox:checked ~ .nav-links {
+  #nav-toggle-checkbox:checked ~ .nav-links {
     max-height: 85vh;
     overflow-y: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
 }
-
 /* Hide hamburger on desktop */
+
 @media (min-width: 769px) {
   .nav-toggle {
     display: none;
   }
+
   .nav-links {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    max-height: none !important;
+    max-height: none;
     padding: 1rem;
     gap: 1rem;
   }
+}
+/* Animate hamburger to X when checked */
+#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon {
+  background-color: transparent;
+}
+
+#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon:after {
+  transform: rotate(-45deg);
+  bottom: 0;
 }
