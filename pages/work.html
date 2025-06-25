@@ -5,11 +5,11 @@
       http-equiv="Content-Security-Policy"
       content="
 	    default-src 'self'; 
-	    script-src 'self' 'unsafe-inline'; 
+	    script-src 'self' 'unsafe-inline' https://unpkg.com; 
 	    style-src 'self' 'unsafe-inline';
 	    img-src 'self' data: https://img.shields.io https://inv.nadeko.net https://spectra.video https://player.rss.com; 
 	    font-src 'self'; 
-	    connect-src 'self';
+	    connect-src 'self' https://api.websitecarbon.com;
 	    frame-src 'self' https://inv.nadeko.net https://spectra.video https://player.rss.com https://webring.bucketfish.me;"
     />
 
@@ -747,6 +747,11 @@
           >Octo Ring Random</a
         >
       </p>
+      <div id="wcb" class="carbonbadge wcb-d"></div>
+      <script
+        src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+        defer
+      ></script>
       <p>
         <a
           href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
