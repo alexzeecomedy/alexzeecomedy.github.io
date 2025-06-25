@@ -3,7 +3,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://api.websitecarbon.com;"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self';"
     />
 
     <link
@@ -100,6 +100,12 @@
       </h3>
     </header>
     <nav>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle-checkbox"
+        hidden
+      />
       <div class="nav-header">
         <span class="site-title"
           ><a href="https://alexzeecomedy.com">Alex Zee Comedy</a>
@@ -112,37 +118,21 @@
                 height="31" /></a></span
         ></span>
 
-        <nav>
-          <div class="nav-header">
-            <input
-              type="checkbox"
-              id="nav-toggle"
-              class="nav-toggle-checkbox"
-              hidden
-            />
-            <label
-              for="nav-toggle"
-              class="nav-toggle"
-              aria-label="Open navigation"
-            >
-              <span class="hamburger-icon"></span>
-            </label>
-          </div>
-          <div class="nav-links">
-            <a href="https://alexzeecomedy.com">Home</a>
-            <a href="https://alexzeecomedy.com/pages/about">About</a>
-            <a href="https://alexzeecomedy.com/pages/blog/">Blog</a>
-            <a href="https://alexzeecomedy.com/pages/community">Community</a>
-            <a href="https://alexzeecomedy.com/pages/work">Work</a>
-            <a href="https://alexzeecomedy.com/pages/links">Links</a>
-            <a href="https://alexzeecomedy.com/pages/lists">Lists</a>
-            <a href="https://alexzeecomedy.com/pages/contact">Contact</a>
-            <a href="https://alexzeecomedy.com/pages/support">Support</a>
-            <a href="https://alexzeecomedy.com/pages/about.html#socials"
-              >Socials</a
-            >
-          </div>
-        </nav>
+        <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+          <span class="hamburger-icon"></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <a href="https://alexzeecomedy.com">Home</a>
+        <a href="https://alexzeecomedy.com/pages/about">About</a>
+        <a href="https://alexzeecomedy.com/pages/blog/">Blog</a>
+        <a href="https://alexzeecomedy.com/pages/community">Community</a>
+        <a href="https://alexzeecomedy.com/pages/work">Work</a>
+        <a href="https://alexzeecomedy.com/pages/links">Links</a>
+        <a href="https://alexzeecomedy.com/pages/lists">Lists</a>
+        <a href="https://alexzeecomedy.com/pages/contact">Contact</a>
+        <a href="https://alexzeecomedy.com/pages/support">Support</a>
+        <a href="https://alexzeecomedy.com/pages/about.html#socials">Socials</a>
       </div>
     </nav>
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
@@ -211,6 +201,18 @@
         ></a>
       </p>
       <p>
+        <a href="https://octo-ring.com/p/alexzeecomedy/prev"
+          ><i class="fa-solid fa-backward-step"></i
+        ></a>
+        <a href="https://octo-ring.com/">Octo Ring</a>
+        <a href="https://octo-ring.com/p/alexzeecomedy/random"
+          ><i class="fa-solid fa-shuffle"></i
+        ></a>
+        <a href="https://octo-ring.com/p/alexzeecomedy/next"
+          ><i class="fa-solid fa-forward-step"></i
+        ></a>
+      </p>
+      <p>
         <iframe
           id="bucket-webring"
           style="width: 90%; height: 3rem; border: none"
@@ -229,15 +231,11 @@
         <a href="https://codeberg.org/alexzeecomedy/pages/wiki">Wiki</a>
         |
         <a href="https://alexzeecomedy.com/rss.xml">RSS</a> |
-        <a href="https://octo-ring.com/p/alexzeecomedy/random"
-          >Octo Ring Random</a
+        <a href="https://www.websitecarbon.com/website/alexzeecomedy-com/"
+          >CO2 Calculator</a
         >
       </p>
-      <div id="wcb" class="carbonbadge wcb-d"></div>
-      <script
-        src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
-        defer
-      ></script>
+
       <p>
         <a
           href="https://nonbot.org/pledged/view/9f29d43c-52bd-498e-b865-9c395f37e694"
