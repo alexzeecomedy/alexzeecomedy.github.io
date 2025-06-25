@@ -306,7 +306,8 @@ nav a {
   overflow: hidden;
 }
 
-nav {
+nav,
+footer {
   display: flex;
   flex-direction: column;
   background: var(--hacker-gray);
