@@ -1008,7 +1008,7 @@ nav a:hover {
   }
 
   /* Show nav when checkbox is checked */
-  #nav-toggle-checkbox:checked ~ .nav-links {
+  #nav-toggle:checked ~ .nav-links {
     max-height: 85vh;
     overflow-y: auto;
     padding: 1rem;
@@ -1031,16 +1031,16 @@ nav a:hover {
   }
 }
 /* Animate hamburger to X when checked */
-#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon {
+#nav-toggle:checked ~ .nav-header .nav-toggle .hamburger-icon {
   background-color: transparent;
 }
 
-#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon:before {
+#nav-toggle:checked ~ .nav-header .nav-toggle .hamburger-icon:before {
   transform: rotate(45deg);
   top: 0;
 }
 
-#nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon:after {
+#nav-toggle:checked ~ .nav-header .nav-toggle .hamburger-icon:after {
   transform: rotate(-45deg);
   bottom: 0;
 }
