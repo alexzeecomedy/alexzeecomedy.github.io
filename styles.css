@@ -341,30 +341,6 @@ nav {
   position: relative;
 }
 
-.hamburger-icon,
-.hamburger-icon:after,
-.hamburger-icon:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--neon-green);
-  position: absolute;
-  transition: all 0.3s ease;
-}
-
-.hamburger-icon {
-  top: 13px;
-}
-
-.hamburger-icon:before {
-  top: -8px;
-}
-
-.hamburger-icon:after {
-  bottom: -8px;
-}
-
 #nav-toggle-checkbox:checked ~ .nav-header .nav-toggle .hamburger-icon {
   background-color: transparent;
 }
@@ -1018,6 +994,35 @@ nav a:hover {
   border: none; /* Remove default border */
   display: block; /* Remove any extra space below the iframe */
   border-radius: 6px; /* Slightly smaller radius to fit inside the container padding */
+}
+
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--neon-green);
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon {
+  top: 13px;
+}
+
+.hamburger-icon:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+
+.hamburger-icon:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
 }
 
 /* Show hamburger on mobile */
