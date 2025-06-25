@@ -3,7 +3,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://liberapay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://nonbot.org; font-src 'self'; connect-src 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self';"
     />
 
     <script type="application/ld+json">
@@ -80,7 +80,7 @@
     <meta property="fb:app_id" content="983370977104769" />
     <meta
       property="og:url"
-      content="https://alexzeecomedy.com/pages/{{TITLE}}"
+      content="https://alexzeecomedy.com/pages/blog/{{TITLE}}"
     />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{TITLE}}" />
@@ -104,7 +104,7 @@
     <meta name="twitter:creator" content="@alexzeecomedy" />
     <meta
       name="twitter:url"
-      content="https://alexzeecomedy.com/pages/{{TITLE}}"
+      content="https://alexzeecomedy.com/pages/blog/{{TITLE}}"
     />
     <meta name="twitter:title" content="Alex Zee Comedy - {{TITLE}}" />
     <meta
@@ -132,24 +132,28 @@
       <h3>"{{SUMMARY}}"</h3>
     </header>
     <nav>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle-checkbox"
+        hidden
+      />
       <div class="nav-header">
         <span class="site-title"
           ><a href="https://alexzeecomedy.com">Alex Zee Comedy</a>
           <span class="liberapay-container">
-            
-            a href="https://liberapay.com/alexzeecomedy/donate"
-                ><img
-                  alt="Donate using Liberapay"
-                  src="/assets/artwork/donate.svg"
-                  width="88"
-                  height="31" /></a></span
+            <a href="https://liberapay.com/alexzeecomedy/donate"
+              ><img
+                alt="Donate using Liberapay"
+                src="/assets/artwork/donate.svg"
+                width="88"
+                height="31" /></a></span
         ></span>
-        
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span class="hamburger-icon"></span>
-        </button>
-      </div>
 
+        <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+          <span class="hamburger-icon"></span>
+        </label>
+      </div>
       <div class="nav-links">
         <a href="https://alexzeecomedy.com">Home</a>
         <a href="https://alexzeecomedy.com/pages/about">About</a>
@@ -157,6 +161,7 @@
         <a href="https://alexzeecomedy.com/pages/community">Community</a>
         <a href="https://alexzeecomedy.com/pages/work">Work</a>
         <a href="https://alexzeecomedy.com/pages/links">Links</a>
+        <a href="https://alexzeecomedy.com/pages/lists">Lists</a>
         <a href="https://alexzeecomedy.com/pages/contact">Contact</a>
         <a href="https://alexzeecomedy.com/pages/support">Support</a>
         <a href="https://alexzeecomedy.com/pages/about.html#socials">Socials</a>
@@ -168,7 +173,10 @@
           <a href="/">Home</a>
         </li>
         <li class="breadcrumb-item">
-          <a href="/pages/template" aria-current="page">Template</a>
+          <a href="/pages/blog">Blog</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/pages/blog/{{TITLE}}" aria-current="page">{{TITLE}}</a>
         </li>
       </ol>
     </nav>
