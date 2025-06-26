@@ -324,7 +324,19 @@ nav a:hover::after {
   border-color: #fff;
   color: #fff;
 }
+.blog {
+  border-color: #fff;
+  color: #fff;
+}
 .mobilizon {
+  border-color: #ffd599;
+  color: #fda62a;
+}
+.tour {
+  border-color: #ffd599;
+  color: #fda62a;
+}
+.about {
   border-color: #ffd599;
   color: #fda62a;
 }

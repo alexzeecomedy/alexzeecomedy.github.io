@@ -46,12 +46,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://alexzeecomedy.com/pages/listening</loc>
+    <loc>https://alexzeecomedy.com/pages/about/listening</loc>
     <lastmod>2025-06-20</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://alexzeecomedy.com/pages/watching</loc>
+    <loc>https://alexzeecomedy.com/pages/about/watching</loc>
     <lastmod>2025-06-20</lastmod>
     <priority>0.5</priority>
   </url>
@@ -61,7 +61,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://alexzeecomedy.com/pages/playing</loc>
+    <loc>https://alexzeecomedy.com/pages/about/playing</loc>
     <lastmod>2025-06-20</lastmod>
     <priority>0.5</priority>
   </url>
@@ -76,12 +76,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://alexzeecomedy.com/pages/software</loc>
+    <loc>https://alexzeecomedy.com/pages/about/software</loc>
     <lastmod>2025-06-20</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://alexzeecomedy.com/pages/hardware</loc>
+    <loc>https://alexzeecomedy.com/pages/about/hardware</loc>
+    <lastmod>2025-06-20</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://alexzeecomedy.com/pages/tour</loc>
     <lastmod>2025-06-20</lastmod>
     <priority>0.5</priority>
   </url>
