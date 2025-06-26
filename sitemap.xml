@@ -76,7 +76,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://alexzeecomedy.com/pages/setup</loc>
+    <loc>https://alexzeecomedy.com/pages/software</loc>
+    <lastmod>2025-06-20</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://alexzeecomedy.com/pages/hardware</loc>
     <lastmod>2025-06-20</lastmod>
     <priority>0.5</priority>
   </url>
