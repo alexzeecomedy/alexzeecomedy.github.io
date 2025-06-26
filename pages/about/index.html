@@ -579,14 +579,14 @@
         </blockquote>
 
         <div class="social-grid">
-          <div class="social-item mastodon">
+          <div
+            class="social-item mastodon"
+            style="cursor: pointer"
+            onclick="window.open('https://mastodon.social/@alexzeecomedy', '_blank')"
+          >
             <i class="fa-brands fa-mastodon fa-2x"></i>
-            <h4>
-              <a href="https://mastodon.social/invite/3yMtCYi9">Mastodon</a>
-            </h4>
-            <a href="https://mastodon.social/@alexzeecomedy"
-              >alexzeecomedy@mastodon.social</a
-            >
+            <h4>Mastodon</h4>
+            <div>alexzeecomedy<br />@mastodon.social</div>
             <img
               alt="Mastodon Follow"
               src="https://img.shields.io/mastodon/follow/110589278551255962?domain=mastodon.social&style=for-the-badge&logo=mastodon"
@@ -645,10 +645,14 @@
             >
           </div>
 
-          <div class="social-item github">
+          <div
+            class="social-item github"
+            style="cursor: pointer"
+            onclick="window.open('https://github.com/alexzeecomedy', '_blank')"
+          >
             <i class="fa-brands fa-github fa-2x"></i>
             <h4 class="">GitHub</h4>
-            <a href="https://github.com/alexzeecomedy">alexzeecomedy</a>
+            <div>alexzeecomedy</div>
             <img
               alt="GitHub followers"
               src="https://img.shields.io/github/followers/alexzeecomedy?style=for-the-badge&logo=github"
@@ -744,6 +748,15 @@
             <a rel="me" href="https://store.alexzeecomedy.com"
               >Limited edition merch drops</a
             >
+          </div>
+          <div
+            class="social-item chalcocabana"
+            style="cursor: pointer"
+            onclick="window.open('https://chalcocabana.codeberg.page', '_blank')"
+          >
+            <i class="fa-solid fa-crow fa-2x"></i>
+            <h4>chalcocabana</h4>
+            <div>A coal bearing cabana</div>
           </div>
         </div>
       </section>
