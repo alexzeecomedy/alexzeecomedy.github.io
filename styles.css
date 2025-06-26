@@ -27,7 +27,7 @@
   --terminal-green: #00bfae;
   --cyber-blue: #0084ff;
   --warning-amber: #ffb700;
-  --error-red: #ff3355;
+  --error-red: #f35;
   --text-primary: #f0f0f0;
   --text-secondary: #b3b3b3;
 }
@@ -101,7 +101,6 @@ a:hover {
 .social-item,
 .support-item {
   background: var(--hacker-gray);
-
   border-radius: 6px;
   color: var(--text-primary);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -177,7 +176,6 @@ a:hover {
 .support-item a {
   margin-bottom: 1rem;
 }
-
 .support-item .amount {
   margin-top: auto;
   font-weight: 700;
@@ -208,7 +206,6 @@ button:hover {
   background: var(--terminal-green);
   color: var(--hacker-black);
 }
-
 .qr-placeholder {
   height: 100px;
   margin: 0.5rem 0;
@@ -507,7 +504,6 @@ nav a:hover::after {
 .contact-item.tuta a {
   color: #850122;
 }
-
 .contact-item.proton {
   border-color: #6d4aff;
   color: #6d4aff;
@@ -543,7 +539,6 @@ nav a:hover::after {
 .contact-item.pobox a {
   color: #303066;
 }
-
 @media (max-width: 600px) {
   .community-grid,
   .contact-grid,
@@ -750,7 +745,7 @@ nav a:hover::after {
 }
 .about-grid,
 .about-section {
-  flex: 1 1 0;
+  flex: 1 1 0%;
   min-width: 0;
   background: var(--hacker-dark);
   border-radius: 8px;
