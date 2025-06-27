@@ -332,7 +332,7 @@ nav a:hover::after {
   border-color: #73b9af;
   color: #73b9af;
 }
-.about,
+
 .tour,
 .mobilizon {
   border-color: #ffd599;
@@ -372,11 +372,13 @@ nav a:hover::after {
   border-color: #fff;
   color: #fff;
 }
+.watching,
 .media-item.youtube,
 .youtube {
   border-color: red;
   color: red;
 }
+.playing,
 .twitch {
   border-color: #9146ff;
   color: #9146ff;
@@ -409,6 +411,7 @@ nav a:hover::after {
   border-color: #0dbd8b;
   color: #0dbd8b;
 }
+.reading,
 .signal {
   border-color: #3b45fd;
   color: #3b45fd;
@@ -445,6 +448,7 @@ nav a:hover::after {
   border-color: #9146ff;
   color: #9146ff;
 }
+.listening,
 .amazon {
   border-color: #f90;
   color: #f90;
@@ -457,6 +461,7 @@ nav a:hover::after {
   border-color: #f96854;
   color: #f96854;
 }
+.about,
 .cashapp {
   border-color: #00cf31;
   color: #00cf31;
