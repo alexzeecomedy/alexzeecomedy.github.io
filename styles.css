@@ -328,15 +328,13 @@ nav a:hover::after {
   border-color: #fff;
   color: #fff;
 }
+.phatsammy {
+  border-color: #73b9af;
+  color: #73b9af;
+}
+.about,
+.tour,
 .mobilizon {
-  border-color: #ffd599;
-  color: #fda62a;
-}
-.tour {
-  border-color: #ffd599;
-  color: #fda62a;
-}
-.about {
   border-color: #ffd599;
   color: #fda62a;
 }
