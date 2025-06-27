@@ -1,24 +1,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Alex Zee Comedy Blog</title>
   <subtitle>Blog of stand-up comedian, Alex Zee</subtitle>
-  <link href="https://alexzeecomedy.com/pages/blog/index"/>
+  <link href="https://alexzeecomedy.com/pages/pages/blog/index.html"/>
   <link href="https://alexzeecomedy.com/atom.xml" rel="self"/>
-  <updated>2025-06-20T12:00:00Z</updated>
-  <id>https://alexzeecomedy.com/</id>
+  <updated>2025-06-27T22:00:00Z</updated>
+  <id>https://alexzeecomedy.com/pages/blog/index.html</id>
   <author>
     <name>Alex Zee</name>
     <email>alex@alexzeecomedy.com</email>
   </author>
 
   <entry>
-    <title>Welcome</title>
-    <link href="https://alexzeecomedy.com/pages/blog/posts/post1"/>
-    <id>https://alexzeecomedy.com/pages/blog/posts/post1</id>
-    <updated>2025-06-20T12:00:00Z</updated>
-    <summary>Welcome.</summary>
+    <title>Gnatography</title>
+    <link href="https://alexzeecomedy.com/pages/blog/062725.html"/>
+    <id>https://alexzeecomedy.com/pages/blog/062725.html</id>
+    <updated>2025-06-27T22:00:00Z</updated>
+    <summary>My girlfriend, Gnat, just got a new old camera and they are really enjoying the pictures they're getting out of it! Edited with Darktable.</summary>
     <content type="html">
       <![CDATA[
-        <p>Welcome.</p>
+         <img src="/assets/artwork/blog/gnatskyline.webp" alt="Phusion Comedy
+          Open Mic Every Wednesday at 8:30pm in Huntsville, Alabama" ; height:
+          auto; /><img src="/assets/artwork/blog/gnatedgar.webp" alt="Phusion
+          Comedy Open Mic Every Wednesday at 8:30pm in Huntsville, Alabama" ;
+          height: auto; /><img src="/assets/artwork/blog/gnatflowers.webp"
+          alt="Phusion Comedy Open Mic Every Wednesday at 8:30pm in Huntsville,
+          Alabama" ; height: auto; />
+          <p>
+            My girlfriend, Gnat, just got a new old camera and they are really
+            enjoying the pictures they're getting out of it! Edited with
+            Darktable.
+          </p>
       ]]>
     </content>
     <author>

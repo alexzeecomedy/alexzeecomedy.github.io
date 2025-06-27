@@ -2,17 +2,17 @@
 <rss version="2.0">
   <channel>
     <title>Alex Zee Comedy Blog</title>
-    <link>https://alexzeecomedy.com/</link>
+    <link>https://alexzeecomedy.com/pages/blog/index.html</link>
     <description>The blog of stand-up comedian, Alex Zee.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Jun 2025 07:49:47 CDT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 17:00:00 CDT</lastBuildDate>
 
     <item>
-      <title>Welcome</title>
-      <link>https://alexzeecomedy.com/pages/blog/posts/post1.html</link>
-      <description>Welcome</description>
-      <pubDate>Fri, 20 Jun 2025 12:00:00 CDT</pubDate>
-      <guid>https://alexzeecomedy.com/pages/blog/posts/post1.html</guid>
+      <title>Gnatography</title>
+      <link>https://alexzeecomedy.com/pages/blog/062725.html</link>
+      <description>My girlfriend, Gnat, just got a new old camera and they are really enjoying the pictures they're getting out of it! Edited with Darktable.</description>
+      <pubDate>Fri, 27 Jun 2025 17:00:00 CDT</pubDate>
+      <guid>https://alexzeecomedy.com/pages/blog/062725.html</guid>
     </item>
 
     <!-- Add more <item> blocks for each post -->
