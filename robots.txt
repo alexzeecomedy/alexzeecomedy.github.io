@@ -1,4 +1,281 @@
+User-agent: .ai
+User-agent: 2^32$
+User-agent: a[mazing]{42}(robot)
+User-agent: AdsBot-Google
+User-agent: Agentic
+User-agent: AhrefsBot
+User-agent: AI Article Writer
+User-agent: AI Content Detector
+User-agent: AI Dungeon
+User-agent: AI Search Engine
+User-agent: AI SEO Crawler
+User-agent: AI Training
+User-agent: AI Writer
+User-agent: AI21 Labs
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: AI2Bot-Dolma
+User-agent: AIBot
+User-agent: aiHitBot
+User-agent: AIMatrix
+User-agent: AISearchBot
+User-agent: AITraining
+User-agent: Alexa
+User-agent: Alpha AI
+User-agent: AlphaAI
+User-agent: Amazon Bedrock
+User-agent: Amazon Comprehend
+User-agent: Amazon Lex
+User-agent: Amazon Sagemaker
+User-agent: Amazon Silk
+User-agent: Amazon Textract
+User-agent: Amazon-Kendra
+User-agent: Amazonbot
+User-agent: AmazonBot
+User-agent: Amelia
+User-agent: AndersPinkBot
+User-agent: Anthropic
+User-agent: anthropic-ai
+User-agent: AnyPicker
+User-agent: Anyword
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Aria Browse
+User-agent: Articoolo
+User-agent: Automated Writer
+User-agent: AwarioBot
+User-agent: AwarioRssBot
+User-agent: AwarioSmartBot
+User-agent: Azure
+User-agent: BardBot
+User-agent: BingBot
+User-agent: Brave Leo
+User-agent: Brightbot 1.0
+User-agent: ByteDance
+User-agent: Bytespider
+User-agent: CatBoost
+User-agent: CC-Crawler
+User-agent: CCBot
+User-agent: ChatGLM
+User-agent: ChatGPT-User
+User-agent: ChatGPT-User/2.0
+User-agent: Chinchilla
+User-agent: Claude
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: claude-web
+User-agent: Claude-Web
+User-agent: ClaudeBot
+User-agent: ClearScope
+User-agent: Cohere
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Common Crawl
+User-agent: CommonCrawl
+User-agent: Content Harmony
+User-agent: Content King
+User-agent: Content Optimizer
+User-agent: Content Samurai
+User-agent: ContentAtScale
+User-agent: ContentBot
+User-agent: Contentedge
+User-agent: Conversion AI
+User-agent: Copilot
+User-agent: CopyAI
+User-agent: Copymatic
+User-agent: Copyscape
+User-agent: Cotoyogi
+User-agent: crawler.with.dots
+User-agent: CrawlQ AI
+User-agent: Crawlspace
+User-agent: Crew AI
+User-agent: CrewAI
+User-agent: curl|sudo bash
+User-agent: DALL-E
+User-agent: DataForSeoBot
+User-agent: DataProvider
+User-agent: DeepAI
+User-agent: DeepL
+User-agent: DeepMind
+User-agent: DeepSeek
+User-agent: Diffbot
+User-agent: diffbot
+User-agent: Doubao AI
+User-agent: DuckAssistBot
+User-agent: FacebookBot
+User-agent: Facebookbot
+User-agent: FacebookExternalHit
+User-agent: facebookexternalhit
+User-agent: Factset_spyderbot
+User-agent: Falcon
+User-agent: Firecrawl
+User-agent: FirecrawlAgent
+User-agent: Flyriver
+User-agent: Frase AI
+User-agent: FriendlyCrawler
+User-agent: Gemini
+User-agent: Gemma
+User-agent: GenAI
+User-agent: Genspark
+User-agent: Gigabot
+User-agent: GLM
+User-agent: Google-CloudVertexBot
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: Goose
+User-agent: GPT
+User-agent: GPTBot
+User-agent: Grammarly
+User-agent: Grendizer
+User-agent: Grok
+User-agent: GT Bot
+User-agent: GTBot
+User-agent: Hemingway Editor
+User-agent: Hugging Face
+User-agent: Hypotenuse AI
+User-agent: iaskspider
+User-agent: iaskspider/2.0
+User-agent: ICC-Crawler
+User-agent: ImageGen
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: imgproxy
+User-agent: Inferkit
+User-agent: INK Editor
+User-agent: INKforall
+User-agent: IntelliSeek
+User-agent: Is this a crawler?
+User-agent: ISSCyberRiskCrawler
+User-agent: JasperAI
+User-agent: Kafkai
+User-agent: Kangaroo
+User-agent: Kangaroo Bot
+User-agent: Keyword Density AI
+User-agent: Knowledge
+User-agent: KomoBot
+User-agent: LinkedInBot
+User-agent: LLaMA
+User-agent: LLMs
+User-agent: magpie-crawler
+User-agent: MarketMuse
+User-agent: Meltwater
+User-agent: Meta AI
+User-agent: Meta-AI
+User-agent: Meta-External
+User-agent: meta-externalagent
+User-agent: Meta-ExternalAgent
+User-agent: meta-externalfetcher
+User-agent: Meta-ExternalFetcher
+User-agent: MetaAI
+User-agent: MetaTagBot
+User-agent: Mistral
+User-agent: MistralAI-User/1.0
+User-agent: Narrative
+User-agent: NeevaBot
+User-agent: Neural Text
+User-agent: NeuralSEO
+User-agent: Nova Act
+User-agent: NovaAct
+User-agent: Nutch
+User-agent: OAI-SearchBot
+User-agent: Omgili
+User-agent: omgili
+User-agent: Omgilibot
+User-agent: omgilibot
+User-agent: Open AI
+User-agent: OpenAI
+User-agent: OpenBot
+User-agent: OpenText AI
+User-agent: Operator
+User-agent: Outwrite
+User-agent: Page Analyzer AI
+User-agent: PanguBot
+User-agent: Paperlibot
+User-agent: Paraphraser.io
+User-agent: peer39_crawler
+User-agent: Perplexity
+User-agent: Perplexity-User
+User-agent: PerplexityBot
+User-agent: PetalBot
+User-agent: Petalbot
+User-agent: Phindbot
+User-agent: PiplBot
+User-agent: prefetch-proxy
+User-agent: ProWritingAid
+User-agent: psbot
+User-agent: python-requests
+User-agent: QualifiedBot
+User-agent: QuillBot
+User-agent: RobotSpider
+User-agent: Robozilla
+User-agent: Rytr
+User-agent: SaplingAI
+User-agent: Scalenut
+User-agent: Scraper
+User-agent: Scrapy
+User-agent: ScriptBook
+User-agent: Seekr
+User-agent: SemrushBot-OCOB
+User-agent: SemrushBot-SWA
+User-agent: SentiBot
+User-agent: sentibot
+User-agent: Sentibot
+User-agent: SEO Content Machine
+User-agent: SEO Robot
+User-agent: Sidetrade
+User-agent: Sidetrade indexer bot
+User-agent: Simplified AI
+User-agent: Sitefinity
+User-agent: Skydancer
+User-agent: SlickWrite
+User-agent: Sonic
+User-agent: Spin Rewriter
+User-agent: Spinbot
+User-agent: Stability
+User-agent: StableDiffusionBot
+User-agent: star***crawler
+User-agent: Sudowrite
+User-agent: Super Agent
+User-agent: Surfer AI
+User-agent: Teoma
+User-agent: Text Blaze
+User-agent: TextCortex
+User-agent: The Knowledge AI
+User-agent: TikTokSpider
+User-agent: TimpiBot
+User-agent: Timpibot
+User-agent: TurnitinBot
+User-agent: VelenPublicWebCrawler
+User-agent: Vidnami AI
+User-agent: Webzio
+User-agent: Webzio-Extended
+User-agent: webzio-extended
+User-agent: Whisper
+User-agent: WordAI
+User-agent: Wordtune
+User-agent: WormsGTP
+User-agent: wpbot
+User-agent: WPBot
+User-agent: Writecream
+User-agent: WriterZen
+User-agent: Writescope
+User-agent: Writesonic
+User-agent: xAI
+User-agent: xBot
+User-agent: YouBot
+User-agent: Youbot
+User-agent: Zero GTP
+User-agent: Zerochat
+User-agent: Zhipu
+User-agent: Zimm
+Disallow: /
+Disallow: *
+
 User-agent: *
-Allow: /
+DisallowAITraining: /
+DisallowAITraining: *
+Content-Usage: ai=n
 
 Sitemap: https://alexzeecomedy.com/sitemap.xml

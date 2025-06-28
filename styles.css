@@ -461,6 +461,7 @@ nav a:hover::after {
   border-color: #f96854;
   color: #f96854;
 }
+.software,
 .about,
 .cashapp {
   border-color: #00cf31;
@@ -540,6 +541,7 @@ nav a:hover::after {
 .contact-item.signal a {
   color: #3b45fd;
 }
+.hardware,
 .contact-item.mailvelope {
   border-color: #ff004f;
   color: #ff004f;
