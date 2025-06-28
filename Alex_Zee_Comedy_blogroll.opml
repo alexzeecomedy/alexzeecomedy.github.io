@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Alex Zee Comedy Blogroll</title>
+  </head>
+  <body>
+    <outline text="The Perry Bible Fellowship" title="The Perry Bible Fellowship" type="rss" xmlUrl="https://pbfcomics.com/feed/" htmlUrl="https://pbfcomics.com"/>
+    <outline text="xkcd" title="xkcd" type="rss" xmlUrl="https://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
+    <outline text="Privacy Guides - Articles" title="Privady Guides - Articles" type="rss" xmlUrl="https://www.privacyguides.org/articles/feed_rss_created.xml" htmlUrl="https://www.privacyguides.org/articles"/>
+    <outline text="Privacy Guides - Articles" title="Privady Guides - Articles" type="rss" xmlUrl="https://feed.alternativeto.net/news/all/" htmlUrl="https://alternativeto.net/news/all/"/>
+  </body>
+</opml>

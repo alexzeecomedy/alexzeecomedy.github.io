@@ -876,3 +876,21 @@ nav a:hover::after {
   transform: rotate(-45deg);
   bottom: 0;
 }
+.icon-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.icon-row span {
+  text-align: center;
+}
+.icon-row-post {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: left;
+}
+.icon-row-post span {
+  text-align: center;
+}
