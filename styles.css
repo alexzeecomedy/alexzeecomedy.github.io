@@ -395,6 +395,7 @@ nav a:hover::after {
   border-color: #fff;
   color: #fff;
 }
+.work,
 .reddit {
   border-color: #ff4500;
   color: #ff4500;
