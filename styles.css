@@ -719,3 +719,59 @@ nav a:hover::after {
 .icon-row-post {
   justify-content: left;
 }
+.notfound-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--hacker-black, #0a0a0a);
+  color: var(--neon-green, #2ecc40);
+  font-family: "JetBrains Mono", "Ubuntu Mono", monospace;
+}
+.notfound-container {
+  background: var(--hacker-gray);
+  border: 2px solid var(--neon-green);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 500px;
+}
+.notfound-container h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  color: var(--neon-green);
+  background: var(--hacker-gray);
+}
+.notfound-container p {
+  color: var(--terminal-green);
+  background: var(--hacker-gray);
+  margin-bottom: 1.5em;
+  font-size: 1.2rem;
+}
+.notfound-container a {
+  color: var(--cyber-blue);
+  background: var(--hacker-gray);
+  border-bottom: 1px dotted var(--cyber-blue);
+  text-decoration: none;
+  transition: color 0.2s, border-bottom-color 0.2s;
+}
+.notfound-container a:hover {
+  color: var(--neon-green);
+  border-bottom-color: var(--neon-green);
+  background: var(--hacker-gray);
+}
+.ascii-art {
+  color: var(--warning-amber);
+  background: var(--hacker-gray);
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  font-family: "JetBrains Mono", "Ubuntu Mono", monospace;
+  white-space: pre;
+}
+.notfound-container p {
+  margin-top: 2em;
+  color: var(--text-secondary, #b3b3b3);
+  font-size: 0.95em;
+}
