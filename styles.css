@@ -162,9 +162,7 @@ button:hover {
   border-radius: 4px;
   overflow: hidden;
 }
-.qr-placeholder::before {
-  content: "QR Code";
-}
+
 .qr-code-img {
   max-width: 95%;
   max-height: 95%;
@@ -276,9 +274,11 @@ nav a:hover::after {
 }
 .psborder {
   color: #73b9af;
+  background-color: var(--hacker-gray);
 }
 .pink-icon {
   color: #ff90e8;
+  background-color: var(--hacker-gray);
 }
 .instagram,
 .gumroad {
@@ -330,21 +330,27 @@ nav a:hover::after {
 }
 .yellow-icon {
   color: #ff0;
+  background-color: var(--hacker-gray);
 }
 .blue-icon {
   color: var(--cyber-blue);
+  background-color: var(--hacker-gray);
 }
 .orange-icon {
   color: var(--warning-amber);
+  background-color: var(--hacker-gray);
 }
 .purple-icon {
   color: var(--purple);
+  background-color: var(--hacker-gray);
 }
 .red-icon {
   color: var(--error-red);
+  background-color: var(--hacker-gray);
 }
 .indigo-icon {
   color: var(--indigo);
+  background-color: var(--hacker-gray);
 }
 .gog,
 .reading,
@@ -379,6 +385,7 @@ nav a:hover::after {
 }
 .green-icon {
   color: var(--terminal-green);
+  background-color: var(--hacker-gray);
 }
 @media (max-width: 600px) {
   .social-grid {
@@ -387,6 +394,7 @@ nav a:hover::after {
 }
 .breadcrumb-nav {
   background: var(--hacker-gray);
+  color: var(--neon-green);
   border: 1px solid rgb(57 255 20 / 0.3);
   border-radius: 4px;
   padding: 0.75rem 1rem;
@@ -609,6 +617,7 @@ nav a:hover::after {
   width: 100%;
   margin: 1.5em auto;
   background: var(--hacker-dark);
+  color: var(--text-primary);
   border-radius: 8px;
   padding: 1em;
   box-sizing: border-box;
