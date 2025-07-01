@@ -37,7 +37,6 @@ h4 {
   color: var(--text-primary);
   background-color: var(--hacker-gray);
 }
-
 h3 {
   color: var(--neon-green);
   background-color: var(--hacker-gray);
@@ -46,13 +45,12 @@ header {
   color: var(--neon-green);
   background-color: var(--hacker-black);
 }
-.about-grid h2,
-.about-grid h3,
 .social-grid h2,
 .about-section h2,
 .about-section h3 {
   color: var(--neon-green);
   background-color: var(--hacker-gray);
+  font-family: "JetBrains Mono", monospace;
 }
 body {
   text-align: center;
@@ -74,9 +72,14 @@ img {
 .crypto-address,
 .terminal-text,
 code {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
   font-family: "JetBrains Mono", monospace;
   border-left: 3px solid var(--terminal-green);
   padding: 0.5em;
+  color: var(--text-primary);
+  background-color: var(--hacker-black);
 }
 a {
   transition: all 0.2s ease;
@@ -84,6 +87,7 @@ a {
   border-bottom: 1px dotted var(--cyber-blue);
   color: var(--neon-green);
   background-color: var(--hacker-gray);
+  font-family: "JetBrains Mono", monospace;
 }
 a:hover {
   border-bottom-color: var(--terminal-green);
@@ -122,7 +126,6 @@ a:hover {
   border-color: var(--neon-green);
   box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
 }
-
 .social-item .amount {
   margin-top: auto;
   font-weight: 700;
@@ -237,6 +240,44 @@ nav {
   color: var(--neon-green);
   background-color: var(--hacker-gray);
 }
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  position: relative;
+  color: var(--neon-green);
+  background-color: var(--hacker-gray);
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold; /* To maintain the bold look from h3 */
+}
+.nav-links a:hover {
+  border-color: var(--terminal-green);
+  color: var(--neon-green);
+  background-color: var(--hacker-gray);
+  text-shadow: 0 0 5px rgb(57 255 20 / 0.5);
+}
+.nav-links a::after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--neon-green);
+  color: var(--terminal-green);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+nav h2,
+nav h3,
 nav a {
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -579,7 +620,6 @@ nav a:hover::after {
   padding: 2em 1em;
   overflow-x: auto;
 }
-.about-grid,
 .about-section {
   flex: 1 1 0%;
   min-width: 0;
@@ -596,7 +636,6 @@ nav a:hover::after {
     gap: 1.5rem;
     max-width: 98vw;
   }
-  .about-grid,
   .about-section,
   .h-card {
     width: fit-content;
@@ -655,6 +694,7 @@ nav a:hover::after {
   .nav-links {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -670,7 +710,6 @@ nav a:hover::after {
     padding: 1rem;
   }
 }
-
 #nav-toggle:checked ~ .nav-header .nav-toggle .hamburger-icon {
   color: var(--hacker-dark);
   background-color: var(--hacker-gray);
@@ -688,7 +727,7 @@ nav a:hover::after {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .icon-row span,
 .icon-row-post span {
@@ -750,6 +789,14 @@ nav a:hover::after {
 }
 .notfound-container p {
   margin-top: 2em;
-  color: var(--text-secondary, #b3b3b3);
+  color: var(--text-secondary);
   font-size: 0.95em;
+}
+pre {
+  color: var(--text-primary);
+  background-color: var(--hacker-black);
+  border: 2px solid var(--terminal-green);
+  border-radius: 8px;
+  font-size: 0.5rem;
+  margin: 1.5em;
 }
