@@ -48,7 +48,6 @@ User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-agent: Azure
 User-agent: BardBot
-User-agent: BingBot
 User-agent: Brave Leo
 User-agent: Brightbot 1.0
 User-agent: ByteDance
@@ -274,6 +273,8 @@ Disallow: /
 Disallow: *
 
 User-agent: *
-DisallowAITraining: /
-DisallowAITraining: *
-Content-Usage: ai=n
+Disallow: /lp
+Disallow: /feedback
+Disallow: /langtest
+
+Sitemap: https://alexzeecomedy.com/sitemap.xml
