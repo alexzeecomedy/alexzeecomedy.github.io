@@ -277,5 +277,3 @@ User-agent: *
 DisallowAITraining: /
 DisallowAITraining: *
 Content-Usage: ai=n
-
-Sitemap: https://alexzeecomedy.com/sitemap.xml
