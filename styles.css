@@ -789,3 +789,39 @@ pre {
   font-size: 0.5rem;
   margin: 1.5em;
 }
+#onlinewire-webring {
+  margin: 0px;
+  text-align: center;
+}
+
+#onlinewire-webring .webring-content {
+  display: flex;
+  align-items: center; /* Vertically center the elements */
+  justify-content: center;
+  gap: 10px; /* Add space between the prev, center, and next elements */
+}
+
+#onlinewire-webring .webring-prev img,
+#onlinewire-webring .webring-next img {
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+#onlinewire-webring .webring-info img {
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+#onlinewire-webring .webring-links {
+  font-size: small;
+  text-align: center;
+}
+
+#onlinewire-webring a {
+  text-decoration: none;
+  color: #8ace00;
+}
+
+#onlinewire-webring a:hover {
+  text-decoration: underline;
+}
