@@ -593,10 +593,15 @@
             class="social-item watching"
             style="cursor: pointer"
             onclick="window.open('https://alexzeecomedy.com/pages/about/watching', '_self')"
+            tabindex="0"
+            role="link"
+            onkeydown="if(event.key === 'Enter') window.open('https://alexzeecomedy.com/pages/about/watching', '_self')"
           >
             <i class="fa-solid fa-tv fa-2x indigo-icon"></i>
             <h3>Now Watching</h3>
             <div>Midnight Mass</div>
+            <div>Dead To Me</div>
+            <div>The Rehearsal</div>
           </div>
           <div
             class="social-item reading"
