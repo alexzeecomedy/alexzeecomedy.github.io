@@ -33,8 +33,8 @@
           "sameAs": [
             "https://mastodon.social/@alexzeecomedy",
             "https://bsky.app/profile/alexzeecomedy.com",
-            "https://twitter.com/alexzeecomedy",
-            "https://instagram.com/alexzeecomedy",
+            "https://x.com/alexzeecomedy",
+            "https://www.instagram.com/alexzeecomedy/",
             "https://facebook.com/alexzeecomedy",
             "https://www.youtube.com/channel/UCcr6TWor-uXWnheOzg8W0Iw",
             "https://github.com/alexzeecomedy",
@@ -52,11 +52,11 @@
             "https://ko-fi.com/alexzeecomedy",
             "https://pixelfed.social/alexzeecomedy",
             "https://spectra.video/a/alexzeecomedy/video-channels",
-            "https://rant.li/alexzeecomedy",
-            "https://threads.net/@alexzeecomedy",
+            "https://rant.li/alexzeecomedy/",
+            "https://www.threads.net/@alexzeecomedy",
             "https://facebook.com/eezxela",
-            "https://tiktok.com/@alexzeecomedy",
-            "https://twitch.tv/alexzeecomedy",
+            "https://www.tiktok.com/@alexzeecomedy",
+            "https://www.twitch.tv/alexzeecomedy",
             "https://www.reddit.com/u/alexzeecomedy",
             "https://letterboxd.com/alexzeecomedy/",
             "https://kick.com/alexzeecomedy"
@@ -244,16 +244,19 @@
             src="/assets/artwork/CCC_Hope_Logo_icon.webp"
             alt="Clown College Podcast"
             height="64"
+            width="64"
          >
           <img
             src="/assets/artwork/donttellcomedy-1200x800.webp"
             alt="Don't Tell Comedy"
             height="64"
+            width="96"
          >
           <img
             src="/assets/artwork/epiccomedyhour.webp"
             alt="Epic Comedy Hour"
             height="64"
+            width="64"
          >
           <img
             src="/assets/artwork/bphd.svg"
@@ -358,14 +361,14 @@
               class="u-url"
               style="display: none"
               rel="me"
-              href="https://twitter.com/alexzeecomedy"
+              href="https://x.com/alexzeecomedy"
               >X (Formerly Twitter)</a
             >
             <a
               class="u-url"
               style="display: none"
               rel="me"
-              href="https://threads.net/@alexzeecomedy"
+              href="https://www.threads.net/@alexzeecomedy"
               >Threads</a
             >
             <a
@@ -379,7 +382,7 @@
               class="u-url"
               style="display: none"
               rel="me"
-              href="https://instagram.com/alexzeecomedy"
+              href="https://www.instagram.com/alexzeecomedy/"
               >Instagram</a
             >
             <a
@@ -400,7 +403,7 @@
               class="u-url"
               style="display: none"
               rel="me"
-              href="https://tiktok.com/@alexzeecomedy"
+              href="https://www.tiktok.com/@alexzeecomedy"
               >TikTok</a
             >
             <a
@@ -414,7 +417,7 @@
               class="u-url"
               style="display: none"
               rel="me"
-              href="https://twitch.tv/alexzeecomedy"
+              href="https://www.twitch.tv/alexzeecomedy"
               >Twitch</a
             >
             <a
@@ -529,17 +532,18 @@
               <div><b>Read my notes here.</b></div>
             </div>
             <div
-              class="social-item tour"
+              class="social-item pages"
               style="cursor: pointer"
-              onclick="window.open('/pages/tour/', '_self')"
+              onclick="window.open('/pages/', '_self')"
               tabindex="0"
               role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/tour/', '_self')"
+              onkeydown="if(event.key === 'Enter') window.open('/pages/', '_self')"
             >
-              <i class="fa-solid fa-calendar-days fa-2x red-icon"></i>
-              <h3>Live Dates</h3>
-              <div>Phat Sammy's Phusion Comedy Open Mic</div>
-              <div>Every Wednesday at 8:30pm in Huntsville Alabama</div>
+              <i
+                class="fa-solid fa-slash fa-2x red-icon fa-flip-horizontal"
+              ></i>
+              <h3>/Pages</h3>
+              <div>Check out my slash pages directory!</div>
             </div>
 
             <div
@@ -556,7 +560,36 @@
               <div>Gnatography</div>
               <div><b>Read my blog here.</b></div>
             </div>
-
+            <div
+              class="social-item now"
+              style="cursor: pointer"
+              onclick="window.open('/pages/now/', '_self')"
+              tabindex="0"
+              role="link"
+              onkeydown="if(event.key === 'Enter') window.open('/pages/now/', '_self')"
+            >
+              <i class="fa-solid fa-arrow-down fa-2x yellow-icon"></i>
+              <h3>/Now</h3>
+              <div>Playing</div>
+              <div>Reading</div>
+              <div>Listening</div>
+              <div>Watching</div>
+              <div>Etc.</div>
+            </div>
+            <div
+              class="social-item verify"
+              style="cursor: pointer"
+              onclick="window.open('/pages/verify', '_self')"
+              tabindex="0"
+              role="link"
+              onkeydown="if(event.key === 'Enter') window.open('/pages/verify', '_self')"
+            >
+              <i class="fa-solid fa-circle-check fa-2x green-icon"></i>
+              <h3>/Verify</h3>
+              <div>
+                Make sure it's me you're following and not some other doofus.
+              </div>
+            </div>
             <div
               class="social-item about"
               style="cursor: pointer"
@@ -565,79 +598,21 @@
               role="link"
               onkeydown="if(event.key === 'Enter') window.open('/pages/about', '_self')"
             >
-              <i class="fa-solid fa-address-card fa-2x yellow-icon"></i>
-              <h3>About</h3>
-              <div>All there is to know about me</div>
+              <i class="fa-solid fa-address-card fa-2x blue-icon"></i>
+              <h3>/About</h3>
+              <div>A page all about me.</div>
             </div>
             <div
-              class="social-item playing"
+              class="social-item interests"
               style="cursor: pointer"
-              onclick="window.open('/pages/now/playing/', '_self')"
+              onclick="window.open('/pages/interests', '_self')"
               tabindex="0"
               role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
+              onkeydown="if(event.key === 'Enter') window.open('/pages/interests', '_self')"
             >
-              <i class="fa-solid fa-gamepad fa-2x green-icon"></i>
-              <h3>Now Playing</h3>
-              <div>Baldur's Gate 3</div>
-              <div>Old School Runescape</div>
-            </div>
-            <div
-              class="social-item listening"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/listening', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/listening', '_self')"
-            >
-              <i class="fa-solid fa-headphones fa-2x blue-icon"></i>
-              <h3>Now Listening</h3>
-              <div>Song</div>
-              <div>Pretty Good - John Prine</div>
-              <div>Album</div>
-              <div>Phantom Island - King Gizzard and The Lizard Wizard</div>
-            </div>
-            <div
-              class="social-item watching"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/watching', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/watching', '_self')"
-            >
-              <i class="fa-solid fa-tv fa-2x indigo-icon"></i>
-              <h3>Now Watching</h3>
-              <div>Midnight Mass</div>
-              <div>Dead To Me</div>
-              <div>The Rehearsal</div>
-            </div>
-            <div
-              class="social-item reading"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/reading', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/reading', '_self')"
-            >
-              <i class="fa-solid fa-book fa-2x purple-icon"></i>
-              <h3>Now Reading</h3>
-              <div>1000 Years of Joys and Sorrows: A Memoir</div>
-              <div>Ai Weiwei</div>
-              <div>ISBN 9780553419481</div>
-            </div>
-            <div
-              class="social-item work"
-              style="cursor: pointer"
-              onclick="window.open('/pages/work', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/work', '_self')"
-            >
-              <i class="fa-solid fa-briefcase fa-2x"></i>
-              <h3>What I'm working on</h3>
-              <div>Clown College Podcast</div>
-              <div>The Bryce and Sifi Show</div>
-              <div>Huntsville Comedy</div>
+              <i class="fa-solid fa-fire fa-2x indigo-icon"></i>
+              <h3>/Interests</h3>
+              <div>Things I'm interested and passionate about.</div>
             </div>
             <div
               class="social-item wordle"
@@ -647,7 +622,7 @@
               role="link"
               onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
             >
-              <i class="fa-solid fa-w fa-2x red-icon"></i>
+              <i class="fa-solid fa-w fa-2x purple-icon"></i>
               <h3>Latest Wordle</h3>
 
               <div>2025-07-06</div>
@@ -667,7 +642,7 @@
               role="link"
               onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
             >
-              <i class="fa-solid fa-border-all fa-2x orange-icon"></i>
+              <i class="fa-solid fa-border-all fa-2x"></i>
               <h3>Latest Connections</h3>
 
               <div>2025-07-06</div>
@@ -697,15 +672,23 @@
         <cite>Matthew 19:24</cite>
       </blockquote>
 
-      <img
-        alt="Liberapay patrons"
-        src="https://img.shields.io/liberapay/patrons/alexzeecomedy?style=for-the-badge&logo=liberapay"
-        loading="lazy"
-     >
+      <p>
+        <img
+          alt="Liberapay patrons"
+          src="https://img.shields.io/liberapay/patrons/alexzeecomedy?style=for-the-badge&logo=liberapay"
+          loading="lazy"
+       >
+      </p>
+      <p>
+        Everything I post on my site is always free. However if you would like
+        to sample my work involve me in your project please check out the links
+        below!
+      </p>
 
-      <h2>
-        <a class="cta-button" href="/pages/tip"> Ways to support </a>
-      </h2>
+      <a class="button-link" href="/pages/work">Ways to Watch the Show</a>
+      <a class="button-link" href="/pages/tip">Ways to Support the Show</a>
+
+      <a class="button-link" href="/pages/pricing">Ways to Buy a Show</a>
     </section>
     <div class="about-section">
       <section id="webrings">
@@ -723,280 +706,286 @@
           <br>
           <cite> Wikipedia: Webring</cite>
         </blockquote>
+        <details class="more-details">
+          <summary>Webrings</summary>
+          <p>
+            <a href="https://chalcocabana.codeberg.page">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="/pages/webring">Mandarin House Webring</a>
+            <a href="https://chalcocabana.codeberg.page"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://fediring.net/previous?host=alexzeecomedy.com">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="https://fediring.net/"
+              >Fediring <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://fediring.net/random"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://fediring.net/next?host=alexzeecomedy.com"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://xn--sr8hvo.ws/previous">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="https://xn--sr8hvo.ws"
+              >IndieWeb Webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://xn--sr8hvo.ws/random"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://xn--sr8hvo.ws/next"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://baccyflap.com/noai/?prv&s=zee" target="_top">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
 
-        <p>
-          <a href="https://chalcocabana.codeberg.page">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-          <a href="/pages/webring">Mandarin House Webring</a>
-          <a href="https://chalcocabana.codeberg.page"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://fediring.net/previous?host=alexzeecomedy.com">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-          <a href="https://fediring.net/"
-            >Fediring <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://fediring.net/random"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://fediring.net/next?host=alexzeecomedy.com"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://xn--sr8hvo.ws/previous">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-          <a href="https://xn--sr8hvo.ws"
-            >IndieWeb Webring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://xn--sr8hvo.ws/random"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://xn--sr8hvo.ws/next"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://baccyflap.com/noai/?prv&s=zee" target="_top">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
+            <a href="https://baccyflap.com/noai" target="_blank"
+              >no ai webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://baccyflap.com/noai/?rnd" target="_top"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
 
-          <a href="https://baccyflap.com/noai" target="_blank"
-            >no ai webring <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://baccyflap.com/noai/?rnd" target="_top"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+            <a href="https://baccyflap.com/noai/?nxt&s=zee" target="_top"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a
+              href="https://webri.ng/webring/cssjoy/previous?via=https://alexzeecomedy.com"
+            >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
 
-          <a href="https://baccyflap.com/noai/?nxt&s=zee" target="_top"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a
-            href="https://webri.ng/webring/cssjoy/previous?via=https://alexzeecomedy.com"
-          >
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
+            <a href="https://cs.sjoy.lol/" target="_blank"
+              >CSS JOY Webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://webri.ng/webring/cssjoy/random?via=https://alexzeecomedy.com"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
 
-          <a href="https://cs.sjoy.lol/" target="_blank"
-            >CSS JOY Webring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a
-            href="https://webri.ng/webring/cssjoy/random?via=https://alexzeecomedy.com"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+            <a
+              href="https://webri.ng/webring/cssjoy/next?via=https://alexzeecomedy.com"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a
+              href="https://spagwhetti.github.io/redirect.html?to=prev&name=alexzeecomedy"
+              target="_top"
+            >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
 
-          <a
-            href="https://webri.ng/webring/cssjoy/next?via=https://alexzeecomedy.com"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a
-            href="https://spagwhetti.github.io/redirect.html?to=prev&name=alexzeecomedy"
-            target="_top"
-          >
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
+            <a href="https://spaghetti.nekoweb.org/webring" target="_blank"
+              >bolognese webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://spagwhetti.github.io/redirect.html?to=random&name=alexzeecomedy"
+              target="_top"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
 
-          <a href="https://spaghetti.nekoweb.org/webring" target="_blank"
-            >bolognese webring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a
-            href="https://spagwhetti.github.io/redirect.html?to=random&name=alexzeecomedy"
-            target="_top"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+            <a
+              href="https://spagwhetti.github.io/redirect.html?to=next&name=alexzeecomedy"
+              target="_top"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://static.quest/previous/?host=alexzeecomedy.com">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="https://static.quest"
+              >Static.Quest Web Ring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://static.quest/random"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://static.quest/next/?host=alexzeecomedy.com"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://theforest.link"
+              >The Forest <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://theforest.link/go-for-a-walk/"
+              >Walk <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <div id="onlinewire-webring">
+            <script
+              src="https://milkyway.moe/onlinewire/onionring-variables.js"
+              defer
+            ></script>
+            <script
+              src="https://milkyway.moe/onlinewire/onionring-widget.js"
+              defer
+            ></script>
+          </div>
 
-          <a
-            href="https://spagwhetti.github.io/redirect.html?to=next&name=alexzeecomedy"
-            target="_top"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://static.quest/previous/?host=alexzeecomedy.com">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-          <a href="https://static.quest"
-            >Static.Quest Web Ring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://static.quest/random"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://static.quest/next/?host=alexzeecomedy.com"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://theforest.link"
-            >The Forest <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://theforest.link/go-for-a-walk"
-            >Walk <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <div id="onlinewire-webring">
-          <script
-            src="https://milkyway.moe/onlinewire/onionring-variables.js"
-            defer
-          ></script>
-          <script
-            src="https://milkyway.moe/onlinewire/onionring-widget.js"
-            defer
-          ></script>
-        </div>
-
-        <object
-          id="melonland-surf-club"
-          data="/assets/artwork/surf-badge.svg?fill=#ffffff"
-          type="image/svg+xml"
-          style="width: 100px; height: 100px"
-          title="Inner icon: Melonland Surf Club, Outer ring: Surf the webring"
-        ></object>
-
-        <a
-          href="https://webring.xxiivv.com/#zee"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="/assets/artwork/icon.white.svg"
-            alt="XXIIVV webring (pending)"
-            loading="lazy"
-            width="100"
-            height="100"
-         ><i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-
-        <p>
-          <a
-            href="https://webring.bucketfish.me/redirect.html?to=prev&name=alexzeecomedy"
-          >
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-          <a href="https://webring.bucketfish.me/"
-            >bucket webring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          (pending)
-          <a
-            href="https://webring.bucketfish.me/redirect.html?to=random&name=alexzeecomedy"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a
-            href="https://webring.bucketfish.me/redirect.html?to=next&name=alexzeecomedy"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-
-        <p>
-          <a href="https://silly.city/prev?user=alexzeecomedy" target="_top">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-
-          <a href="https://silly.city/" target="_blank"
-            >silly.city webring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          (pending)
-          <a href="https://silly.city/random" target="_top"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-
-          <a href="https://silly.city/next?user=alexzeecomedy" target="_top"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <iframe
-          class="wiframe"
-          height="300"
-          width="640"
-          src="https://webring.htmlhobbyist.com/site/alexzeecomedy.com/"
-          title="The HTML Hobbyist Webring"
-        ></iframe>
-        <p>(pending)</p>
-        <section class="a11y-webring-club" aria-labelledby="a11y-webring-club">
-          <a
-            rel="external"
-            referrerpolicy="strict-origin"
-            href="https://a11y-webring.club/prev"
-            ><i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
-          >
-          <a rel="external" href="https://a11y-webring.club/"
-            >a11y-webring.club
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          (pending)
-          <a
-            rel="external"
-            referrerpolicy="strict-origin"
-            href="https://a11y-webring.club/random"
-            >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <object
+            id="melonland-surf-club"
+            data="/assets/artwork/surf-badge.svg?fill=#ffffff"
+            type="image/svg+xml"
+            style="width: 100px; height: 100px"
+            title="Inner icon: Melonland Surf Club, Outer ring: Surf the webring"
+          ></object>
 
           <a
-            rel="external"
-            referrerpolicy="strict-origin"
-            href="https://a11y-webring.club/next"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </section>
-        <p>
-          <a href="https://hotlinewebring.club/alexzeecomedy/previous">
-            <i
-              class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
-            ></i>
-            Previous</a
+            href="https://webring.xxiivv.com/#zee"
+            target="_blank"
+            rel="noopener"
           >
-          <a href="https://hotlinewebring.club/"
-            >Hotline Webring
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          <a href="https://hotlinewebring.club/alexzeecomedy/next"
-            >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
+            <img
+              src="/assets/artwork/icon.white.svg"
+              alt="XXIIVV webring (pending)"
+              loading="lazy"
+              width="100"
+              height="100"
+           ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+          <p>
+            <a
+              href="https://webring.bucketfish.me/redirect.html?to=prev&name=alexzeecomedy"
+            >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="https://webring.bucketfish.me/"
+              >bucket webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            (pending)
+            <a
+              href="https://webring.bucketfish.me/redirect.html?to=random&name=alexzeecomedy"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://webring.bucketfish.me/redirect.html?to=next&name=alexzeecomedy"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+
+          <p>
+            <a href="https://silly.city/prev?user=alexzeecomedy" target="_top">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+
+            <a href="https://silly.city/" target="_blank"
+              >silly.city webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            (pending)
+            <a href="https://silly.city/random" target="_top"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+
+            <a href="https://silly.city/next?user=alexzeecomedy" target="_top"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <iframe
+            class="wiframe"
+            height="300"
+            width="640"
+            src="https://webring.htmlhobbyist.com/site/alexzeecomedy.com/"
+            title="The HTML Hobbyist Webring"
+          ></iframe>
+          <p>(pending)</p>
+          <div
+            class="a11y-webring-club"
+            aria-labelledby="a11y-webring-club"
+          >
+            <a
+              rel="external"
+              referrerpolicy="strict-origin"
+              href="https://a11y-webring.club/prev"
+              ><i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a rel="external" id="a11y-webring-club" href="https://a11y-webring.club/"
+              >a11y-webring.club
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            (pending)
+            <a
+              rel="external"
+              referrerpolicy="strict-origin"
+              href="https://a11y-webring.club/random"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+
+            <a
+              rel="external"
+              referrerpolicy="strict-origin"
+              href="https://a11y-webring.club/next"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <p>
+            <a href="https://hotlinewebring.club/alexzeecomedy/previous">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="https://hotlinewebring.club/"
+              >Hotline Webring
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://hotlinewebring.club/alexzeecomedy/next"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+        </details>
       </section>
       <section>
         <h2>Clubs</h2>
@@ -1010,544 +999,546 @@
         </p>
       </section>
       <section>
-        <h2>Badges</h2>
-        <h3>Link to my site!</h3>
-        <p>
-          <a href="/pages/contact"
-            >Shoot me a message here if you want me to link you back.</a
-          >
-        </p>
-        <img
-          src="/assets/artwork/alexzeecomedybutton.webp"
-          alt="I love you, Gnat :)"
-          width="88"
-          height="31"
-          loading="lazy"
-       >
-        <h3>88x31</h3>
-        <img
-          src="/assets/artwork/dietcoke.webp"
-          alt="Made with Diet Coke"
-          width="88"
-          height="31"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/iso8601.png"
-          alt="ISO 8601 YYYY-MM-DD"
-          width="88"
-          height="31"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/validate_html5.svg"
-          alt="[Valid HTML5]"
-          width="88"
-          height="31"
-          title="Valid HTML5"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/valid-rss-rogers.webp"
-          alt="[Valid RSS]"
-          width="88"
-          height="31"
-          title="Valid RSS"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/valid-atom.webp"
-          alt="[Valid Atom 1.0]"
-          width="88"
-          height="31"
-          title="Valid Atom 1.0"
-          loading="lazy"
-       >
-
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="/assets/artwork/vcss.webp"
-          width="88"
-          height="31"
-          alt="Valid CSS!"
-          loading="lazy"
-       >
-
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          width="88"
-          height="31"
-          src="/assets/artwork/microformats88x31-flat.webp"
-          alt="Microformats"
-          loading="lazy"
-       >
-
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          width="88"
-          height="31"
-          src="/assets/artwork/webmentions_anim.gif"
-          alt="Webmentions supported"
-          loading="lazy"
-       >
-
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          width="88"
-          height="31"
-          src="/assets/artwork/Created-By-a-Human-Not-By-AI-Badge-white.svg"
-          alt="Created by a Human, Not By AI"
-          loading="lazy"
-       >
-
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          width="88"
-          height="31"
-          src="/assets/artwork/class-B.svg"
-          alt="Non-essential functionality doesn't work when JS is disabled."
-          loading="lazy"
-       >
-
-        <img
-          width="88"
-          height="31"
-          src="/assets/artwork/fediring.webp"
-          alt="Fediring badge by TheCozyCat"
-          loading="lazy"
-       >
-        <img
-          width="88"
-          height="31"
-          src="/assets/artwork/button.png"
-          alt="Status Cafe"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/silly.gif"
-          width="88"
-          height="31"
-          alt="silly.city"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/indieweb88x31-retro-gif.webp"
-          width="88"
-          height="31"
-          alt="IndieWeb"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/fedora.webp"
-          width="88"
-          height="31"
-          alt="Powered by Fedora"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/pwsuse.webp"
-          width="88"
-          height="31"
-          alt="Powered by openSUSE"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/brave.webp"
-          width="88"
-          height="31"
-          alt="Get Brave"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/vscodium100.webp"
-          width="88"
-          height="31"
-          alt="Made with VSCodium"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/fediverse.webp"
-          width="88"
-          height="31"
-          alt="Join the Fediverse"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/mastodon_button_1.webp"
-          width="88"
-          height="31"
-          alt="Join Mastodon"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/internet_archive.gif"
-          width="88"
-          height="31"
-          alt="Internet Archive"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/wikipedia.webp"
-          width="88"
-          height="31"
-          alt="Wikipedia"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/nextcloud.webp"
-          width="88"
-          height="31"
-          alt="Get Nextcloud"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/ddg.webp"
-          width="88"
-          height="31"
-          alt="DuckDuckGo - Always use protection"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/tor.webp"
-          width="88"
-          height="31"
-          alt="Tor"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/steam.webp"
-          width="88"
-          height="31"
-          alt="Friend me on Steam"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/getvlcnow.webp"
-          width="88"
-          height="31"
-          alt="Get VLC media player"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/7z_am.webp"
-          width="88"
-          height="31"
-          alt="7-Zip"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/bitwarden.webp"
-          width="88"
-          height="31"
-          alt="Get Bitwarden"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/gimp2.webp"
-          width="88"
-          height="31"
-          alt="Get GIMP"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/blender.webp"
-          width="88"
-          height="31"
-          alt="Get Blender"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/xkcd.webp"
-          width="88"
-          height="31"
-          alt="XKCD"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/onionlink1098.webp"
-          width="88"
-          height="31"
-          alt="The Onion"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/hatems.webp"
-          width="88"
-          height="31"
-          alt="I hate Microsoft"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/google_stand.webp"
-          width="88"
-          height="31"
-          alt="Take a stand against Google"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/right_to_repair_01.webp"
-          width="88"
-          height="31"
-          alt="I support the right to repair"
-          loading="lazy"
-       >
-
-        <img
-          src="/assets/artwork/fckfb.webp"
-          width="88"
-          height="31"
-          alt="Muck Meta"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/dbd.webp"
-          width="88"
-          height="31"
-          alt="Eliminate DRM"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/pgp-now.webp"
-          width="88"
-          height="31"
-          alt="PGP Now"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/email.webp"
-          width="88"
-          height="31"
-          alt="Questions or comments? Email."
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/penguins.webp"
-          width="88"
-          height="31"
-          alt="Powered by Penguins"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/88x31-your-ad.webp"
-          width="88"
-          height="31"
-          alt="Your ad here"
-          loading="lazy"
-       >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          width="88"
-          height="31"
-          src="/assets/artwork/bookmark_this_page.gif"
-          alt="Bookmark this page!"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/nocookie.webp"
-          width="88"
-          height="31"
-          alt="This website is 100% cookie free"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/8831-1.png"
-          width="88"
-          height="31"
-          alt="Responsive Web Directory"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/artistsagainstmastodondotart.webp"
-          width="88"
-          height="31"
-          alt="Artists against mastodon.art"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/cssdif.gif"
-          width="88"
-          height="31"
-          alt="CSS is difficult"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/ffmpeg.png"
-          width="88"
-          height="31"
-          alt="FFMPEG Now"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/fightforthefuture.gif"
-          width="88"
-          height="31"
-          alt="Fight For The Future"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/fuckadobe.gif"
-          width="88"
-          height="31"
-          alt="Uck Adobe"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/made-with-css.gif"
-          width="88"
-          height="31"
-          alt="Made with CSS"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/matrix.png"
-          width="88"
-          height="31"
-          alt="Matrix"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/net_neutrality.webp"
-          width="88"
-          height="31"
-          alt="I support net neutrality"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/noweb32.gif"
-          width="88"
-          height="31"
-          alt="Say no to Web3"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/piracy.gif"
-          width="88"
-          height="31"
-          alt="Piracy now"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/privacy_human_right.gif"
-          width="88"
-          height="31"
-          alt="Privacy is a human right"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/qbittorrent.png"
-          width="88"
-          height="31"
-          alt="Don't forget to seed"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/tiktok.gif"
-          width="88"
-          height="31"
-          alt="Tuck TikTok"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/w3s.png"
-          width="88"
-          height="31"
-          alt="W3 Schools"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/wiby.gif"
-          width="88"
-          height="31"
-          alt="Wiby.me"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/wiby.org.gif"
-          width="88"
-          height="31"
-          alt="Wiby.org"
-          loading="lazy"
-       >
-        <img
-          src="/assets/artwork/wikiasucks.gif"
-          width="88"
-          height="31"
-          alt="Wikia sucks"
-          loading="lazy"
-       >
-        <h3>SVG</h3>
-        <p>
+        <details class="more-details">
+          <summary>Badges</summary>
+          <h3>Link to my site!</h3>
+          <p>
+            <a href="/pages/contact"
+              >Shoot me a message here if you want me to link you back.</a
+            >
+          </p>
           <img
-            style="height: 128px"
-            src="/assets/artwork/mhp.svg"
-            alt="Mandarin House Productions logo"
-            width="128"
-            height="128"
+            src="/assets/artwork/alexzeecomedybutton.webp"
+            alt="I love you, Gnat :)"
+            width="88"
+            height="31"
+            loading="lazy"
+         >
+          <h3>88x31</h3>
+          <img
+            src="/assets/artwork/dietcoke.webp"
+            alt="Made with Diet Coke"
+            width="88"
+            height="31"
             loading="lazy"
          >
           <img
-            style="height: 128px"
-            src="/assets/artwork/nonbot_pledged_logo.svg"
-            alt="Human-made Content"
-            width="147"
-            height="128"
+            src="/assets/artwork/iso8601.png"
+            alt="ISO 8601 YYYY-MM-DD"
+            width="88"
+            height="31"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/validate_html5.svg"
+            alt="[Valid HTML5]"
+            width="88"
+            height="31"
+            title="Valid HTML5"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/valid-rss-rogers.webp"
+            alt="[Valid RSS]"
+            width="88"
+            height="31"
+            title="Valid RSS"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/valid-atom.webp"
+            alt="[Valid Atom 1.0]"
+            width="88"
+            height="31"
+            title="Valid Atom 1.0"
             loading="lazy"
          >
 
           <img
-            src="/assets/artwork/html-hobbyist-badge.svg"
-            height="128"
-            width="128"
-            alt="I am an HTML Hobbyist"
+            style="border: 0; width: 88px; height: 31px"
+            src="/assets/artwork/vcss.webp"
+            width="88"
+            height="31"
+            alt="Valid CSS!"
             loading="lazy"
          >
 
           <img
-            style="height: 128px"
-            src="/assets/artwork/bphd.svg"
-            alt="Black Panther/Hidden Dragon logo"
-            width="128"
-            height="128"
+            style="border: 0; width: 88px; height: 31px"
+            width="88"
+            height="31"
+            src="/assets/artwork/microformats88x31-flat.webp"
+            alt="Microformats"
             loading="lazy"
          >
-        </p>
-        <h3>Miscellaneous</h3>
-        <p>
-          The Current mood of the Internet is
-          <a href="https://www.imood.com/imood"
-            ><img
-              src="https://moods.imood.com/internet/current.gif"
-              alt="The current mood of the Internet at www.imood.com"
-              loading="lazy">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
-        <img
-          src="/assets/artwork/I_heart_validator_lg.png"
-          alt="I love Validator"
-          width="101"
-          height="46"
-          loading="lazy"
-       >
-        <div id="wcb" class="carbonbadge wcb-d"></div>
-        <script
-          src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
-          defer
-        ></script>
+
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            width="88"
+            height="31"
+            src="/assets/artwork/webmentions_anim.gif"
+            alt="Webmentions supported"
+            loading="lazy"
+         >
+
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            width="88"
+            height="31"
+            src="/assets/artwork/Created-By-a-Human-Not-By-AI-Badge-white.svg"
+            alt="Created by a Human, Not By AI"
+            loading="lazy"
+         >
+
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            width="88"
+            height="31"
+            src="/assets/artwork/class-B.svg"
+            alt="Non-essential functionality doesn't work when JS is disabled."
+            loading="lazy"
+         >
+
+          <img
+            width="88"
+            height="31"
+            src="/assets/artwork/fediring.webp"
+            alt="Fediring badge by TheCozyCat"
+            loading="lazy"
+         >
+          <img
+            width="88"
+            height="31"
+            src="/assets/artwork/button.png"
+            alt="Status Cafe"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/silly.gif"
+            width="88"
+            height="31"
+            alt="silly.city"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/indieweb88x31-retro-gif.webp"
+            width="88"
+            height="31"
+            alt="IndieWeb"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/fedora.webp"
+            width="88"
+            height="31"
+            alt="Powered by Fedora"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/pwsuse.webp"
+            width="88"
+            height="31"
+            alt="Powered by openSUSE"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/brave.webp"
+            width="88"
+            height="31"
+            alt="Get Brave"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/vscodium100.webp"
+            width="88"
+            height="31"
+            alt="Made with VSCodium"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/fediverse.webp"
+            width="88"
+            height="31"
+            alt="Join the Fediverse"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/mastodon_button_1.webp"
+            width="88"
+            height="31"
+            alt="Join Mastodon"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/internet_archive.gif"
+            width="88"
+            height="31"
+            alt="Internet Archive"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/wikipedia.webp"
+            width="88"
+            height="31"
+            alt="Wikipedia"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/nextcloud.webp"
+            width="88"
+            height="31"
+            alt="Get Nextcloud"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/ddg.webp"
+            width="88"
+            height="31"
+            alt="DuckDuckGo - Always use protection"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/tor.webp"
+            width="88"
+            height="31"
+            alt="Tor"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/steam.webp"
+            width="88"
+            height="31"
+            alt="Friend me on Steam"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/getvlcnow.webp"
+            width="88"
+            height="31"
+            alt="Get VLC media player"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/7z_am.webp"
+            width="88"
+            height="31"
+            alt="7-Zip"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/bitwarden.webp"
+            width="88"
+            height="31"
+            alt="Get Bitwarden"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/gimp2.webp"
+            width="88"
+            height="31"
+            alt="Get GIMP"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/blender.webp"
+            width="88"
+            height="31"
+            alt="Get Blender"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/xkcd.webp"
+            width="88"
+            height="31"
+            alt="XKCD"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/onionlink1098.webp"
+            width="88"
+            height="31"
+            alt="The Onion"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/hatems.webp"
+            width="88"
+            height="31"
+            alt="I hate Microsoft"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/google_stand.webp"
+            width="88"
+            height="31"
+            alt="Take a stand against Google"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/right_to_repair_01.webp"
+            width="88"
+            height="31"
+            alt="I support the right to repair"
+            loading="lazy"
+         >
+
+          <img
+            src="/assets/artwork/fckfb.webp"
+            width="88"
+            height="31"
+            alt="Muck Meta"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/dbd.webp"
+            width="88"
+            height="31"
+            alt="Eliminate DRM"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/pgp-now.webp"
+            width="88"
+            height="31"
+            alt="PGP Now"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/email.webp"
+            width="88"
+            height="31"
+            alt="Questions or comments? Email."
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/penguins.webp"
+            width="88"
+            height="31"
+            alt="Powered by Penguins"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/88x31-your-ad.webp"
+            width="88"
+            height="31"
+            alt="Your ad here"
+            loading="lazy"
+         >
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            width="88"
+            height="31"
+            src="/assets/artwork/bookmark_this_page.gif"
+            alt="Bookmark this page!"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/nocookie.webp"
+            width="88"
+            height="31"
+            alt="This website is 100% cookie free"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/8831-1.png"
+            width="88"
+            height="31"
+            alt="Responsive Web Directory"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/artistsagainstmastodondotart.webp"
+            width="88"
+            height="31"
+            alt="Artists against mastodon.art"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/cssdif.gif"
+            width="88"
+            height="31"
+            alt="CSS is difficult"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/ffmpeg.png"
+            width="88"
+            height="31"
+            alt="FFMPEG Now"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/fightforthefuture.gif"
+            width="88"
+            height="31"
+            alt="Fight For The Future"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/fuckadobe.gif"
+            width="88"
+            height="31"
+            alt="Uck Adobe"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/made-with-css.gif"
+            width="88"
+            height="31"
+            alt="Made with CSS"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/matrix.png"
+            width="88"
+            height="31"
+            alt="Matrix"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/net_neutrality.webp"
+            width="88"
+            height="31"
+            alt="I support net neutrality"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/noweb32.gif"
+            width="88"
+            height="31"
+            alt="Say no to Web3"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/piracy.gif"
+            width="88"
+            height="31"
+            alt="Piracy now"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/privacy_human_right.gif"
+            width="88"
+            height="31"
+            alt="Privacy is a human right"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/qbittorrent.png"
+            width="88"
+            height="31"
+            alt="Don't forget to seed"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/tiktok.gif"
+            width="88"
+            height="31"
+            alt="Tuck TikTok"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/w3s.png"
+            width="88"
+            height="31"
+            alt="W3 Schools"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/wiby.gif"
+            width="88"
+            height="31"
+            alt="Wiby.me"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/wiby.org.gif"
+            width="88"
+            height="31"
+            alt="Wiby.org"
+            loading="lazy"
+         >
+          <img
+            src="/assets/artwork/wikiasucks.gif"
+            width="88"
+            height="31"
+            alt="Wikia sucks"
+            loading="lazy"
+         >
+          <h3>SVG</h3>
+          <p>
+            <img
+              style="height: 128px"
+              src="/assets/artwork/mhp.svg"
+              alt="Mandarin House Productions logo"
+              width="128"
+              height="128"
+              loading="lazy"
+           >
+            <img
+              style="height: 128px"
+              src="/assets/artwork/nonbot_pledged_logo.svg"
+              alt="Human-made Content"
+              width="147"
+              height="128"
+              loading="lazy"
+           >
+
+            <img
+              src="/assets/artwork/html-hobbyist-badge.svg"
+              height="128"
+              width="128"
+              alt="I am an HTML Hobbyist"
+              loading="lazy"
+           >
+
+            <img
+              style="height: 128px"
+              src="/assets/artwork/bphd.svg"
+              alt="Black Panther/Hidden Dragon logo"
+              width="128"
+              height="128"
+              loading="lazy"
+           >
+          </p>
+          <h3>Miscellaneous</h3>
+          <p>
+            The Current mood of the Internet is
+            <a href="https://www.imood.com/imood"
+              ><img
+                src="https://moods.imood.com/internet/current.gif"
+                alt="The current mood of the Internet at www.imood.com"
+                loading="lazy">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <img
+            src="/assets/artwork/I_heart_validator_lg.png"
+            alt="I love Validator"
+            width="101"
+            height="46"
+            loading="lazy"
+         >
+          <div id="wcb" class="carbonbadge wcb-d"></div>
+          <script
+            src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+            defer
+          ></script>
+        </details>
       </section>
     </div>
     <footer>
