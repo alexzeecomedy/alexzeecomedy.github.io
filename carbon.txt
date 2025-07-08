@@ -1,0 +1,11 @@
+[org]
+disclosures = [
+	{ doc_type='web-page', url='https://alexzeecomedy.com/carbon.txt', domain='alexzeecomedy.com' }
+]
+
+[upstream]
+services = [
+	{ domain='njal.la', service_type='domain-provider' },
+	{ domain='github.io', service_type='hosting-provider' },
+    { domain='cloudflare.com', service_type='dns-provider' }
+]
