@@ -1,0 +1,83 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2025-07-07
+
+### Added
+
+- about.html
+- ai.html
+- canon.html
+- carry.html
+- changelog.html
+- colophon.html
+- defaults.html
+- green.html
+- guy.html
+- hats.html
+- hello.html
+- ideas.html
+- interests.html
+- junk.html
+- next.html
+- pfp.html
+- podroll.html
+- posse.html
+- postroll.html
+- pricing.html
+- question.html
+- save.html
+- tip.html
+- uses.html
+- verify.html
+- where.html
+- why.html
+- wish.html
+- version.txt
+- connections.html
+- osrs.html
+- wordle.html
+- listening.html
+- reading.html
+- watching.html
+- Alex_Zee_Comedy_notes_atom.xml
+- Alex_Zee_Comedy_notes_rss.xml
+- I_heart_validator_lg.png
+
+### Changed
+
+- 404.html
+- atom.xml
+- rss.xml
+- sitemap.xml
+- accessibility.html
+- blogroll.html
+- community.html
+- contact.html
+- links.html
+- privacy.html
+- sitemap.html
+- webring.html
+- work.html
+- 062725.html
+- AnE8b.html
+- kvkcs.html
+- QiRNt.html
+- phusion.html
+
+### Removed
+
+- meta.html
+- support.html
+- hardware.html
+- listening.html
+- reading.html
+- software.html
+- watching.html
+- connections.html
+- osrs.html
+- wordle.html
