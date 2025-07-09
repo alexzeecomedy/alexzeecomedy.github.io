@@ -103,8 +103,6 @@ User-agent: Doubao AI
 User-agent: DuckAssistBot
 User-agent: FacebookBot
 User-agent: Facebookbot
-User-agent: FacebookExternalHit
-User-agent: facebookexternalhit
 User-agent: Factset_spyderbot
 User-agent: Falcon
 User-agent: Firecrawl
