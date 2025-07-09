@@ -1,0 +1,18 @@
+                            
+/* TEAM */
+
+        Webmaster: Alex Zee
+        Site: alex [at] alexzeecomedy.com
+        Twitter: @alexzeecomedy
+        Location: Huntsville, Alabama
+
+/* THANKS */
+
+        Gnat
+        Mom
+        Jon
+
+/* SITE */
+        Last update: 2025/07/09 
+        Standards: HTML5, CSS3, SVG, JS
+        Software: VSCodium
