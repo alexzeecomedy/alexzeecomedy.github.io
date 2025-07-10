@@ -1,5 +1,6 @@
-# Security Policy
-
-## Reporting a Vulnerability
-
-Contact me, the maintainer, at [alex@alexzeecomedy.com](mailto:alex@alexzeecomedy.com). Vulnerabilities will be addressed in this repository's Discussions forum.
+Contact: mailto:alex@alexzeecomedy.com
+Expires: 2026-07-10T05:00:00.000Z
+Encryption: https://alexzeecomedy.com/Alex_Zee_Comedy_pub.asc
+Preferred-Languages: en
+Canonical: https://alexzeecomedy.com/security.md
+Policy: https://alexzeecomedy.com/pages/security
