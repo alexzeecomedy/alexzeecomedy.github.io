@@ -1,0 +1,3 @@
+# ads.txt file for alexzeecomedy.com
+
+#Ads can suck an egg.
