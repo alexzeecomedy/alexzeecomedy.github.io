@@ -2,5 +2,5 @@ Contact: mailto:alex@alexzeecomedy.com
 Expires: 2026-07-10T05:00:00.000Z
 Encryption: https://alexzeecomedy.com/Alex_Zee_Comedy_pub.asc
 Preferred-Languages: en
-Canonical: https://alexzeecomedy.com/security.txt
+Canonical: https://alexzeecomedy.com/.well-known/security.txt
 Policy: https://alexzeecomedy.com/pages/security
