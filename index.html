@@ -7,7 +7,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://milkyway.moe https://xandra.cc https://town.thecozy.cat; frame-src 'self' 'unsafe-inline' https://john.citrons.xyz https://milkyway.moe https://unpkg.com https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://milkyway.moe https://unpkg.com https://moods.imood.com https://i.imgur.com; font-src 'self'; connect-src 'self' https://api.websitecarbon.com https://xandra.cc;"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://status.cafe https://unpkg.com https://milkyway.moe https://xandra.cc https://town.thecozy.cat; frame-src 'self' 'unsafe-inline' https://john.citrons.xyz https://milkyway.moe https://unpkg.com https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://milkyway.moe https://unpkg.com https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self'; connect-src 'self' https://api.websitecarbon.com https://xandra.cc https://status.cafe;"
    >
     <meta charset="UTF-8">
     <meta name="robots" content="noai, noimageai, noml">
@@ -610,6 +610,22 @@
               <i class="fa-solid fa-address-card fa-2x blue-icon"></i>
               <h3>/About</h3>
               <div>A page all about me.</div>
+              <div>
+                I'm currently feeling
+                <a href="https://www.imood.com/users/alexzeecomedy"
+                  ><img
+                    src="https://moods.imood.com/display/uname-alexzeecomedy/fg-FFFFFF/bg-2a2a2a/imood.gif"
+                    alt="The current mood of alexzeecomedy at www.imood.com">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://status.cafe/users/alexzeecomedy"
+                  ><img
+                    src="https://status.cafe/users/alexzeecomedy/badge.png"
+                    alt="Status Cafe Profile"
+               ></a>
+              </div>
             </div>
             <div
               class="social-item interests"
@@ -663,6 +679,26 @@
               <div>🟦🟦🟦🟦</div>
               <div>🟪🟪🟪🟪</div>
               <div>Skill 88/99, Uniqueness Uniqueness 1 in 708</div>
+            </div>
+            <div
+              class="social-item status"
+              style="cursor: pointer"
+              onclick="window.open('/pages/now/playing/', '_self')"
+              tabindex="0"
+              role="link"
+              onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
+            >
+              <i class="fa-solid fa-glass-water fa-2x red-icon"></i>
+              <h3>status.cafe</h3>
+
+              <div id="statuscafe">
+                <div id="statuscafe-username"></div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <script
+                src="https://status.cafe/current-status.js?name=alexzeecomedy"
+                defer
+              ></script>
             </div>
           </div>
         </div>

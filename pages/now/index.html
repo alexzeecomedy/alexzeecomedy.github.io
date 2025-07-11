@@ -9,7 +9,7 @@
 
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://status.cafe; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://status.cafe;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <link rel="canonical" href="https://alexzeecomedy.com/pages/now/">
@@ -309,6 +309,26 @@
           <div>🟪🟪🟪🟪</div>
           <div>Skill 88/99, Uniqueness Uniqueness 1 in 708</div>
         </div>
+        <div
+              class="social-item status"
+              style="cursor: pointer"
+              onclick="window.open('/pages/now/playing/', '_self')"
+              tabindex="0"
+              role="link"
+              onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
+            >
+              <i class="fa-solid fa-glass-water fa-2x red-icon"></i>
+              <h3>status.cafe</h3>
+
+              <div id="statuscafe">
+                <div id="statuscafe-username"></div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <script
+                src="https://status.cafe/current-status.js?name=alexzeecomedy"
+                defer
+              ></script>
+            </div>
       </div>
     </section>
     <footer>
