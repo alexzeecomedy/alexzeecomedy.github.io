@@ -1,20 +1,25 @@
 /* https://indieweb.org/indieweb.txt */
 
 /* Tools */
+
         A list of tools my site leverages to implement IndieWeb functionality.
         - Njalla: https://njal.la/
         - GitHub Pages: https://pages.github.com
 
 /* Strategies */
+
         - Syndication: https://alexzeecomedy.com/pages/posse
   
 /* Why */
+
         - Guiding Principles: https://alexzeecomedy.com/pages/why
 
 /* IndieMark Score */
+
         TBA
 
-/* Reference Information */
+/* Reference Information *
+
         - handle: alexzeecomedy
         - name: Alex Zee
         - font-color: #f0f0f0

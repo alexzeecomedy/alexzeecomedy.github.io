@@ -1,7 +1,8 @@
 /* TEAM */
 
         Webmaster: Alex Zee
-        Site: alex [at] alexzeecomedy.com
+        Email: alex [at] alexzeecomedy.com
+        Site: alexzeecomedy.com
         Twitter: @alexzeecomedy
         Location: Huntsville, Alabama
 
@@ -12,6 +13,11 @@
         Jon
 
 /* SITE */
-        Last update: 2025/07/09 
+
+        Last update: 2025/07/10 
         Standards: HTML5, CSS3, SVG, JS
         Software: VSCodium
+
+/* CAREER */
+
+        Available for booking at alex@alexzeecomedy.com
