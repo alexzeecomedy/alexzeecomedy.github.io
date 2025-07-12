@@ -7,6 +7,7 @@
     <outline text="The Perry Bible Fellowship" title="The Perry Bible Fellowship" type="rss" xmlUrl="https://pbfcomics.com/feed/" htmlUrl="https://pbfcomics.com"/>
     <outline text="xkcd" title="xkcd" type="rss" xmlUrl="https://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
     <outline text="Privacy Guides - Articles" title="Privady Guides - Articles" type="rss" xmlUrl="https://www.privacyguides.org/articles/feed_rss_created.xml" htmlUrl="https://www.privacyguides.org/articles"/>
-    <outline text="Privacy Guides - Articles" title="Privady Guides - Articles" type="rss" xmlUrl="https://feed.alternativeto.net/news/all/" htmlUrl="https://alternativeto.net/news/all/"/>
+    <outline text="Alternative To - Tech News" title="Alternative To - Tech News" type="rss" xmlUrl="https://feed.alternativeto.net/news/all/" htmlUrl="https://alternativeto.net/news/all/"/>
+    <outline text="The Pragmatic Papers - Volumes" title="The Pragmatic Papers - Volumes" type="rss" xmlUrl="https://pragmaticpapers.com/feed.volumes" htmlUrl="https://pragmaticpapers.com/"/>
   </body>
 </opml>
