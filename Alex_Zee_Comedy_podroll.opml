@@ -5,5 +5,6 @@
   </head>
   <body>
     <outline text="Radiolab" title="Radiolab" type="rss" xmlUrl="https://feeds.simplecast.com/EmVW7VGp" htmlUrl="https://radiolab.org"/>
+    <outline text="Jordan, Jesse, Go!" title="Jordan, Jesse, Go!" type="rss" xmlUrl="https://feeds.simplecast.com/NDAi3mtz" htmlUrl="https://maximumfun.org/podcasts/jordan-jesse-go/"/>  
   </body>
 </opml>
