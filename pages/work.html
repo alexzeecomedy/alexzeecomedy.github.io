@@ -14,7 +14,7 @@
 	    style-src 'self' 'unsafe-inline';
 	    img-src 'self' data: https://img.shields.io https://inv.nadeko.net https://spectra.video https://player.rss.com; 
 	    font-src 'self'; 
-	    connect-src 'self';
+	    connect-src 'self' https://octothorp.es;
 	    frame-src 'self' https://inv.nadeko.net https://spectra.video https://player.rss.com;"
    >
     <meta name="robots" content="noai, noimageai, noml">
@@ -281,12 +281,19 @@
           {
             "@type": "ListItem",
             "position": 2,
+            "name": "Pages",
+            "item": "https://alexzeecomedy.com/pages/"
+          }
+          {
+            "@type": "ListItem",
+            "position": 3,
             "name": "Work",
             "item": "https://alexzeecomedy.com/pages/work"
           }
         ]
       }
     </script>
+    <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://alexzeecomedy.com/pages/work">
     <link
       rel="preload"
       href="/styles.css"
