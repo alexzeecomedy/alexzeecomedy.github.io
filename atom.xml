@@ -1,5 +1,5 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Alex Zee Comedy Blog</title>
+  <title>Alex Zee Comedy Blog - Atom</title>
   <subtitle>Blog of stand-up comedian, Alex Zee</subtitle>
   <link href="https://alexzeecomedy.com/pages/pages/blog/"/>
   <link href="https://alexzeecomedy.com/atom.xml" rel="self"/>
@@ -12,7 +12,7 @@
 
   <entry>
     <title>Gnatography 1</title>
-    <link href="https://alexzeecomedy.com/pages/blog/062725.html"/>
+    <link href="https://alexzeecomedy.com/pages/blog/062725"/>
     <id>https://alexzeecomedy.com/pages/blog/062725</id>
     <updated>2025-06-27T22:07:00Z</updated>
     <summary>My girlfriend, Gnat, just got a new old camera and they are really enjoying the pictures they're getting out of it! Edited with Darktable.</summary>

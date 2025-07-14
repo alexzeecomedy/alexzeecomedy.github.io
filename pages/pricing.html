@@ -6,7 +6,6 @@
 -->
   <head>
     <meta charset="UTF-8">
-
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self';"
@@ -105,14 +104,26 @@
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="RSS"
+      title="Alex Zee Comedy Blog - RSS"
       href="/rss.xml"
    >
     <link
       rel="alternate"
       type="application/atom+xml"
-      title="Alex Zee Comedy Blog"
+      title="Alex Zee Comedy Blog - Atom"
       href="/atom.xml"
+   >
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Notes - RSS"
+      href="/pages/feeds/Alex_Zee_Comedy_notes_rss.xml"
+   >
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Notes - Atom"
+      href="/pages/feeds/Alex_Zee_Comedy_notes_atom.xml"
    >
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -132,7 +143,7 @@
       <div class="nav-header">
         <h3>
           <span class="site-title"
-            ><a href="/">Alex Ƶee Comedy</a>
+            ><a href="/" rel="home">Alex Ƶee Comedy</a>
           </span>
         </h3>
         <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation">
