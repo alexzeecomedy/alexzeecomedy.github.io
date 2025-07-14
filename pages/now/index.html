@@ -1,68 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr" translate="yes">
   <!--
   Oh so you're an inspector?
   View the source here: https://github.com/alexzeecomedy/alexzeecomedy.github.io
 -->
   <head>
     <meta charset="UTF-8">
-
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://status.cafe; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://status.cafe;"
    >
     <meta name="robots" content="noai, noimageai, noml">
-    <link rel="canonical" href="https://alexzeecomedy.com/pages/now/">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://alexzeecomedy.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Pages",
-            "item": "https://alexzeecomedy.com/pages/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Now",
-            "item": "https://alexzeecomedy.com/pages/now/"
-          }
-        ]
-      }
-    </script>
-    <link
-      rel="preload"
-      href="/styles.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-   >
-    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="RSS"
-      href="/rss.xml"
-   >
-    <link
-      rel="alternate"
-      type="application/atom+xml"
-      title="Alex Zee Comedy Blog"
-      href="/atom.xml"
-   >
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-
-    <title>Alex Zee Comedy - Now</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <meta
+        <meta
       name="description"
       content="What stand-up comedian Alex Zee is up to right now."
    >
@@ -114,6 +63,55 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="fediverse:creator" content="@alexzeecomedy@mastodon.social">
+    <title>Alex Zee Comedy - Now</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://alexzeecomedy.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pages",
+            "item": "https://alexzeecomedy.com/pages/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Now",
+            "item": "https://alexzeecomedy.com/pages/now/"
+          }
+        ]
+      }
+    </script>
+    <link rel="canonical" href="https://alexzeecomedy.com/pages/now/">
+    <link
+      rel="preload"
+      href="/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+   >
+    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="/rss.xml"
+   >
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Alex Zee Comedy Blog"
+      href="/atom.xml"
+   >
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body>
     <header>
@@ -129,14 +127,14 @@
      >
       <div class="nav-header">
         <h3>
-          <span class="site-title"><a href="/">Alex Ƶee Comedy</a></span>
+          <span class="site-title"><a href="/" rel="home">Alex Ƶee Comedy</a></span>
         </h3>
         <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation">
           <span class="hamburger-icon"></span>
         </label>
       </div>
       <div class="nav-links">
-        <a href="/">Home</a>
+        <a href="/" rel="home">Home</a>
         <a href="/pages/about">About</a>
         <a href="/pages/blog/">Blog</a>
         <a href="/pages/notes/">Notes</a>
@@ -152,7 +150,7 @@
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
       <ol class="breadcrumb-list">
         <li class="breadcrumb-item">
-          <a href="/">Home</a>
+          <a href="/" rel="home">Home</a>
         </li>
         <li class="breadcrumb-item">
           <a href="/pages/">/Pages</a>
@@ -165,11 +163,11 @@
     <section class="about-section">
       <h2>What I'm into</h2>
       <p>
-          <a href="https://nownownow.com/p/R8N4"
-            >Listed on nownownow.com
-            <i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </p>
+        <a href="https://nownownow.com/p/R8N4"
+          >Listed on nownownow.com
+          <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </p>
       <div class="social-grid">
         <div
           class="social-item notes"
@@ -317,30 +315,30 @@
           <div>Skill 88/99, Uniqueness Uniqueness 1 in 708</div>
         </div>
         <div
-              class="social-item status"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/playing/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
-            >
-              <i class="fa-solid fa-glass-water fa-2x red-icon"></i>
-              <h3>status.cafe</h3>
+          class="social-item status"
+          style="cursor: pointer"
+          onclick="window.open('/pages/now/playing/', '_self')"
+          tabindex="0"
+          role="link"
+          onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
+        >
+          <i class="fa-solid fa-glass-water fa-2x red-icon"></i>
+          <h3>status.cafe</h3>
 
-              <div id="statuscafe">
-                <div id="statuscafe-username"></div>
-                <div id="statuscafe-content"></div>
-              </div>
-              <script
-                src="https://status.cafe/current-status.js?name=alexzeecomedy"
-                defer
-              ></script>
-            </div>
+          <div id="statuscafe">
+            <div id="statuscafe-username"></div>
+            <div id="statuscafe-content"></div>
+          </div>
+          <script
+            src="https://status.cafe/current-status.js?name=alexzeecomedy"
+            defer
+          ></script>
+        </div>
       </div>
     </section>
     <footer>
       <p>
-        <a href="/">Home</a> | <a href="/pages/contact">Contact</a> |
+        <a href="/" rel="home">Home</a> | <a href="/pages/contact">Contact</a> |
         <a href="/pages/privacy">Privacy Policy</a> |
         <a href="/pages/colophon">Colophon</a> |
         <a href="/pages/accessibility">Accessibility Statement</a>
