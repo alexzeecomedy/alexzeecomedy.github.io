@@ -138,7 +138,7 @@
       }
     </script>
     <script
-      async=""
+      async
       type="module"
       data-register="https://octothorp.es/"
       src="https://octothorp.es/tag.js"
@@ -213,7 +213,7 @@
       <h1>Alex Zee Comedy - Home</h1>
       <h2>The online landing page for stand-up comedian, Alex Zee.</h2>
     </header>
-    <nav>
+    <nav aria-label="nav toggle">
       <input
         type="checkbox"
         id="nav-toggle"
@@ -333,7 +333,6 @@
             alt="Alex Zee Comedy Logo"
             width="32"
             height="32"
-            style="width: 32px; margin-bottom: 1em"
          >
           <h2>
             <span class="p-honorific-prefix">Mr.</span>
@@ -476,10 +475,10 @@
               >Reddit</a
             >
           </p>
-          <div class="p-category" style="margin-bottom: 1em">
+          <div class="p-category">
             Stand-up, Comedy, Writing, Video Editing, Podcasting, Art
           </div>
-          <div class="p-adr" style="font-size: 0.95em">
+          <div class="p-adr">
             <span class="p-post-office-box">PO Box 1012</span><br>
             <span class="p-locality">Madison</span>,
             <span class="p-region">AL</span>
@@ -554,14 +553,7 @@
             comedian, Alex Zee. Consume responsibly.
           </h3>
           <div class="social-grid">
-            <div
-              class="social-item notes"
-              style="cursor: pointer"
-              onclick="window.open('/pages/notes/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/notes/', '_self')"
-            >
+            <a href="/pages/notes/" class="social-item notes">
               <i class="fa-solid fa-note-sticky fa-2x"></i>
               <h3>Latest Note:</h3>
               <div>2025-07-03 09:08:45 CDT</div>
@@ -570,43 +562,22 @@
                 comfortable saying I don't understand the show lol
               </div>
               <div><b>Read my notes here.</b></div>
-            </div>
-            <div
-              class="social-item pages"
-              style="cursor: pointer"
-              onclick="window.open('/pages/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/', '_self')"
-            >
+            </a>
+            <a href="/pages/pages/" class="social-item pages">
               <i
                 class="fa-solid fa-slash fa-2x red-icon fa-flip-horizontal"
               ></i>
               <h3>/Pages</h3>
               <div>Check out my slash pages directory!</div>
-            </div>
-            <div
-              class="social-item blog"
-              style="cursor: pointer"
-              onclick="window.open('/pages/blog/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/blog/', '_self')"
-            >
+            </a>
+            <a href="/pages/blog/" class="social-item blog">
               <i class="fa-solid fa-blog fa-2x orange-icon"></i>
               <h3>Latest Blog Post:</h3>
               <div>2025-06-27 17:00:00 CDT</div>
               <div>Gnatography</div>
               <div><b>Read my blog here.</b></div>
-            </div>
-            <div
-              class="social-item now"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/', '_self')"
-            >
+            </a>
+            <a href="/pages/now/" class="social-item now">
               <i class="fa-solid fa-arrow-down fa-2x yellow-icon"></i>
               <h3>/Now</h3>
               <div>Playing</div>
@@ -614,29 +585,15 @@
               <div>Listening</div>
               <div>Watching</div>
               <div>Etc.</div>
-            </div>
-            <div
-              class="social-item verify"
-              style="cursor: pointer"
-              onclick="window.open('/pages/verify', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/verify', '_self')"
-            >
+            </a>
+            <a href="/pages/verify" class="social-item verify">
               <i class="fa-solid fa-circle-check fa-2x green-icon"></i>
               <h3>/Verify</h3>
               <div>
                 Make sure it's me you're following and not some other doofus.
               </div>
-            </div>
-            <div
-              class="social-item about"
-              style="cursor: pointer"
-              onclick="window.open('/pages/about', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/about', '_self')"
-            >
+            </a>
+            <a href="/pages/about" class="social-item about">
               <i class="fa-solid fa-address-card fa-2x blue-icon"></i>
               <h3>/About</h3>
               <div>A page all about me.</div>
@@ -653,27 +610,13 @@
                   alt="Status Cafe Profile"
                >
               </div>
-            </div>
-            <div
-              class="social-item interests"
-              style="cursor: pointer"
-              onclick="window.open('/pages/interests', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/interests', '_self')"
-            >
+            </a>
+            <a href="/pages/interests" class="social-item interests">
               <i class="fa-solid fa-fire fa-2x indigo-icon"></i>
               <h3>/Interests</h3>
               <div>Things I'm interested and passionate about.</div>
-            </div>
-            <div
-              class="social-item wordle"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/playing/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
-            >
+            </a>
+            <a href="/pages/now/playing/wordle" class="social-item wordle">
               <i class="fa-solid fa-w fa-2x purple-icon"></i>
               <h3>Latest Wordle</h3>
 
@@ -685,14 +628,10 @@
               <div>⬛🟦🟧⬛🟦</div>
               <div>🟧🟧🟧🟧🟧</div>
               <div>WordleBot: Skill 67/99, Luck 51/99</div>
-            </div>
-            <div
+            </a>
+            <a
+              href="/pages/now/playing/connections"
               class="social-item connections"
-              style="cursor: pointer"
-              onclick="window.open('/pages/now/playing/', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/now/playing/', '_self')"
             >
               <i class="fa-solid fa-border-all fa-2x"></i>
               <h3>Latest Connections</h3>
@@ -705,15 +644,8 @@
               <div>🟦🟦🟦🟦</div>
               <div>🟪🟪🟪🟪</div>
               <div>Skill 88/99, Uniqueness Uniqueness 1 in 708</div>
-            </div>
-            <div
-              class="social-item status"
-              style="cursor: pointer"
-              onclick="window.open('/pages/about', '_self')"
-              tabindex="0"
-              role="link"
-              onkeydown="if(event.key === 'Enter') window.open('/pages/about', '_self')"
-            >
+            </a>
+            <a href="/pages/about" class="social-item status">
               <i class="fa-solid fa-glass-water fa-2x red-icon"></i>
               <h3>status.cafe</h3>
               <div id="statuscafe">
@@ -724,7 +656,7 @@
                 src="https://status.cafe/current-status.js?name=alexzeecomedy"
                 defer
               ></script>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -1050,8 +982,8 @@
               id="melonland-surf-club"
               data="/assets/artwork/surf-badge.svg?fill=#ffffff"
               type="image/svg+xml"
-              style="width: 100px; height: 100px"
               title="Inner icon: Melonland Surf Club, Outer ring: Surf the webring"
+              class="melon"
             ></object>
           </p>
           <p>
@@ -1119,87 +1051,37 @@
               >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
           </p>
-          <div
-            style="
-              width: 100%;
-              margin: 0 auto;
-              text-align: center;
-              text-shadow: 0 0 4px red;
-            "
-          >
-            <p
-              style="
-                margin: 0;
-                padding: 0.1em;
-                border: ridge grey 4px;
-                background-color: #161616;
-                color: #ff8700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
+          <div class="webring-container">
+            <p class="webring-title">
               <img
                 src="/assets/artwork/rssring.png"
                 alt="RSS Ring"
-                style="
-                  height: 12px;
-                  image-rendering: pixelated;
-                  margin-right: 0.5em;
-                  filter: drop-shadow(0 0 4px red);
-                "
-             ><a
-                style="color: #ff8700; text-decoration: none"
+                class="webring-img webring-img-left"
+             >
+              <a
+                class="webring-title-link"
                 href="https://mxbo.neocities.org/rss/ring.html"
                 >The RSS Webring</a
-              ><img
+              >
+              <img
                 src="/assets/artwork/rssring.png"
                 alt="RSS Ring"
-                style="
-                  height: 12px;
-                  image-rendering: pixelated;
-                  margin-left: 0.5em;
-                  filter: drop-shadow(0 0 4px red);
-                "
+                class="webring-img webring-img-right"
              >
             </p>
-            <div style="display: flex; justify-content: center">
+            <div class="webring-nav">
               <a
-                style="
-                  flex: 1;
-                  margin: 0;
-                  padding: 0.1em;
-                  border: ridge grey 4px;
-                  background-color: #161616;
-                  color: #ffdc60;
-                  text-align: center;
-                "
+                class="webring-link"
                 href="https://webri.ng/webring/rssring/previous?via=https%3A%2F%2Falexzeecomedy.com"
                 >← Previous</a
               >
               <a
-                style="
-                  flex: 1;
-                  margin: 0;
-                  padding: 0.1em;
-                  border: ridge grey 4px;
-                  background-color: #161616;
-                  text-align: center;
-                  color: #ffdc60;
-                "
+                class="webring-link"
                 href="https://webri.ng/webring/rssring/random?via=https%3A%2F%2Falexzeecomedy.com"
                 >Random</a
               >
               <a
-                style="
-                  flex: 1;
-                  margin: 0;
-                  padding: 0.1em;
-                  border: ridge grey 4px;
-                  background-color: #161616;
-                  text-align: center;
-                  color: #ffdc60;
-                "
+                class="webring-link"
                 href="https://webri.ng/webring/rssring/next?via=https%3A%2F%2Falexzeecomedy.com"
                 >Next →</a
               >
@@ -1342,7 +1224,7 @@
           loading="lazy"
        >
         <textarea>
-<a href="https://alexzeecomedy.com"><img src="path/to/alexzeecomedybutton.webp" alt="Alexzeecomedy.com" width="88" height="31" loading="lazy"></a></textarea
+&lt;a href=&quot;https://alexzeecomedy.com&quot;&gt;&lt;img src=&quot;path/to/alexzeecomedybutton.webp&quot; alt=&quot;Alexzeecomedy.com&quot; width=&quot;88&quot; height=&quot;31&quot; loading=&quot;lazy&quot;&gt;&lt;/a&gt;</textarea
         >
         <a class="button-link" href="/pages/links">More /Links</a>
         <p>
@@ -1357,25 +1239,27 @@
         </p>
         <h3>Johnvertisement</h3>
         <iframe
+          class="johnvertisement"
           src="https://john.citrons.xyz/embed?ref=alexzeecomedy.com"
-          style="max-width: 732px; width: 100%; height: 94px; border: none"
           loading="lazy"
+          title="johnvertisement"
         ></iframe>
         <h3>BannerLink Ad</h3>
         <iframe
-          style="max-width: 468px; width: 100%; height: 60px; border: none"
           src="https://hbaguette.neocities.org/bannerlink/embed.html"
           name="bannerlink"
+          class="bannerlink"
           loading="lazy"
+          title="bannerlink"
         ></iframe>
         <h3>NavLink Ad</h3>
         <iframe
           width="180"
           height="180"
-          style="border: none"
           src="https://dimden.neocities.org/navlink/"
           name="neolink"
           loading="lazy"
+          title="navlink ad"
         ></iframe>
       </section>
     </div>
@@ -1437,7 +1321,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/web-pi.png"
@@ -1469,7 +1352,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           src="/assets/artwork/vcss.webp"
           width="88"
           height="31"
@@ -1478,7 +1360,6 @@
           title="Valid CSS"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/microformats88x31-flat.webp"
@@ -1486,7 +1367,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/webmentions_anim.gif"
@@ -1501,7 +1381,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/Created-By-a-Human-Not-By-AI-Badge-white.svg"
@@ -1509,7 +1388,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/class-B.svg"
@@ -1517,7 +1395,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/anibrows.gif"
@@ -1525,7 +1402,6 @@
           loading="lazy"
        >
         <img
-          style="border: 0; width: 88px; height: 31px"
           width="88"
           height="31"
           src="/assets/artwork/class-b.png"
@@ -1537,9 +1413,7 @@
         <small>Version 1.0.0</small>
       </p>
     </footer>
-    <div style="text-align: right">
-      <a href="https://cd5k.net/tau/">&tau;</a>
-    </div>
+    <a href="https://cd5k.net/tau/">&tau;</a>
   </body>
   <!--                            .:xxxxxxxx:.
                              .xxxxxxxxxxxxxxxx.
