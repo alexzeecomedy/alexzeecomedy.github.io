@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://milkyway.moe https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://john.citrons.xyz https://milkyway.moe https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://octothorp.es https://xandra.cc; img-src 'self' data: https://img.shields.io https://milkyway.moe https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc; connect-src 'self' https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://milkyway.moe https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://john.citrons.xyz https://milkyway.moe https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://octothorp.es https://xandra.cc; img-src 'self' data: https://img.shields.io https://milkyway.moe https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc; connect-src 'self' https://code.jquery.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -167,11 +167,32 @@
         ]
       }
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch(
+          "https://webmention.io/api/count?target=https://alexzeecomedy.com"
+        )
+          .then((response) => response.json())
+          .then((responseJson) => {
+            console.log(responseJson);
+            const countElement = document.getElementById("webmention-count");
+            if (countElement) {
+              countElement.textContent = `Webmentions: ${
+                responseJson.count || 0
+              }`;
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching webmentions:", error)
+          );
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
-      defer></script>
+      defer
+    ></script>
     <script
       async
       type="module"
@@ -779,7 +800,8 @@
           <br>
           <cite> Wikipedia: Webring</cite>
         </blockquote>
-        <span data-webmention-count data-url="https://alexzeecomedy.com"></span> mentions
+        <span data-webmention-count data-url="https://alexzeecomedy.com"></span>
+        mentions
         <script src="https://webmention.io/js/mentions.js" defer></script>
         <details class="more-details">
           <summary>Webrings</summary>
@@ -1208,8 +1230,14 @@
             ></a>
           </p>
           <div id="focusfirst-webring">
-            <script src="https://www.beepbird.net/webring/onionring-variables.js" defer></script>
-            <script src="https://www.beepbird.net/webring/onionring-widget.js" defer></script>
+            <script
+              src="https://www.beepbird.net/webring/onionring-variables.js"
+              defer
+            ></script>
+            <script
+              src="https://www.beepbird.net/webring/onionring-widget.js"
+              defer
+            ></script>
             <noscript
               ><a href="https://www.beepbird.net/index.html"
                 ><img
@@ -1239,9 +1267,7 @@
             loading="lazy">
           <i class="fa-solid fa-arrow-up-right-from-square"></i
         ></a>
-        <a
-          href="https://smoothsailing.asclaria.org/"
-          target="_blank"
+        <a href="https://smoothsailing.asclaria.org/" target="_blank"
           ><img
             src="/assets/artwork/microbutton.png"
             alt="Listed @ smoothsailing.asclaria.org"
