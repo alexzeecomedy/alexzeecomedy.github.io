@@ -168,28 +168,33 @@
       }
     </script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://webmention.io/api/count?target=https://alexzeecomedy.com")
-      .then((response) => response.json())
-      .then((responseJson) => {
-        console.log(responseJson); // For debugging
-        const countElement = document.getElementById("webmention-count");
-        if (countElement) {
-          countElement.textContent = `Webmentions: ${responseJson.count || 0}`;
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching webmentions:", error);
-        const countElement = document.getElementById("webmention-count");
-        if (countElement) countElement.textContent = "Webmentions: Error";
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch(
+          "https://webmention.io/api/count?target=https://alexzeecomedy.com"
+        )
+          .then((response) => response.json())
+          .then((responseJson) => {
+            console.log(responseJson); // For debugging
+            const countElement = document.getElementById("webmention-count");
+            if (countElement) {
+              countElement.textContent = `Webmentions: ${
+                responseJson.count || 0
+              }`;
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching webmentions:", error);
+            const countElement = document.getElementById("webmention-count");
+            if (countElement) countElement.textContent = "Webmentions: Error";
+          });
       });
-  });
     </script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
       defer
+      async
     ></script>
     <script
       async
@@ -378,24 +383,28 @@
             alt="Clown College Podcast"
             height="64"
             width="64"
+            loading="lazy"
          >
           <img
             src="/assets/artwork/donttellcomedy-1200x800.webp"
             alt="Don't Tell Comedy"
             height="64"
             width="96"
+            loading="lazy"
          >
           <img
             src="/assets/artwork/epiccomedyhour.webp"
             alt="Epic Comedy Hour"
             height="64"
             width="64"
+            loading="lazy"
          >
           <img
             src="/assets/artwork/bphd.svg"
             alt="Black Panther/Hidden Dragon"
             height="64"
             width="64"
+            loading="lazy"
          >
         </div>
         <h3>
@@ -419,6 +428,7 @@
             alt="Alex Zee"
             width="120"
             height="120"
+            loading="lazy"
          >
           <img
             class="u-logo"
@@ -426,6 +436,7 @@
             alt="Alex Zee Comedy Logo"
             width="32"
             height="32"
+            loading="lazy"
          >
           <h2>
             <span class="p-honorific-prefix">Mr.</span>
@@ -695,12 +706,14 @@
                 <img
                   src="https://moods.imood.com/display/uname-alexzeecomedy/fg-FFFFFF/bg-2a2a2a/imood.gif"
                   alt="The current mood of alexzeecomedy at www.imood.com"
+                  loading="lazy"
                >
               </div>
               <div>
                 <img
                   src="https://status.cafe/users/alexzeecomedy/badge.png"
                   alt="Status Cafe Profile"
+                  loading="lazy"
                >
               </div>
             </a>
@@ -748,6 +761,7 @@
               <script
                 src="https://status.cafe/current-status.js?name=alexzeecomedy"
                 defer
+                async
               ></script>
             </a>
           </div>
@@ -798,8 +812,14 @@
           <br>
           <cite> Wikipedia: Webring</cite>
         </blockquote>
-        <span id="webmention-count" data-webmention-count data-url="https://alexzeecomedy.com">Loading...</span> mentions
-        <script src="https://webmention.io/js/mentions.js" defer></script>
+        <span
+          id="webmention-count"
+          data-webmention-count
+          data-url="https://alexzeecomedy.com"
+          >Loading...</span
+        >
+        mentions
+        <script src="https://webmention.io/js/mentions.js" defer async></script>
         <details class="more-details">
           <summary>Webrings</summary>
           <p>
@@ -998,6 +1018,22 @@
             ></a>
           </div>
           <p>
+            <a
+              href="https://webmasterwebring.netlify.app?alexzeecomedy-previous"
+              ><i
+                class="fa-solid fa-arrow-up-right-from-square fa-flip-horizontal"
+              ></i>
+              Previous</a
+            >
+            <a href="https://webmasterwebring.netlify.app">Webmaster Webring</a>
+            <a href="https://webmasterwebring.netlify.app?alexzeecomedy-random"
+              >Random <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="https://webmasterwebring.netlify.app?alexzeecomedy-next"
+              >Next <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </p>
+          <p>
             <a href="https://theforest.link"
               >The Forest <i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
@@ -1009,35 +1045,45 @@
             <script
               src="https://town.thecozy.cat/wp-content/onionring/onionring-variables.js?v=1.0"
               defer
+              async
             ></script>
             <script
               src="https://town.thecozy.cat/wp-content/onionring/onionring-widget.js"
               defer
+              async
             ></script>
           </div>
           <div id="sovereignwebring">
             <script
               src="https://sovereignweb.thecozy.cat/wp-content/onionring/onionring-variables.js"
               defer
+              async
             ></script>
             <script
               src="https://sovereignweb.thecozy.cat/wp-content/onionring/onionring-widget.js"
               defer
+              async
             ></script>
           </div>
           <div id="onlinewire-webring">
             <script
               src="https://milkyway.moe/onlinewire/onionring-variables.js"
               defer
+              async
             ></script>
             <script
               src="https://milkyway.moe/onlinewire/onionring-widget.js"
               defer
+              async
             ></script>
           </div>
           <div class="safontz">
-            <script src="https://xandra.cc/safonts/webring.js" defer></script>
-            <ring-900 site="https://alexzeecomedy.com/"></ring-900>
+            <script
+              src="https://xandra.cc/safonts/webring.js"
+              defer
+              async
+            ></script>
+            <ring-900 site="https://alexzeecomedy.com"></ring-900>
           </div>
           <div>
             <map name="genlissawidget">
@@ -1078,7 +1124,8 @@
               usemap="#genlissawidget"
               src="/assets/artwork/widget.gif"
               alt="a yellow rectangle with the words 'I'm generation Lissa' in pink and purple. to the left and right are double arrows in pink, and to the top right is a purple question mark"
-           >
+              loading="lazy"
+              >
           </div>
           <p>
             <object
@@ -1160,6 +1207,7 @@
                 src="/assets/artwork/rssring.png"
                 alt="RSS Ring"
                 class="webring-img webring-img-left"
+                loading="lazy"
              >
               <a
                 class="webring-title-link"
@@ -1170,6 +1218,7 @@
                 src="/assets/artwork/rssring.png"
                 alt="RSS Ring"
                 class="webring-img webring-img-right"
+                loading="lazy"
              >
             </p>
             <div class="webring-nav">
@@ -1230,19 +1279,21 @@
             <script
               src="https://www.beepbird.net/webring/onionring-variables.js"
               defer
+              async
             ></script>
             <script
               src="https://www.beepbird.net/webring/onionring-widget.js"
               defer
+              async
             ></script>
             <noscript
               ><a href="https://www.beepbird.net/index.html"
                 ><img
                   src="https://www.beepbird.net/webring/focusfirst.png"
-                  alt="Focus First Index"></a
+                  alt="Focus First Index"
+                  loading="lazy"></a
             ></noscript>
           </div>
-          <a href="https://webmasterwebring.netlify.app?alexzeecomedy-previous">&larr;</a> <a href="https://webmasterwebring.netlify.app">Webmaster Webring</a> <a href="https://webmasterwebring.netlify.app?alexzeecomedy-random">?</a> <a href="https://webmasterwebring.netlify.app?alexzeecomedy-next">&rarr;</a>
         </details>
       </section>
       <section id="clubs">
@@ -1379,14 +1430,13 @@
         ></a>
         <a href="https://smallworld.mizuki.world/"
           ><img
-            src="/assets/artwork/button (1).png"
+            src="/assets/artwork/button1.png"
             width="88"
             height="31"
             loading="lazy"
             alt="Small World, a listing for artists of all kinds on the small web!">
           <i class="fa-solid fa-arrow-up-right-from-square"></i
         ></a>
-        <a target="_blank" href="https://webmasterwebring.netlify.app"><img src="/assets/artwork/9S1iwM8.png" width="88" height="31" loading="lazy" alt="Webmaster webring"></a>
         <p>
           <a href="https://uses.tech/" rel="directory"
             >/Uses Directory
