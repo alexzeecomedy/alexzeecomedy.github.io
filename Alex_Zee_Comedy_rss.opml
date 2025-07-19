@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Alex Zee Comedy - RSS Feeds</title>
+  </head>
+  <body>
+    <outline text="Alex Zee Comedy Blog - RSS" title="Alex Zee Comedy Blog - RSS" type="rss" xmlUrl="https://alexzeecomedy.com/rss.xml" htmlUrl="https://alexzeecomedy.com/pages/blog/"/>
+    <outline text="Alex Zee Comedy Notes - RSS" title="Alex Zee Comedy Notes - RSS" type="rss" xmlUrl="https://alexzeecomedy.com/pages/feeds/Alex_Zee_Comedy_notes_rss.xml" htmlUrl="https://alexzeecomedy.com/pages/notes"/>
+    <outline text="Alex Zee Comedy" title="Alex Zee Comedy" type="rss" xmlUrl="https://mastodon.social/@alexzeecomedy.rss" htmlUrl="https://mastodon.social/@alexzeecomedy"/>
+  </body>
+</opml>
