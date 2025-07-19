@@ -203,38 +203,42 @@
     <header>
       <h1>Alex Zee Comedy - Hello</h1>
       <h2>Hello page of stand-up comedian, Alex Zee.</h2>
+      <nav aria-label="nav toggle">
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle-checkbox"
+          hidden
+       >
+        <div class="nav-header">
+          <h3>
+            <span class="site-title"
+              ><a href="/" rel="home">Alex Ƶee Comedy</a>
+            </span>
+          </h3>
+          <label
+            for="nav-toggle"
+            class="nav-toggle"
+            aria-label="Open navigation"
+          >
+            <span class="menu-text">Menu</span>
+          </label>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/pages/about">About</a></li>
+          <li><a href="/pages/blog/">Blog</a></li>
+          <li><a href="/pages/notes/">Notes</a></li>
+          <li><a href="/pages/community">Community</a></li>
+          <li><a href="/pages/work">Work</a></li>
+          <li><a href="/pages/contact">Contact</a></li>
+          <li><a href="/pages/tip">Tip</a></li>
+          <li><a href="/pages/tour/">Tour</a></li>
+          <li><a href="/pages/links">Links</a></li>
+          <li><a href="/pages/">/Pages</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav aria-label="nav toggle">
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle-checkbox"
-        hidden
-     >
-      <div class="nav-header">
-        <h3>
-          <span class="site-title"
-            ><a href="/" rel="home">Alex Ƶee Comedy</a>
-          </span>
-        </h3>
-        <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation">
-          <span class="menu-text">Menu</span>
-        </label>
-      </div>
-      <div class="nav-links">
-        <a href="/" rel="home">Home</a>
-        <a href="/pages/about">About</a>
-        <a href="/pages/blog/">Blog</a>
-        <a href="/pages/notes/">Notes</a>
-        <a href="/pages/community">Community</a>
-        <a href="/pages/work">Work</a>
-        <a href="/pages/contact">Contact</a>
-        <a href="/pages/tip">Tip</a>
-        <a href="/pages/tour/">Tour</a>
-        <a href="/pages/links">Links</a>
-        <a href="/pages/">/Pages</a>
-      </div>
-    </nav>
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
       <ol class="breadcrumb-list">
         <li class="breadcrumb-item">
@@ -265,16 +269,15 @@
           >
             <path
               d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM168,144a8,8,0,0,1-16,0V115.31l-50.34,50.35a8,8,0,0,1-11.32-11.32L140.69,104H112a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8Z"
-            ></path>
-          </svg></a>
+            ></path></svg
+        ></a>
       </p>
       <ul class="no-bullet-list">
         <li>
           My prefered contact method is
           <a
             href="https://signal.me/#eu/NKlfblIbUHuHH_5O8RizoJWSUKRT6CAgGiiJT9ap0any3xBE-zdAFonRLZD-WBaT"
-            >Signal
-            <svg
+            >Signal<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -321,8 +324,8 @@
           >
             <path
               d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM168,144a8,8,0,0,1-16,0V115.31l-50.34,50.35a8,8,0,0,1-11.32-11.32L140.69,104H112a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8Z"
-            ></path>
-          </svg></a>
+            ></path></svg
+        ></a>
         under the terms of the
         <a href="/license.txt">Free Art License</a>.
       </p>

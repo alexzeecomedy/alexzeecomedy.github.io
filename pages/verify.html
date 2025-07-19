@@ -203,38 +203,42 @@
     <header>
       <h1>Alex Zee Comedy - Verify</h1>
       <h2>Verified online presences of stand-up comedian, Alex Zee.</h2>
+      <nav aria-label="nav toggle">
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle-checkbox"
+          hidden
+       >
+        <div class="nav-header">
+          <h3>
+            <span class="site-title"
+              ><a href="/" rel="home">Alex Ƶee Comedy</a>
+            </span>
+          </h3>
+          <label
+            for="nav-toggle"
+            class="nav-toggle"
+            aria-label="Open navigation"
+          >
+            <span class="menu-text">Menu</span>
+          </label>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/pages/about">About</a></li>
+          <li><a href="/pages/blog/">Blog</a></li>
+          <li><a href="/pages/notes/">Notes</a></li>
+          <li><a href="/pages/community">Community</a></li>
+          <li><a href="/pages/work">Work</a></li>
+          <li><a href="/pages/contact">Contact</a></li>
+          <li><a href="/pages/tip">Tip</a></li>
+          <li><a href="/pages/tour/">Tour</a></li>
+          <li><a href="/pages/links">Links</a></li>
+          <li><a href="/pages/">/Pages</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav aria-label="nav toggle">
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle-checkbox"
-        hidden
-     >
-      <div class="nav-header">
-        <h3>
-          <span class="site-title"
-            ><a href="/" rel="home">Alex Ƶee Comedy</a>
-          </span>
-        </h3>
-        <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation">
-          <span class="menu-text">Menu</span>
-        </label>
-      </div>
-      <div class="nav-links">
-        <a href="/" rel="home">Home</a>
-        <a href="/pages/about">About</a>
-        <a href="/pages/blog/">Blog</a>
-        <a href="/pages/notes/">Notes</a>
-        <a href="/pages/community">Community</a>
-        <a href="/pages/work">Work</a>
-        <a href="/pages/contact">Contact</a>
-        <a href="/pages/tip">Tip</a>
-        <a href="/pages/tour/">Tour</a>
-        <a href="/pages/links">Links</a>
-        <a href="/pages/">/Pages</a>
-      </div>
-    </nav>
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
       <ol class="breadcrumb-list">
         <li class="breadcrumb-item">
@@ -302,8 +306,7 @@
             </svg>
           </div>
           <h3>
-            Mastodon
-            <svg
+            Mastodon<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -342,8 +345,7 @@
             </svg>
           </div>
           <h3>
-            spacehey
-            <svg
+            spacehey<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -377,8 +379,7 @@
             </svg>
           </div>
           <h3>
-            32-Bit Cafe Discourse
-            <svg
+            32-Bit Cafe Discourse<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -412,8 +413,7 @@
             </svg>
           </div>
           <h3>
-            Melonland Forum
-            <svg
+            Melonland Forum<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -447,8 +447,7 @@
             </svg>
           </div>
           <h3>
-            Agora Road Forum
-            <svg
+            Agora Road Forum<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -482,8 +481,7 @@
             </svg>
           </div>
           <h3>
-            Bluesky
-            <svg
+            Bluesky<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -517,8 +515,7 @@
             </svg>
           </div>
           <h3>
-            Pixelfed
-            <svg
+            Pixelfed<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -552,8 +549,7 @@
             </svg>
           </div>
           <h3>
-            PeerTube
-            <svg
+            PeerTube<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -587,8 +583,7 @@
             </svg>
           </div>
           <h3>
-            WriteFreely
-            <svg
+            WriteFreely<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -622,8 +617,7 @@
             </svg>
           </div>
           <h3>
-            X (Formerly Twitter)
-            <svg
+            X (Formerly Twitter)<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -662,8 +656,7 @@
             </svg>
           </div>
           <h3>
-            Threads
-            <svg
+            Threads<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -697,8 +690,7 @@
             </svg>
           </div>
           <h3>
-            GitHub
-            <svg
+            GitHub<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -737,8 +729,7 @@
             </svg>
           </div>
           <h3>
-            Instagram
-            <svg
+            Instagram<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -767,7 +758,10 @@
             </svg>
           </div>
           <h3>Facebook</h3>
-          <a href="https://facebook.com/alexzeecomedy" target="_blank" rel="external"
+          <a
+            href="https://facebook.com/alexzeecomedy"
+            target="_blank"
+            rel="external"
             >Alex Zee Comedy
             <i class="fa-solid fa-arrow-up-right-from-square"></i
           ></a>
@@ -796,8 +790,7 @@
             </svg>
           </div>
           <h3>
-            TikTok
-            <svg
+            TikTok<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -831,8 +824,7 @@
             </svg>
           </div>
           <h3>
-            YouTube
-            <svg
+            YouTube<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -871,8 +863,7 @@
             </svg>
           </div>
           <h3>
-            Twitch
-            <svg
+            Twitch<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -911,8 +902,7 @@
             </svg>
           </div>
           <h3>
-            Kick
-            <svg
+            Kick<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -946,8 +936,7 @@
             </svg>
           </div>
           <h3>
-            Trovo
-            <svg
+            Trovo<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -981,8 +970,7 @@
             </svg>
           </div>
           <h3>
-            Lemmy
-            <svg
+            Lemmy<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1016,8 +1004,7 @@
             </svg>
           </div>
           <h3>
-            Reddit
-            <svg
+            Reddit<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1056,8 +1043,7 @@
             </svg>
           </div>
           <h3>
-            Letterboxd
-            <svg
+            Letterboxd<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1091,8 +1077,7 @@
             </svg>
           </div>
           <h3>
-            Linkedin
-            <svg
+            Linkedin<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1126,8 +1111,7 @@
             </svg>
           </div>
           <h3>
-            Gumroad
-            <svg
+            Gumroad<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1161,8 +1145,7 @@
             </svg>
           </div>
           <h3>
-            Mobilizon
-            <svg
+            Mobilizon<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -1196,8 +1179,7 @@
             </svg>
           </div>
           <h3>
-            Loops
-            <svg
+            Loops<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
