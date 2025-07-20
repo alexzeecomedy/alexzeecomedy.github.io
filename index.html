@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://mastodon.social https://code.jquery.com https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://code.jquery.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://melonking.net https://mastodon.social https://code.jquery.com https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://code.jquery.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -202,13 +202,12 @@
       data-register="https://octothorp.es/"
       src="https://octothorp.es/tag.js"
     ></script>
-    <script
+    <!--<script
       async
-      defer
       type="module"
       data-register="https://octothorp.es/"
       src="https://octothorp.es/ring.js"
-    ></script>
+    ></script>-->
     <link rel="stylesheet" href="https://octothorp.es/tag.css">
     <link
       rel="preload"
@@ -432,14 +431,12 @@
       <div class="main-container">
         <aside class="h-card hcard h-card-style">
           <a class="button-link" href="/pages/hello">/Hello</a>
-          <img
-            class="u-photo"
-            src="/assets/artwork/cheekyzee120.webp"
-            alt="Alex Zee"
-            width="120"
-            height="120"
-            loading="lazy"
-         >
+          <iframe
+            title="Alex Zee Comedy - Webgarden"
+            src="/pages/webgarden.html"
+            height="250"
+            width="250"
+          ></iframe>
           <img
             class="u-logo"
             src="/assets/artwork/mhp200.webp"
@@ -1033,6 +1030,23 @@
               ></path></svg
           ></a>
         </p>
+        <span id="swatchClock">@000</span>
+        <script
+          async
+          defer
+          src="https://melonking.net/scripts/swatchTime.js"
+        ></script>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="#00ff41"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM168,144a8,8,0,0,1-16,0V115.31l-50.34,50.35a8,8,0,0,1-11.32-11.32L140.69,104H112a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8Z"
+          ></path>
+        </svg>
         <h3>Link to my site!</h3>
         <p>
           <a href="/pages/contact"
@@ -1042,10 +1056,13 @@
         <img
           src="/assets/artwork/ALEX-ZEE.png"
           alt="I love you, Gnat :)"
-          width="88"
-          height="31"
+          width="80"
+          height="15"
           loading="lazy"
        >
+        <textarea id="button-html">
+&lt;a href=&quot;https://alexzeecomedy.com&quot;&gt;&lt;img src=&quot;path/to/ALEX-ZEE.png&quot; alt=&quot;Alexzeecomedy.com&quot; width=&quot;88&quot; height=&quot;31&quot; loading=&quot;lazy&quot;&gt;&lt;/a&gt;</textarea
+        >
         <img
           src="/assets/artwork/alexzeecomedybutton.webp"
           alt="I love you, Gnat :)"
@@ -1053,7 +1070,7 @@
           height="31"
           loading="lazy"
        >
-        <textarea id="button-html">
+        <textarea id="small-button-html">
 &lt;a href=&quot;https://alexzeecomedy.com&quot;&gt;&lt;img src=&quot;path/to/alexzeecomedybutton.webp&quot; alt=&quot;Alexzeecomedy.com&quot; width=&quot;88&quot; height=&quot;31&quot; loading=&quot;lazy&quot;&gt;&lt;/a&gt;</textarea
         >
         <p>
@@ -1119,7 +1136,7 @@
             ></a>
           </p>
           <p>
-            <web-ring data-appearance="expanded"></web-ring>
+            <!--<web-ring data-appearance="expanded"></web-ring>-->
           </p>
           <p>
             <a
@@ -2773,8 +2790,10 @@
           width="80"
           height="15"
           viewBox="0 0 80 15"
-          alt="IndieWeb"
+          aria-labelledby="svg-title"
         >
+          <title id="svg-title">IndieWeb button</title>
+          <desc id="svg-desc">IndieWeb</desc>
           <rect
             x="0"
             y="0"
@@ -2840,8 +2859,10 @@
           width="80"
           height="15"
           viewBox="0 0 80 15"
-          alt="Microformats supported"
+          aria-labelledby="svg-title-1"
         >
+          <title id="svg-title-1">Microformats button</title>
+          <desc id="svg-desc-1">Microformats supported</desc>
           <defs>
             <lineargradient id="greendient">
               <stop offset="0%" stop-color="#5c8e17"></stop>
@@ -2928,8 +2949,10 @@
           height="15"
           version="1.1"
           viewBox="0 0 80 15"
-          alt="Webmentions supported"
+          aria-labelledby="svg-title-2"
         >
+          <title id="svg-title-2">Webmentions button</title>
+          <desc id="svg-desc-2">Webmentions supported</desc>
           <rect width="80" height="15" fill="#666"></rect>
           <rect x="18" y="1" width="61" height="13" fill="#fff"></rect>
           <rect x="1" y="1" width="16" height="13" fill="#fff"></rect>
