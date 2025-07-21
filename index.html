@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://melonking.net https://mastodon.social https://code.jquery.com https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://code.jquery.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self'  https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -167,35 +167,6 @@
         ]
       }
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch(
-          "https://webmention.io/api/count?target=https://alexzeecomedy.com"
-        )
-          .then((response) => response.json())
-          .then((responseJson) => {
-            console.log(responseJson); // For debugging
-            const countElement = document.getElementById("webmention-count");
-            if (countElement) {
-              countElement.textContent = `Webmentions: ${
-                responseJson.count || 0
-              }`;
-            }
-          })
-          .catch((error) => {
-            console.error("Error fetching webmentions:", error);
-            const countElement = document.getElementById("webmention-count");
-            if (countElement) countElement.textContent = "Webmentions: Error";
-          });
-      });
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-      defer
-      async
-    ></script>
     <script
       async
       type="module"
@@ -678,10 +649,10 @@
           <h3>Latest Toot</h3>
           <blockquote
             class="mastodon-embed"
-            data-embed-url="https://mastodon.social/@alexzeecomedy/114857730653591600/embed"
+            data-embed-url="https://mastodon.social/@alexzeecomedy/114889131762687356/embed"
           >
             <a
-              href="https://mastodon.social/@alexzeecomedy/114857730653591600"
+              href="https://mastodon.social/@alexzeecomedy/114889131762687356"
               target="_blank"
               class="masto1"
               rel="external"
@@ -1003,14 +974,6 @@
           <br>
           <cite>Wikipedia: Webring</cite>
         </blockquote>
-        <span
-          id="webmention-count"
-          data-webmention-count
-          data-url="https://alexzeecomedy.com"
-          >Loading...</span
-        >
-        mentions
-        <script src="https://webmention.io/js/mentions.js" defer async></script>
         <p>
           The Current mood of the Internet is
           <a href="https://www.imood.com/imood"
