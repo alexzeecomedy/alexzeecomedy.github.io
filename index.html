@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://milkyway.moe https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self'  https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://milkyway.moe https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://alexzeecomedy.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -837,15 +837,8 @@
                   ></path>
                 </svg>
               </div>
-              <h3>Latest Wordle</h3>
-              <div>2025-07-06</div>
-              <div>Wordle 1,478 5/6</div>
-              <div>⬛⬛🟦⬛⬛</div>
-              <div>🟦🟦⬛⬛⬛</div>
-              <div>⬛🟦🟧🟦⬛</div>
-              <div>⬛🟦🟧⬛🟦</div>
-              <div>🟧🟧🟧🟧🟧</div>
-              <div>WordleBot: Skill 67/99, Luck 51/99</div>
+              <h3>Wordle</h3>
+              <div id="wordle-area">See my latest Wordle score!</div>
             </a>
             <a
               href="/pages/now/playing/connections"
@@ -995,8 +988,8 @@
         ></script>
         <noscript
           ><a href="https://wiki.melonland.net/swatch_time"
-            >Swatch Internet Time</a
-          ></noscript
+            >Swatch Internet Time
+          </a></noscript
         >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -1073,7 +1066,18 @@
                 width="88"
                 height="31"
                 class="eightthree"
-                loading="lazy"></a
+                loading="lazy">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#00ff41"
+                width="24"
+                height="24"
+                viewBox="0 0 256 256"
+              >
+                <path fill="none" d="M0 0h256v256H0z"></path>
+                <path
+                  d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
+                ></path></svg></a
           ></noscript>
         </div>
         <details class="more-details">
@@ -1906,9 +1910,19 @@
             ></script>
             <noscript
               ><a href="https://town.thecozy.cat/web-revival/freespeechwebring/"
-                >Free Speech Webring</a
-              ></noscript
-            >
+                >Free Speech Webring
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#00ff41"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="none" d="M0 0h256v256H0z"></path>
+                  <path
+                    d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
+                  ></path></svg></a
+            ></noscript>
           </div>
           <div id="sovereignwebring">
             <script
@@ -1923,9 +1937,19 @@
             ></script>
             <noscript
               ><a href="https://sovereignweb.thecozy.cat"
-                >Sovereign Web Webring</a
-              ></noscript
-            >
+                >Sovereign Web Webring
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#00ff41"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="none" d="M0 0h256v256H0z"></path>
+                  <path
+                    d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
+                  ></path></svg></a
+            ></noscript>
           </div>
           <div id="onlinewire-webring">
             <script
@@ -1940,9 +1964,19 @@
             ></script>
             <noscript
               ><a href="https://milkyway.moe/onlinewire"
-                >OnlineWire Webring</a
-              ></noscript
-            >
+                >OnlineWire Webring
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#00ff41"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="none" d="M0 0h256v256H0z"></path>
+                  <path
+                    d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
+                  ></path></svg></a
+            ></noscript>
           </div>
           <div class="safontz">
             <script
@@ -1952,8 +1986,20 @@
             ></script>
             <ring-900 site="https://alexzeecomedy.com"></ring-900>
             <noscript
-              ><a href="https://safonts.club/">I'm a Safont</a></noscript
-            >
+              ><a href="https://safonts.club/"
+                >I'm a Safont
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#00ff41"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="none" d="M0 0h256v256H0z"></path>
+                  <path
+                    d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
+                  ></path></svg></a
+            ></noscript>
           </div>
           <div>
             <map name="genlissawidget">
@@ -2327,7 +2373,18 @@
                 ><img
                   src="https://www.beepbird.net/webring/focusfirst.png"
                   alt="Focus First Index"
-                  loading="lazy"></a
+                  loading="lazy">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#00ff41"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <path fill="none" d="M0 0h256v256H0z"></path>
+                  <path
+                    d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
+                  ></path></svg></a
             ></noscript>
           </div>
           <div id="miscri2">
@@ -3056,6 +3113,36 @@
     </div>
     <script>
       document.body.classList.remove("no-js");
+    </script>
+    <script>
+      async function getContentFromAnotherPage() {
+        try {
+          const response = await fetch(
+            "/pages/now/playing/wordle.html"
+          );
+          const text = await response.text();
+
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+
+          const desiredContent = doc.getElementById("latest-wordle");
+
+          if (desiredContent) {
+            document.getElementById("wordle-area").innerHTML =
+              desiredContent.innerHTML;
+          } else {
+            document.getElementById("wordle-area").innerHTML =
+              "Content section not found.";
+          }
+        } catch (error) {
+          console.error("Error fetching content:", error);
+          document.getElementById("wordle-area").innerHTML =
+            "Failed to load content.";
+        }
+      }
+
+      // Call the function to execute it
+      getContentFromAnotherPage();
     </script>
   </body>
   <!--                            .:xxxxxxxx:.
