@@ -693,10 +693,8 @@
                   ></path>
                 </svg>
               </div>
-              <h3>Latest Note:</h3>
-              <div>2025-07-18 10:48:45 CDT</div>
-              <div>What's the over/under on whelmed?</div>
-              <div><b>Read my notes here.</b></div>
+              <h3>Latest Note</h3>
+              <div id="note-area">See my latest note!</div>
             </a>
             <a href="/pages/" class="social-item pages">
               <div>
@@ -730,9 +728,7 @@
                 </svg>
               </div>
               <h3>Latest Blog Post:</h3>
-              <div>2025-06-27 17:00:00 CDT</div>
-              <div>Gnatography</div>
-              <div><b>Read my blog here.</b></div>
+              <div id="blog-area">See my latest blog post!</div>
             </a>
             <a href="/pages/now/" class="social-item now">
               <div>
@@ -857,16 +853,8 @@
                   ></path>
                 </svg>
               </div>
-              <h3>Latest Connections</h3>
-              <div>2025-07-06</div>
-              <div>Connections Puzzle #756</div>
-              <div>🟩🟩🟩🟩</div>
-              <div>🟨🟨🟨🟨</div>
-              <div>🟨🟨🟨🟨</div>
-              <div>🟦🟪🟦🟦</div>
-              <div>🟦🟦🟦🟦</div>
-              <div>🟪🟪🟪🟪</div>
-              <div>Skill 88/99, Uniqueness Uniqueness 1 in 708</div>
+              <h3>Connections</h3>
+              <div id="connections-area">See my latest Connections score!</div>
             </a>
             <a href="/pages/about" class="social-item status">
               <div>
@@ -3117,9 +3105,7 @@
     <script>
       async function getContentFromAnotherPage() {
         try {
-          const response = await fetch(
-            "/pages/now/playing/wordle.html"
-          );
+          const response = await fetch("/pages/now/playing/wordle.html");
           const text = await response.text();
 
           const parser = new DOMParser();
@@ -3140,8 +3126,84 @@
             "Failed to load content.";
         }
       }
+      getContentFromAnotherPage();
+    </script>
+    <script>
+      async function getContentFromAnotherPage() {
+        try {
+          const response = await fetch("/pages/now/playing/connections.html");
+          const text = await response.text();
 
-      // Call the function to execute it
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+
+          const desiredContent = doc.getElementById("latest-connections");
+
+          if (desiredContent) {
+            document.getElementById("connections-area").innerHTML =
+              desiredContent.innerHTML;
+          } else {
+            document.getElementById("connections-area").innerHTML =
+              "Content section not found.";
+          }
+        } catch (error) {
+          console.error("Error fetching content:", error);
+          document.getElementById("connections-area").innerHTML =
+            "Failed to load content.";
+        }
+      }
+      getContentFromAnotherPage();
+    </script>
+    <script>
+      async function getContentFromAnotherPage() {
+        try {
+          const response = await fetch("/pages/notes/index.html");
+          const text = await response.text();
+
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+
+          const desiredContent = doc.getElementById("latest-note");
+
+          if (desiredContent) {
+            document.getElementById("note-area").innerHTML =
+              desiredContent.innerHTML;
+          } else {
+            document.getElementById("note-area").innerHTML =
+              "Content section not found.";
+          }
+        } catch (error) {
+          console.error("Error fetching content:", error);
+          document.getElementById("note-area").innerHTML =
+            "Failed to load content.";
+        }
+      }
+      getContentFromAnotherPage();
+    </script>
+    <script>
+      async function getContentFromAnotherPage() {
+        try {
+          const response = await fetch("/pages/blog/index.html");
+          const text = await response.text();
+
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+
+          const desiredContent = doc.getElementById("latest-blog");
+
+          if (desiredContent) {
+            document.getElementById("blog-area").innerHTML =
+              desiredContent.innerHTML;
+          } else {
+            document.getElementById("blog-area").innerHTML =
+              "Content section not found.";
+          }
+        } catch (error) {
+          console.error("Error fetching content:", error);
+          document.getElementById("blog-area").innerHTML =
+            "Failed to load content.";
+        }
+      }
       getContentFromAnotherPage();
     </script>
   </body>
