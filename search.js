@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let n = t.value.trim();
     if (n) {
       let l = encodeURIComponent(n);
-      window.location.href = `/test.html?q=${l}`;
+      window.location.href = `/search.html?q=${l}`;
     }
   });
 });

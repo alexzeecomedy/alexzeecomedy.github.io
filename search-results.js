@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let r = e.value.trim();
     if (r) {
       let a = encodeURIComponent(r);
-      window.location.href = `/test.html?q=${a}`;
+      window.location.href = `/search.html?q=${a}`;
     } else t.innerHTML = "<p>Please enter a search term.</p>";
   });
 });
