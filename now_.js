@@ -1,65 +1,61 @@
 document.body.classList.remove("no-js"),
   (async function () {
     try {
-      let e = await fetch("/pages/now/playing/index.html"),
-        t = await e.text(),
-        n = new DOMParser()
+      let t = await (await fetch("/pages/now/playing/wordle.html")).text(),
+        e = new DOMParser()
           .parseFromString(t, "text/html")
-          .getElementById("now-playing");
-      document.getElementById("now-playing-area").innerHTML = n
-        ? n.innerHTML
+          .getElementById("latest-wordle");
+      document.getElementById("wordle-area").innerHTML = e
+        ? e.innerHTML
         : "Content section not found.";
-    } catch (e) {
-      console.error("Error fetching content:", e),
-        (document.getElementById("now-playing-area").innerHTML =
+    } catch (n) {
+      console.error("Error fetching content:", n),
+        (document.getElementById("wordle-area").innerHTML =
           "Failed to load content.");
     }
   })(),
   (async function () {
     try {
-      let e = await fetch("/pages/now/reading.html"),
-        t = await e.text(),
-        n = new DOMParser()
+      let t = await (await fetch("/pages/now/playing/connections.html")).text(),
+        e = new DOMParser()
           .parseFromString(t, "text/html")
-          .getElementById("now-reading");
-      document.getElementById("reading-area").innerHTML = n
-        ? n.innerHTML
+          .getElementById("latest-connections");
+      document.getElementById("connections-area").innerHTML = e
+        ? e.innerHTML
         : "Content section not found.";
-    } catch (e) {
-      console.error("Error fetching content:", e),
-        (document.getElementById("reading-area").innerHTML =
+    } catch (n) {
+      console.error("Error fetching content:", n),
+        (document.getElementById("connections-area").innerHTML =
           "Failed to load content.");
     }
   })(),
   (async function () {
     try {
-      let e = await fetch("/pages/now/listening.html"),
-        t = await e.text(),
-        n = new DOMParser()
+      let t = await (await fetch("/pages/notes/index.html")).text(),
+        e = new DOMParser()
           .parseFromString(t, "text/html")
-          .getElementById("now-listening");
-      document.getElementById("listening-area").innerHTML = n
-        ? n.innerHTML
+          .getElementById("latest-note");
+      document.getElementById("note-area").innerHTML = e
+        ? e.innerHTML
         : "Content section not found.";
-    } catch (e) {
-      console.error("Error fetching content:", e),
-        (document.getElementById("listening-area").innerHTML =
+    } catch (n) {
+      console.error("Error fetching content:", n),
+        (document.getElementById("note-area").innerHTML =
           "Failed to load content.");
     }
   })(),
   (async function () {
     try {
-      let e = await fetch("/pages/now/watching.html"),
-        t = await e.text(),
-        n = new DOMParser()
+      let t = await (await fetch("/pages/blog/index.html")).text(),
+        e = new DOMParser()
           .parseFromString(t, "text/html")
-          .getElementById("now-watching");
-      document.getElementById("watching-area").innerHTML = n
-        ? n.innerHTML
+          .getElementById("latest-blog");
+      document.getElementById("blog-area").innerHTML = e
+        ? e.innerHTML
         : "Content section not found.";
-    } catch (e) {
-      console.error("Error fetching content:", e),
-        (document.getElementById("watching-area").innerHTML =
+    } catch (n) {
+      console.error("Error fetching content:", n),
+        (document.getElementById("blog-area").innerHTML =
           "Failed to load content.");
     }
   })();

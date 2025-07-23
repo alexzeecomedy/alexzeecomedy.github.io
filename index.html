@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://alexzeecomedy.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; script-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://alexzeecomedy.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -168,6 +168,7 @@
       }
     </script>
     <script src="/now.js" async defer></script>
+    <script src="/search.js" async defer></script>
     <script
       async
       type="module"
@@ -294,6 +295,12 @@
               ><a href="/" rel="home">Alex Ƶee Comedy</a>
             </span>
           </h3>
+          <div>
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Search...">
+              <button type="submit">Search</button>
+            </form>
+          </div>
         </div>
         <ul class="nav-links">
           <li><a href="/" rel="home">Home</a></li>

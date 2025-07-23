@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; script-src 'self' 'unsafe-inline' https://alexzeecomedy.com; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta
@@ -120,6 +120,7 @@
         ]
       }
     </script>
+    <script src="/search.js" async defer></script>
     <link rel="me" href="https://mastodon.social/@alexzeecomedy">
     <link rel="me" href="https://bsky.app/profile/alexzeecomedy.com">
     <link rel="me" href="https://x.com/alexzeecomedy">
@@ -213,6 +214,10 @@
               ><a href="/" rel="home">Alex Ƶee Comedy</a>
             </span>
           </h3>
+          <div><form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form></div>
         </div>
         <ul class="nav-links">
           <li><a href="/" rel="home">Home</a></li>

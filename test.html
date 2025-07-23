@@ -111,6 +111,7 @@
         ]
       }
     </script>
+    <script src="/search.js" async defer></script>
     <link rel="me" href="https://mastodon.social/@alexzeecomedy">
     <link rel="me" href="https://bsky.app/profile/alexzeecomedy.com">
     <link rel="me" href="https://x.com/alexzeecomedy">
@@ -153,11 +154,11 @@
     <link rel="canonical" href="https://alexzeecomedy.com/pages/guy">
     <link
       rel="preload"
-      href="/test.css"
+      href="/styles.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
    >
-    <noscript><link rel="stylesheet" href="/test.css"></noscript>
+    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -196,6 +197,10 @@
               ><a href="/" rel="home">Alex Ƶee Comedy</a>
             </span>
           </h3>
+          <div><form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form></div>
         </div>
         <ul class="nav-links">
           <li><a href="/" rel="home">Home</a></li>
@@ -226,7 +231,14 @@
       </ol>
     </nav>
     <article id="content" class="about-section">
-      <h2>I'm a funny guy!</h2>
+      <form id="searchFormOnResults">
+        <input type="text" id="searchInputOnResults" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <div id="searchResultsContainer">
+        <p>Loading results...</p>
+    </div>
+    <script src="search-results.js"></script>
     </article>
     <footer>
       <nav aria-label="footer-nav">
