@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self';  script-src 'self' 'unsafe-inline' https://status.cafe; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self';  script-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://status.cafe; frame-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self' https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta
@@ -120,6 +120,8 @@
         ]
       }
     </script>
+    <script src="/now.js" async defer></script>
+    <script src="/now_.js" async defer></script>
     <link rel="me" href="https://mastodon.social/@alexzeecomedy">
     <link rel="me" href="https://bsky.app/profile/alexzeecomedy.com">
     <link rel="me" href="https://x.com/alexzeecomedy">
@@ -241,7 +243,7 @@
     </nav>
     <article id="content" class="about-section">
       <h2>What I'm into</h2>
-      <time datetime="2025-07-14"> Last updated on 2025-07-14</time>
+      <time datetime="2025-07-23"> Last updated on 2025-07-23</time>
       <p>
         <a href="https://nownownow.com/p/R8N4" rel="directory" target="_blank"
           >Listed on nownownow.com
@@ -357,20 +359,19 @@
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
               width="48"
               height="48"
-              fill="#ffffff"
               viewBox="0 0 256 256"
             >
+              <path fill="none" d="M0 0h256v256H0z"></path>
               <path
-                d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H156.69A15.92,15.92,0,0,0,168,219.31L219.31,168A15.92,15.92,0,0,0,224,156.69V48A16,16,0,0,0,208,32ZM96,88h64a8,8,0,0,1,0,16H96a8,8,0,0,1,0-16Zm32,80H96a8,8,0,0,1,0-16h32a8,8,0,0,1,0,16ZM96,136a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm64,68.69V160h44.7Z"
+                d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h109a16 16 0 0 0 11-5l51-51a16 16 0 0 0 5-11V48a16 16 0 0 0-16-16ZM96 88h64a8 8 0 0 1 0 16H96a8 8 0 0 1 0-16Zm32 80H96a8 8 0 0 1 0-16h32a8 8 0 0 1 0 16Zm-32-32a8 8 0 0 1 0-16h64a8 8 0 0 1 0 16Zm64 69v-45h45Z"
               ></path>
             </svg>
           </div>
-          <h3>Latest Note:</h3>
-          <div>2025-07-18 10:48:45 CDT</div>
-          <div>What's the over/under on whelmed?</div>
-          <div><b>Read my notes here.</b></div>
+          <h3>Latest Note</h3>
+          <div id="note-area">See my latest note!</div>
         </a>
         <a href="/pages/uses" class="social-item uses">
           <div>
@@ -393,22 +394,20 @@
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              fill="#ffb700"
               width="48"
               height="48"
-              fill="#ffb700"
               viewBox="0 0 256 256"
             >
+              <path fill="none" d="M0 0h256v256H0z"></path>
               <path
-                d="M216,40H40A16,16,0,0,0,24,56V216a8,8,0,0,0,11.58,7.15L64,208.94l28.42,14.21a8,8,0,0,0,7.16,0L128,208.94l28.42,14.21a8,8,0,0,0,7.16,0L192,208.94l28.42,14.21A8,8,0,0,0,232,216V56A16,16,0,0,0,216,40ZM116,160a4,4,0,0,1-4,4H64a4,4,0,0,1-4-4V96a4,4,0,0,1,4-4h48a4,4,0,0,1,4,4Zm76-8H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm0-32H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Z"
+                d="M216 40H40a16 16 0 0 0-16 16v160a8 8 0 0 0 12 7l28-14 28 14a8 8 0 0 0 8 0l28-14 28 14a8 8 0 0 0 8 0l28-14 28 14a8 8 0 0 0 12-7V56a16 16 0 0 0-16-16ZM116 160a4 4 0 0 1-4 4H64a4 4 0 0 1-4-4V96a4 4 0 0 1 4-4h48a4 4 0 0 1 4 4Zm76-8h-48a8 8 0 0 1 0-16h48a8 8 0 0 1 0 16Zm0-32h-48a8 8 0 0 1 0-16h48a8 8 0 0 1 0 16Z"
               ></path>
             </svg>
           </div>
           <h3>Latest Blog Post:</h3>
-          <div>2025-06-27 17:00:00 CDT</div>
-          <div>Gnatography</div>
-          <div><b>Read my blog here.</b></div>
+          <div id="blog-area">See my latest blog post!</div>
         </a>
-
         <a href="/pages/pages/" class="social-item pages">
           <div>
             <svg
@@ -441,8 +440,7 @@
             </svg>
           </div>
           <h3>Now Playing</h3>
-          <div>Baldur's Gate 3</div>
-          <div>Old School Runescape</div>
+          <div id="now-playing-area">See what I'm playing now!</div>
         </a>
         <a href="/pages/now/listening" class="social-item listening">
           <div>
@@ -459,8 +457,7 @@
             </svg>
           </div>
           <h3>Now Listening</h3>
-          <div>Pretty Good</div>
-          <div>John Prine</div>
+          <div id="listening-area">See what I'm listening to now!</div>
         </a>
         <a href="/pages/now/watching" class="social-item watching">
           <div>
@@ -476,10 +473,8 @@
               ></path>
             </svg>
           </div>
-          <h3>Now Watching</h3>
-          <div>Midnight Mass</div>
-          <div>Dead To Me</div>
-          <div>The Rehearsal</div>
+          <h3>Now Playing</h3>
+          <div id="watching-area">See what I'm watching now!</div>
         </a>
         <a href="/pages/now/reading" class="social-item reading">
           <div>
@@ -496,9 +491,7 @@
             </svg>
           </div>
           <h3>Now Reading</h3>
-          <div>1000 Years of Joys and Sorrows: A Memoir</div>
-          <div>Ai Weiwei</div>
-          <div>ISBN 9780553419481</div>
+          <div id="reading-area">See what I'm reading now!</div>
         </a>
         <a href="/pages/pages/work" class="social-item work">
           <div>
@@ -528,21 +521,14 @@
               fill="#a259f7"
               viewBox="0 0 256 256"
             >
+              <path fill="none" d="M0 0h256v256H0z"></path>
               <path
-                d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H128V128H48V48h80v80h80v80Z"
+                d="M224 48H32a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h192a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16Zm-19 95a8 8 0 1 1-13 9l-8-10-8 10a8 8 0 1 1-13-9l8-11-12-4a8 8 0 1 1 5-15l12 4v-13a8 8 0 0 1 16 0v13l12-4a8 8 0 0 1 5 15l-12 4Zm-72 0a8 8 0 1 1-13 9l-8-10-8 10a8 8 0 1 1-13-9l8-11-12-4a8 8 0 1 1 5-15l12 4v-13a8 8 0 0 1 16 0v13l12-4a8 8 0 1 1 5 15l-12 4ZM64 88v80a8 8 0 0 1-16 0V88a8 8 0 0 1 16 0Z"
               ></path>
             </svg>
           </div>
-          <h3>Latest Wordle</h3>
-
-          <div>2025-07-06</div>
-          <div>Wordle 1,478 5/6</div>
-          <div>⬛⬛🟦⬛⬛</div>
-          <div>🟦🟦⬛⬛⬛</div>
-          <div>⬛🟦🟧🟦⬛</div>
-          <div>⬛🟦🟧⬛🟦</div>
-          <div>🟧🟧🟧🟧🟧</div>
-          <div>WordleBot: Skill 67/99, Luck 51/99</div>
+          <h3>Wordle</h3>
+          <div id="wordle-area">See my latest Wordle score!</div>
         </a>
         <a
           href="/pages/now/playing/connections"
@@ -556,21 +542,14 @@
               fill="#ffffff"
               viewBox="0 0 256 256"
             >
+              <path fill="none" d="M0 0h256v256H0z"></path>
               <path
-                d="M88.57,35A8,8,0,0,1,103.43,29l8,20A8,8,0,0,1,96.57,55ZM29,103.43l20,8A8,8,0,1,0,55,96.57l-20-8A8,8,0,0,0,29,103.43ZM227,152.57l-20-8A8,8,0,1,0,201,159.43l20,8A8,8,0,0,0,227,152.57ZM159.43,201A8,8,0,0,0,144.57,207l8,20A8,8,0,1,0,167.43,221ZM237.91,18.52a8,8,0,0,0-11.5-.18L174,70.75l-5.38-5.38a32,32,0,0,0-45.28,0L106.14,82.54a4,4,0,0,0,0,5.66l61.7,61.66a4,4,0,0,0,5.66,0l16.74-16.74a32.76,32.76,0,0,0,9.81-22.52,31.82,31.82,0,0,0-9.37-23.17l-5.38-5.37,52.2-52.17A8.22,8.22,0,0,0,237.91,18.52ZM85.64,90.34a8,8,0,0,0-11.49.18,8.22,8.22,0,0,0,.41,11.37L80.67,108,65.34,123.31A31.82,31.82,0,0,0,56,146.47,32.75,32.75,0,0,0,65.77,169l5,4.94L18.49,226.13a8.21,8.21,0,0,0-.61,11.1,8,8,0,0,0,11.72.43L82,185.25l5.37,5.38a32.1,32.1,0,0,0,45.29,0L148,175.31l6.34,6.35a8,8,0,0,0,11.32-11.32Z"
+                d="M89 35a8 8 0 0 1 14-6l8 20a8 8 0 0 1-14 6Zm-60 68 20 8a8 8 0 1 0 6-14l-20-8a8 8 0 0 0-6 14Zm198 50-20-8a8 8 0 1 0-6 14l20 8a8 8 0 0 0 6-14Zm-68 48a8 8 0 0 0-14 6l8 20a8 8 0 1 0 14-6Zm79-182a8 8 0 0 0-12-1l-52 53-5-6a32 32 0 0 0-46 0l-17 18a4 4 0 0 0 0 5l62 62a4 4 0 0 0 6 0l16-17a33 33 0 0 0 10-22 32 32 0 0 0-9-24l-6-5 53-52a8 8 0 0 0 0-11ZM86 90a8 8 0 0 0-12 1 8 8 0 0 0 1 11l6 6-16 15a32 32 0 0 0-9 23 33 33 0 0 0 10 23l5 5-53 52a8 8 0 0 0 0 11 8 8 0 0 0 12 1l52-53 5 6a32 32 0 0 0 46 0l15-16 6 7a8 8 0 0 0 12-12Z"
               ></path>
             </svg>
           </div>
-          <h3>Latest Connections</h3>
-          <div>2025-07-06</div>
-          <div>Connections Puzzle #756</div>
-          <div>🟩🟩🟩🟩</div>
-          <div>🟨🟨🟨🟨</div>
-          <div>🟨🟨🟨🟨</div>
-          <div>🟦🟪🟦🟦</div>
-          <div>🟦🟦🟦🟦</div>
-          <div>🟪🟪🟪🟪</div>
-          <div>Skill 88/99, Uniqueness Uniqueness 1 in 708</div>
+          <h3>Connections</h3>
+          <div id="connections-area">See my latest Connections score!</div>
         </a>
         <a href="/pages/about" class="social-item status no-js">
           <div>

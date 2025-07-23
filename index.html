@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://mxbo.neocities.org https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://alexzeecomedy.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      content="default-src 'self'; object-src 'self'; form-action 'none'; script-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social  https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe  https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; frame-src 'self' 'unsafe-inline' https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz  https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; img-src 'self' data: https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io  https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; font-src 'self' https://xandra.cc https://alexzeecomedy.com; connect-src 'self' https://alexzeecomedy.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -167,6 +167,7 @@
         ]
       }
     </script>
+    <script src="/now.js" async defer></script>
     <script
       async
       type="module"
@@ -2845,19 +2846,18 @@
       </article>
     </div>
     <footer>
-      <nav aria-label="footer-nav">
+      <nav class="bottom-nav" aria-label="footer-nav">
         <ul class="nav-links">
           <li><a href="/" rel="home">Home</a></li>
           <li><a href="/pages/contact">Contact</a></li>
-          <li><a href="/pages/privacy">Privacy Policy</a></li>
+          <li><a href="/pages/privacy">Privacy</a></li>
           <li><a href="/pages/colophon">Colophon</a></li>
-          <li><a href="/pages/accessibility">Accessibility Statement</a></li>
+          <li><a href="/pages/accessibility">Accessibility</a></li>
           <li><a href="/pages/sitemap">Sitemap</a></li>
           <li><a href="/pages/feeds/">Feeds</a></li>
           <li><a href="/pages/green">Green</a></li>
           <li><a href="/pages/ai">AI</a></li>
         </ul>
-      </nav>
       <p>
         A Mandarin House Production by <a href="/pages/about">Alex Zee</a>.
         Copyleft: This is a free work, you can
@@ -3109,117 +3109,11 @@
           loading="lazy"
        >
       </p>
+      </nav>
     </footer>
     <div class="tau">
       <a href="https://cd5k.net/tau/" rel="external" target="_blank">&tau;</a>
     </div>
-    <script>
-      document.body.classList.remove("no-js");
-    </script>
-    <script>
-      async function getContentFromAnotherPage() {
-        try {
-          const response = await fetch("/pages/now/playing/wordle.html");
-          const text = await response.text();
-
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, "text/html");
-
-          const desiredContent = doc.getElementById("latest-wordle");
-
-          if (desiredContent) {
-            document.getElementById("wordle-area").innerHTML =
-              desiredContent.innerHTML;
-          } else {
-            document.getElementById("wordle-area").innerHTML =
-              "Content section not found.";
-          }
-        } catch (error) {
-          console.error("Error fetching content:", error);
-          document.getElementById("wordle-area").innerHTML =
-            "Failed to load content.";
-        }
-      }
-      getContentFromAnotherPage();
-    </script>
-    <script>
-      async function getContentFromAnotherPage() {
-        try {
-          const response = await fetch("/pages/now/playing/connections.html");
-          const text = await response.text();
-
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, "text/html");
-
-          const desiredContent = doc.getElementById("latest-connections");
-
-          if (desiredContent) {
-            document.getElementById("connections-area").innerHTML =
-              desiredContent.innerHTML;
-          } else {
-            document.getElementById("connections-area").innerHTML =
-              "Content section not found.";
-          }
-        } catch (error) {
-          console.error("Error fetching content:", error);
-          document.getElementById("connections-area").innerHTML =
-            "Failed to load content.";
-        }
-      }
-      getContentFromAnotherPage();
-    </script>
-    <script>
-      async function getContentFromAnotherPage() {
-        try {
-          const response = await fetch("/pages/notes/index.html");
-          const text = await response.text();
-
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, "text/html");
-
-          const desiredContent = doc.getElementById("latest-note");
-
-          if (desiredContent) {
-            document.getElementById("note-area").innerHTML =
-              desiredContent.innerHTML;
-          } else {
-            document.getElementById("note-area").innerHTML =
-              "Content section not found.";
-          }
-        } catch (error) {
-          console.error("Error fetching content:", error);
-          document.getElementById("note-area").innerHTML =
-            "Failed to load content.";
-        }
-      }
-      getContentFromAnotherPage();
-    </script>
-    <script>
-      async function getContentFromAnotherPage() {
-        try {
-          const response = await fetch("/pages/blog/index.html");
-          const text = await response.text();
-
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, "text/html");
-
-          const desiredContent = doc.getElementById("latest-blog");
-
-          if (desiredContent) {
-            document.getElementById("blog-area").innerHTML =
-              desiredContent.innerHTML;
-          } else {
-            document.getElementById("blog-area").innerHTML =
-              "Content section not found.";
-          }
-        } catch (error) {
-          console.error("Error fetching content:", error);
-          document.getElementById("blog-area").innerHTML =
-            "Failed to load content.";
-        }
-      }
-      getContentFromAnotherPage();
-    </script>
     <script
       data-allowed-prefixes="https://mastodon.social/"
       async
