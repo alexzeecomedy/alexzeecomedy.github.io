@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    <atom:link href="http://alexzeecomedy.com/rss.xml" rel="self" type="application/rss+xml" />
     <title>Alex Zee Comedy Blog - RSS</title>
     <link>https://alexzeecomedy.com/pages/blog/</link>
     <description>The blog of stand-up comedian, Alex Zee.</description>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Jun 2025 17:00:00 CDT</lastBuildDate>
-
     <item>
       <title>Gnatography 1</title>
       <link>https://alexzeecomedy.com/pages/blog/062725</link>
@@ -14,7 +14,5 @@
       <pubDate>Fri, 27 Jun 2025 17:00:00 CDT</pubDate>
       <guid>https://alexzeecomedy.com/pages/blog/062725</guid>
     </item>
-
-    <!-- Add more <item> blocks for each post -->
   </channel>
 </rss>

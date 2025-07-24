@@ -1,15 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Alex Zee Comedy Blog - Atom</title>
   <subtitle>Blog of stand-up comedian, Alex Zee</subtitle>
-  <link href="https://alexzeecomedy.com/pages/pages/blog/"/>
+  <link rel="alternate" type="text/html" href="https://alexzeecomedy.com/pages/pages/blog/"/>
   <link href="https://alexzeecomedy.com/atom.xml" rel="self"/>
+  <rights>Free Art License 1.3</rights>
   <updated>2025-06-27T22:07:00Z</updated>
   <id>https://alexzeecomedy.com/pages/blog/</id>
-  <author>
-    <name>Alex Zee</name>
-    <email>alex@alexzeecomedy.com</email>
-  </author>
-
   <entry>
     <title>Gnatography 1</title>
     <link href="https://alexzeecomedy.com/pages/blog/062725"/>
@@ -33,9 +30,8 @@
     </content>
     <author>
       <name>Alex Zee</name>
+      <uri>http://alexzeecomedy.com</uri>
       <email>alex@alexzeecomedy.com</email>
     </author>
   </entry>
-
-  <!-- Add more entries, each with its own <author> -->
 </feed>
