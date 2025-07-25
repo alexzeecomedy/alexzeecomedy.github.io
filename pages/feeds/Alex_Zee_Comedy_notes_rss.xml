@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="http://alexzeecomedy.com/pages/feeds/Alex_Zee_Comedy_notes_rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://alexzeecomedy.com/pages/feeds/Alex_Zee_Comedy_notes_rss.xml" rel="self"
+      type="application/rss+xml" />
     <title>Alex Zee Comedy Notes - RSS</title>
     <link>https://alexzeecomedy.com/pages/notes/</link>
     <description>The notes of stand-up comedian, Alex Zee.</description>
@@ -24,7 +25,8 @@
     <item>
       <title>2025-07-03 09:08:45 CDT</title>
       <link>https://alexzeecomedy.com/pages/notes/kvkcs</link>
-      <description>Watching Dead To Me with my girlfriend. 3 episodes in and am comfortable saying I don't understand the show lol</description>
+      <description>Watching Dead To Me with my girlfriend. 3 episodes in and am comfortable saying I
+        don't understand the show lol</description>
       <pubDate>Thu, 03 Jul 2025 09:08:45 CDT</pubDate>
       <guid>https://alexzeecomedy.com/pages/notes/kvkcs</guid>
     </item>
