@@ -4,6 +4,7 @@
     <title>Alex Zee Comedy Blogroll</title>
   </head>
   <body>
+    <outline text="Clown College Podcast" title="Clown College Podcast" type="rss" xmlUrl="https://media.rss.com/clowncollegecomedy/feed.xml" htmlUrl="https://rss.com/podcasts/clowncollegecomedy/"/>
     <outline text="Radiolab" title="Radiolab" type="rss" xmlUrl="https://feeds.simplecast.com/EmVW7VGp" htmlUrl="https://radiolab.org"/>
     <outline text="Jordan, Jesse, Go!" title="Jordan, Jesse, Go!" type="rss" xmlUrl="https://feeds.simplecast.com/NDAi3mtz" htmlUrl="https://maximumfun.org/podcasts/jordan-jesse-go/"/>  
   </body>
