@@ -40,12 +40,12 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; 
       object-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://unpkg.com https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://xandra.cc https://town.thecozy.cat https://sovereignweb.thecozy.cat; 
-      frame-src 'self' 'unsafe-inline' http://incr.easrng.net https://incr.easrng.net https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz https://xandra.cc https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  
-      style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://xandra.cc; 
-      img-src 'self' data: https://alexzeecomedy.com https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io https://xandra.cc https://moods.imood.com https://i.imgur.com https://status.cafe; 
-      font-src 'self' https://xandra.cc https://alexzeecomedy.com; 
-      connect-src 'self' https://api.websitecarbon.com/ https://alexzeecomedy.com https://webmention.io https://xandra.cc https://status.cafe https://octothorp.es;"
+      script-src 'self' 'unsafe-inline' https://unpkg.com https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://safonts.club https://town.thecozy.cat https://sovereignweb.thecozy.cat; 
+      frame-src 'self' 'unsafe-inline' http://incr.easrng.net https://incr.easrng.net https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz https://safonts.club https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  
+      style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://safonts.club; 
+      img-src 'self' data: https://alexzeecomedy.com https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io https://safonts.club https://moods.imood.com https://i.imgur.com https://status.cafe; 
+      font-src 'self' https://safonts.club https://alexzeecomedy.com; 
+      connect-src 'self' https://api.websitecarbon.com/ https://alexzeecomedy.com https://webmention.io https://safonts.club https://status.cafe https://octothorp.es;"
    >
     <meta name="robots" content="noai, noimageai, noml">
     <meta name="msvalidate.01" content="DB08163D532F886A00D5CB5DB93C4049">
@@ -304,6 +304,7 @@
           </h3>
         </div>
         <form class="sform" id="searchForm">
+          <label for="searchInput" class="sr-only">Search</label>
           <input type="text" id="searchInput" placeholder="Search...">
           <button type="submit">Search</button>
         </form>
@@ -495,7 +496,7 @@
           ></iframe>
           <img
             class="u-logo"
-            src="/assets/artwork/mhp200.webp"
+            src="/assets/artwork/mhp.svg"
             alt="Alex Zee Comedy Logo"
             width="32"
             height="32"
@@ -1167,17 +1168,22 @@
           class="eightthree"
           loading="lazy"
        >
+        <label for="button-html" class="sr-only">Copyable HTML code</label>
         <textarea id="button-html">
-&lt;a href=&quot;https://alexzeecomedy.com&quot;&gt;&lt;img src=&quot;path/to/ALEX-ZEE.png&quot; alt=&quot;Alexzeecomedy.com&quot; width=&quot;80&quot; height=&quot;15&quot; loading=&quot;lazy&quot;&gt;&lt;/a&gt;</textarea
+&lt;a href=&quot;https://alexzeecomedy.com&quot;&gt;&lt;img src=&quot;path/to/ALEX-ZEE.png&quot; alt=&quot;Alexzeecomedy.com&quot; width=&quot;80&quot; height=&quot;15&quot; loading=&quot;lazy&quot;&gt;&lt;/a&gt;
+</textarea
         >
         <img
           src="/assets/artwork/alexzeecomedybutton.webp"
-          alt="I love you, Gnat :)"
+          alt="I love you a lot, Gnat :)"
           width="88"
           height="31"
           class="eightthree"
           loading="lazy"
        >
+        <label for="small-button-html" class="sr-only"
+          >Copyable HTML code</label
+        >
         <textarea id="small-button-html">
 &lt;a href=&quot;https://alexzeecomedy.com&quot;&gt;&lt;img src=&quot;path/to/alexzeecomedybutton.webp&quot; alt=&quot;Alexzeecomedy.com&quot; width=&quot;88&quot; height=&quot;31&quot; loading=&quot;lazy&quot;&gt;&lt;/a&gt;</textarea
         >
@@ -1269,9 +1275,6 @@
                   d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm-40 112a8 8 0 0 1-16 0v-28.69l-50.34 50.35a8 8 0 0 1-11.32-11.32L140.69 104H112a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8Z"
                 ></path></svg
             ></a>
-          </p>
-          <p>
-            <!--<web-ring data-appearance="expanded"></web-ring>-->
           </p>
           <p>
             <a
@@ -2031,11 +2034,7 @@
             ></noscript>
           </div>
           <div class="safontz">
-            <script
-              src="https://xandra.cc/safonts/webring.js"
-              defer
-              async
-            ></script>
+            <script src="https://safonts.club/webring.js" defer async></script>
             <ring-900 site="https://alexzeecomedy.com"></ring-900>
             <noscript
               ><a href="https://safonts.club/"
@@ -2115,15 +2114,14 @@
               loading="lazy"
            >
           </div>
-          <p>
-            <object
-              id="melonland-surf-club"
-              data="/assets/artwork/surf-badge.svg?fill=#ffffff"
-              type="image/svg+xml"
-              title="Inner icon: Melonland Surf Club, Outer ring: Surf the webring"
-              class="melon"
-            ></object>
-          </p>
+          <p>Melonland Surf Club</p>
+          <object
+            id="melonland-surf-club"
+            data="/assets/artwork/surf-badge.svg?fill=#ffffff"
+            type="image/svg+xml"
+            title="Inner icon: Melonland Surf Club, Outer ring: Surf the webring"
+            class="melon"
+          ></object>
           <p>
             <a href="https://github.com/alexzeecomedy" target="_blank">
               Check out my GitHub profile in the Octo Ring
@@ -2973,7 +2971,7 @@
          >
           <img
             src="/assets/artwork/w3c-html5-badge.png"
-            alt="[Valid RSS]"
+            alt="[Valid HTML5]"
             width="80"
             height="15"
             class="eightthree"
@@ -3003,7 +3001,7 @@
             width="80"
             height="15"
             class="eightthree"
-            alt="Valid CSS"
+            alt="[Valid CSS]"
             loading="lazy"
             title="Valid CSS"
          >
