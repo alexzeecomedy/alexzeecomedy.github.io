@@ -40,8 +40,8 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; 
       object-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://unpkg.com https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://safonts.club https://town.thecozy.cat https://sovereignweb.thecozy.cat; 
-      frame-src 'self' 'unsafe-inline' http://incr.easrng.net https://incr.easrng.net https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz https://safonts.club https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  
+      script-src 'self' 'unsafe-inline' http://feed.surfing-waves.com https://unpkg.com https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://mastodon.social https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://safonts.club https://town.thecozy.cat https://sovereignweb.thecozy.cat; 
+      frame-src 'self' 'unsafe-inline' http://feed.surfing-waves.com http://incr.easrng.net https://incr.easrng.net https://webring.bucketfish.me https://silly.city https://mastodon.social https://john.citrons.xyz https://safonts.club https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  
       style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://safonts.club; 
       img-src 'self' data: https://alexzeecomedy.com https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io https://safonts.club https://moods.imood.com https://i.imgur.com https://status.cafe; 
       font-src 'self' https://safonts.club https://alexzeecomedy.com; 
@@ -705,32 +705,69 @@
             1fNXsVOBhA== =TTqZ -----END PGP PUBLIC KEY BLOCK-----
           </div>
           <div class="latest-toot">
-            <h3>Latest Toot</h3>
-            <blockquote
-              class="mastodon-embed"
-              data-embed-url="https://mastodon.social/@alexzeecomedy/114889131762687356/embed"
-            >
-              <a
-                href="https://mastodon.social/@alexzeecomedy/114889131762687356"
-                target="_blank"
-                class="masto1"
-                rel="external"
-                ><svg
+            <h3>Latest Activity</h3>
+            <!-- start sw-rss-feed code -->
+            <script>
+              <!--
+              rssfeed_url = new Array();
+              rssfeed_url[0] = "https://mastodon.social/@alexzeecomedy.rss";
+              rssfeed_url[1] = "https://status.cafe/users/alexzeecomedy.atom";
+              rssfeed_url[2] = "https://alexzeecomedy.com/atom.xml";
+              rssfeed_frame_width = "230";
+              rssfeed_frame_height = "260";
+              rssfeed_scroll = "on";
+              rssfeed_scroll_step = "6";
+              rssfeed_scroll_bar = "off";
+              rssfeed_target = "_blank";
+              rssfeed_font_size = "12";
+              rssfeed_font_face = "";
+              rssfeed_border = "on";
+              rssfeed_css_url = "https://feed.surfing-waves.com/css/style5.css";
+              rssfeed_title = "on";
+              rssfeed_title_name = "";
+              rssfeed_title_bgcolor = "#3366ff";
+              rssfeed_title_color = "#fff";
+              rssfeed_title_bgimage = "";
+              rssfeed_footer = "off";
+              rssfeed_footer_name = "rss feed";
+              rssfeed_footer_bgcolor = "#fff";
+              rssfeed_footer_color = "#333";
+              rssfeed_footer_bgimage = "";
+              rssfeed_item_title_length = "50";
+              rssfeed_item_title_color = "#666";
+              rssfeed_item_bgcolor = "#fff";
+              rssfeed_item_bgimage = "";
+              rssfeed_item_border_bottom = "on";
+              rssfeed_item_source_icon = "off";
+              rssfeed_item_date = "off";
+              rssfeed_item_description = "on";
+              rssfeed_item_description_length = "120";
+              rssfeed_item_description_color = "#666";
+              rssfeed_item_description_link_color = "#333";
+              rssfeed_item_description_tag = "off";
+              rssfeed_no_items = "0";
+              rssfeed_cache = "cca5dba9520b1b85d73d2de60e876b99";
+              //-->
+            </script>
+            <script src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+            <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+            <div class="waverss">
+              powered by
+              <a href="https://surfing-waves.com" rel="noopener" target="_blank"
+                >Surfing Waves
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 79 75"
+                  width="24"
+                  height="24"
+                  fill="#00ff41"
+                  viewBox="0 0 256 256"
                 >
                   <path
-                    d="M63 45.3v-20c0-4.1-1-7.3-3.2-9.7-2.1-2.4-5-3.7-8.5-3.7-4.1 0-7.2 1.6-9.3 4.7l-2 3.3-2-3.3c-2-3.1-5.1-4.7-9.2-4.7-3.5 0-6.4 1.3-8.6 3.7-2.1 2.4-3.1 5.6-3.1 9.7v20h8V25.9c0-4.1 1.7-6.2 5.2-6.2 3.8 0 5.8 2.5 5.8 7.4V37.7H44V27.1c0-4.9 1.9-7.4 5.8-7.4 3.5 0 5.2 2.1 5.2 6.2V45.3h8ZM74.7 16.6c.6 6 .1 15.7.1 17.3 0 .5-.1 4.8-.1 5.3-.7 11.5-8 16-15.6 17.5-.1 0-.2 0-.3 0-4.9 1-10 1.2-14.9 1.4-1.2 0-2.4 0-3.6 0-4.8 0-9.7-.6-14.4-1.7-.1 0-.1 0-.1 0s-.1 0-.1 0 0 .1 0 .1 0 0 0 0c.1 1.6.4 3.1 1 4.5.6 1.7 2.9 5.7 11.4 5.7 5 0 9.9-.6 14.8-1.7 0 0 0 0 0 0 .1 0 .1 0 .1 0 0 .1 0 .1 0 .1.1 0 .1 0 .1.1v5.6s0 .1-.1.1c0 0 0 0 0 .1-1.6 1.1-3.7 1.7-5.6 2.3-.8.3-1.6.5-2.4.7-7.5 1.7-15.4 1.3-22.7-1.2-6.8-2.4-13.8-8.2-15.5-15.2-.9-3.8-1.6-7.6-1.9-11.5-.6-5.8-.6-11.7-.8-17.5C3.9 24.5 4 20 4.9 16 6.7 7.9 14.1 2.2 22.3 1c1.4-.2 4.1-1 16.5-1h.1C51.4 0 56.7.8 58.1 1c8.4 1.2 15.5 7.5 16.6 15.6Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-                <div class="masto2">Post by @alexzeecomedy@mastodon.social</div>
-                <div class="masto3">View on Mastodon</div>
-              </a>
-            </blockquote>
+                    d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM168,144a8,8,0,0,1-16,0V115.31l-50.34,50.35a8,8,0,0,1-11.32-11.32L140.69,104H112a8,8,0,0,1,0-16h48a8,8,0,0,1,8,8Z"
+                  ></path></svg
+              ></a>
+            </div>
+            <!-- end sw-rss-feed code -->
           </div>
         </aside>
         <div class="about-section">
