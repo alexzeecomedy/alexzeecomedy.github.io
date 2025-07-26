@@ -40,7 +40,7 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; 
       object-src 'self'; 
-      script-src 'self' 'unsafe-inline' http://feed.surfing-waves.com https://unpkg.com https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://safonts.club https://town.thecozy.cat https://sovereignweb.thecozy.cat; 
+      script-src 'self' 'unsafe-inline' https://unpkg.com https://alexzeecomedy.com https://milkyway.moe https://melonking.net https://webmention.io https://www.beepbird.net https://octothorp.es https://status.cafe https://safonts.club https://town.thecozy.cat https://sovereignweb.thecozy.cat; 
       frame-src 'self' 'unsafe-inline' http://feed.surfing-waves.com http://incr.easrng.net https://incr.easrng.net https://webring.bucketfish.me https://silly.city https://john.citrons.xyz https://safonts.club https://webring.htmlhobbyist.com https://hbaguette.neocities.org https://dimden.neocities.org;  
       style-src 'self' 'unsafe-inline' https://alexzeecomedy.com https://octothorp.es https://safonts.club; 
       img-src 'self' data: https://alexzeecomedy.com https://www.beepbird.net https://milkyway.moe https://octothorp.es https://img.shields.io https://safonts.club https://moods.imood.com https://i.imgur.com https://status.cafe; 
@@ -193,6 +193,7 @@
    >
     <link rel="preload" href="https://safonts.club/webring.js" as="script">
     <link rel="preload" href="/now.js" as="script">
+    <link rel="preload" href="/rss-feed.js" as="script">
     <link
       rel="preload"
       href="https://status.cafe/current-status.js?name=alexzeecomedy"
@@ -245,7 +246,7 @@
    >
     <link
       rel="preload"
-      href="//feed.surfing-waves.com/js/rss-feed.js"
+      href="/rss-feed.js"
       as="script"
    >
     <link rel="stylesheet" href="https://octothorp.es/tag.css">
@@ -816,7 +817,7 @@
               rssfeed_cache = "cca5dba9520b1b85d73d2de60e876b99";
               //-->
             </script>
-            <script src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+            <script src="/rss-feed.js"></script>
             <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
             <div class="waverss">
               powered by
