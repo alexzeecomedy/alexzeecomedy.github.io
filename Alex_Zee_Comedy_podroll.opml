@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Alex Zee Comedy Blogroll</title>
+    <title>Alex Zee Comedy Podroll</title>
   </head>
   <body>
-    <outline text="Clown College Podcast" title="Clown College Podcast" type="rss" xmlUrl="https://media.rss.com/clowncollegecomedy/feed.xml" htmlUrl="https://rss.com/podcasts/clowncollegecomedy/"/>
+    <outline text="Clown College Audio Podcast" title="Clown College Audio Podcast" type="rss" xmlUrl="https://media.rss.com/clowncollegecomedy/feed.xml" htmlUrl="https://rss.com/podcasts/clowncollegecomedy/"/>
+    <outline text="Clown College Video Podcast" title="Clown College Video Podcast" type="rss" xmlUrl="https://youtube.com/feeds/videos.xml?channel_id=UCywww0h4TlStVZZOwwR-TwA" htmlUrl="https://www.youtube.com/channel/UCywww0h4TlStVZZOwwR-TwA"/>
     <outline text="Radiolab" title="Radiolab" type="rss" xmlUrl="https://feeds.simplecast.com/EmVW7VGp" htmlUrl="https://radiolab.org"/>
     <outline text="Jordan, Jesse, Go!" title="Jordan, Jesse, Go!" type="rss" xmlUrl="https://feeds.simplecast.com/NDAi3mtz" htmlUrl="https://maximumfun.org/podcasts/jordan-jesse-go/"/>  
   </body>

@@ -4,8 +4,11 @@
     <title>Alex Zee Comedy - RSS Feeds</title>
   </head>
   <body>
-    <outline text="Alex Zee Comedy Blog - RSS" title="Alex Zee Comedy Blog - RSS" type="rss" xmlUrl="https://alexzeecomedy.com/rss.xml" htmlUrl="https://alexzeecomedy.com/pages/blog/"/>
-    <outline text="Alex Zee Comedy Notes - RSS" title="Alex Zee Comedy Notes - RSS" type="rss" xmlUrl="https://alexzeecomedy.com/pages/feeds/Alex_Zee_Comedy_notes_rss.xml" htmlUrl="https://alexzeecomedy.com/pages/notes"/>
-    <outline text="Alex Zee Comedy" title="Alex Zee Comedy" type="rss" xmlUrl="https://mastodon.social/@alexzeecomedy.rss" htmlUrl="https://mastodon.social/@alexzeecomedy"/>
+    <outline text="Alex Zee Comedy Blog" title="Alex Zee Comedy Blog" type="rss" xmlUrl="https://alexzeecomedy.com/rss.xml" htmlUrl="https://alexzeecomedy.com/pages/blog/"/>
+    <outline text="Alex Zee Comedy Notes" title="Alex Zee Comedy Notes" type="rss" xmlUrl="https://alexzeecomedy.com/pages/feeds/Alex_Zee_Comedy_notes_rss.xml" htmlUrl="https://alexzeecomedy.com/pages/notes"/>
+    <outline text="Alex Zee Comedy Toots" title="Alex Zee Comedy Toots" type="rss" xmlUrl="https://mastodon.social/@alexzeecomedy.rss" htmlUrl="https://mastodon.social/@alexzeecomedy"/>
+    <outline text="Alex Zee Comedy Tweets" title="Alex Zee Comedy Tweets" type="rss" xmlUrl="https://nitter.net/alexzeecomedy/rss" htmlUrl="https://nitter.net/alexzeecomedy/rss"/>
+    <outline text="Alex Zee Comedy YouTube" title="Alex Zee Comedy YouTube" type="rss" xmlUrl="https://youtube.com/feeds/videos.xml?channel_id=UCcr6TWor-uXWnheOzg8W0Iw" htmlUrl="https://www.youtube.com/channel/UCcr6TWor-uXWnheOzg8W0Iwy"/>
+    <outline text="Alex Zee Comedy spacehey Blog" title="Alex Zee Comedy spacehey Blog" type="rss" xmlUrl="https://rss.spacehey.com/blog_user?id=4009792" htmlUrl="https://blog.spacehey.com/alexzeecomedy"/>
   </body>
 </opml>
