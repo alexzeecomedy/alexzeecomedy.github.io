@@ -1,39 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="/assets/rss-style1.xsl" type="text/xsl"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Alex Zee Comedy Blog - Atom</title>
-  <subtitle>Blog of stand-up comedian, Alex Zee</subtitle>
-  <link rel="alternate" type="text/html" href="https://alexzeecomedy.com/pages/pages/blog/" />
-  <link href="https://alexzeecomedy.com/atom.xml" rel="self" />
-  <rights>Free Art License 1.3</rights>
-  <updated>2025-06-27T22:07:00Z</updated>
-  <id>https://alexzeecomedy.com/pages/blog/</id>
-  <entry>
-    <title>Gnatography 1</title>
-    <link href="https://alexzeecomedy.com/pages/blog/062725" />
-    <id>https://alexzeecomedy.com/pages/blog/062725</id>
-    <updated>2025-06-27T22:07:00Z</updated>
-    <summary>My girlfriend, Gnat, just got a new old camera and they are really enjoying the
-      pictures they're getting out of it! Edited with Darktable.</summary>
-    <content type="html">
-      <![CDATA[
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet href="/assets/rss-style1.xsl" type="text/xsl"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Alex Zee Comedy Blog - Atom</title><subtitle>Blog of stand-up comedian, Alex Zee</subtitle><link rel="alternate" type="text/html" href="https://alexzeecomedy.com/pages/pages/blog/" /><link href="https://alexzeecomedy.com/atom.xml" rel="self" /><rights>Free Art License 1.3</rights><updated>2025-06-27T22:07:00Z</updated><id>https://alexzeecomedy.com/pages/blog/</id><entry><title>Gnatography 1</title><link href="https://alexzeecomedy.com/pages/blog/062725" /><id>https://alexzeecomedy.com/pages/blog/062725</id><updated>2025-06-27T22:07:00Z</updated><summary>My girlfriend, Gnat, just got a new old camera and they are really enjoying the
+      pictures they're getting out of it! Edited with Darktable.</summary><content type="html"><![CDATA[
          <img src="/assets/artwork/blog/gnatskyline.webp" alt="Photo of
           Prividence, Alabama Skyline at dusk." ; height: auto; /><img
           src="/assets/artwork/blog/gnatedgar.webp" alt="Photo of black cat
           named Edgar up close." ; height: auto; /><img
           src="/assets/artwork/blog/gnatflowers.webp" alt="Photo of red flowers
-          on a green bush." ; height: auto; />
-          <p>
+          on a green bush." ; height: auto; /><p>
             My girlfriend, Gnat, just got a new old camera and they are really
             enjoying the pictures they're getting out of it! Edited with
             Darktable.
           </p>
-      ]]>
-    </content>
-    <author>
-      <name>Alex Zee</name>
-      <uri>http://alexzeecomedy.com</uri>
-      <email>alex@alexzeecomedy.com</email>
-    </author>
-  </entry>
-</feed>
+      ]]></content><author><name>Alex Zee</name><uri>http://alexzeecomedy.com</uri><email>alex@alexzeecomedy.com</email></author></entry></feed>
