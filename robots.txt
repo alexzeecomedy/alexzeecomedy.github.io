@@ -161,7 +161,6 @@ User-agent: Meltwater
 User-agent: Meta AI
 User-agent: Meta-AI
 User-agent: Meta-External
-User-agent: meta-externalagent
 User-agent: Meta-ExternalAgent
 User-agent: meta-externalfetcher
 User-agent: Meta-ExternalFetcher
