@@ -14,7 +14,7 @@
 
 /* SITE */
 
-        Last update: 2025/07/10 
+        Last update: 2025/07/28
         Standards: HTML5, CSS3, SVG, JS
         Software: VSCodium
 
