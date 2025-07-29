@@ -9,5 +9,6 @@
     <outline text="Privacy Guides - Articles" title="Privady Guides - Articles" type="rss" xmlUrl="https://www.privacyguides.org/articles/feed_rss_created.xml" htmlUrl="https://www.privacyguides.org/articles"/>
     <outline text="Alternative To - Tech News" title="Alternative To - Tech News" type="rss" xmlUrl="https://feed.alternativeto.net/news/all/" htmlUrl="https://alternativeto.net/news/all/"/>
     <outline text="The Pragmatic Papers - Volumes" title="The Pragmatic Papers - Volumes" type="rss" xmlUrl="https://pragmaticpapers.com/feed.volumes" htmlUrl="https://pragmaticpapers.com/"/>
+    <outline text="ŽIŽEK GOADS AND PRODS" title="ŽIŽEK GOADS AND PRODS" type="rss" xmlUrl="https://slavoj.substack.com/feed" htmlUrl="https://slavoj.substack.com"/>
   </body>
 </opml>
