@@ -2,4 +2,4 @@
 a,button,input,select,textarea,[role=button],summary,details[role=button],.button-link,.more-details,.social-item
 ):focus-visible{outline:.125em solid var(--focus-outline,var(--terminal-green));outline-offset:0.125em}:where(
 a,button,input,select,textarea,[role=button],summary
-):focus:not(:focus-visible){outline:0}summary{cursor:pointer;list-style:none;padding:.25em .5em;border-radius:.25em}summary::marker{content:'▸ '}details[open]>summary::marker{content:'▾ '}summary:hover{background:color-mix(in oklab,var(--hacker-gray),#fff 5%)}
+):focus:not(:focus-visible){outline:0}summary{cursor:pointer;list-style:none;padding:.25em .5em;border-radius:.25em}summary::marker{content:'▸ '}details[open]>summary::marker{content:'▾ '}summary:hover{background:var(--hacker-gray)}
