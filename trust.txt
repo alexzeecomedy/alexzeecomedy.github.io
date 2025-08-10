@@ -1,0 +1,8 @@
+#Alex Zee Comedy trust.txt file
+belongto=https://linktr.ee/hsvcomedy
+datatrainingallowed=no
+social=https://www.facebook.com/alexzeecomedy
+social=https://www.instagram.com/alexzeecomedy/
+social=https://twitter.com/alexzeecomedy
+social=https://www.linkedin.com/in/alexzeecomedy
+contact=https://alexzeecomedy.com/pages/contact
