@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom"><xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/><xsl:template match="/"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>
           RSS Feed |
-          <xsl:value-of select="/atom:feed/atom:title"/></title><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/styles.css"/></head><body><main class="layout-content"><dk-alert-box type="info"><strong>This is an RSS feed</strong>. Subscribe by copying
+          <xsl:value-of select="/atom:feed/atom:title"/></title><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/main.css"/></head><body><main class="layout-content"><dk-alert-box type="info"><strong>This is an RSS feed</strong>. Subscribe by copying
             the URL from the address bar into your newsreader. Visit <a
             href="https://aboutfeeds.com">About Feeds
           </a> to learn more and get started. It’s free.
