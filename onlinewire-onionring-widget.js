@@ -12,7 +12,7 @@ var tag=document.getElementById(ringID);for(i=0,thisSite=window.location.href,th
           </a>
           
           <!-- Central logo -->
-          <a class="webring-info" href="${indexPage}"><img src="https://milkyway.moe/onlinewire/lime_logo.png" alt="Center Logo">
+          <a class="webring-info" href="${indexPage}"><img src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/lime_logo.webp" alt="Center Logo">
           
           <!-- Next button -->
           <a class="webring-next" href="${sites[nextIndex]}">
