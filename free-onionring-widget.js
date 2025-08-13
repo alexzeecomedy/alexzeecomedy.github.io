@@ -10,17 +10,17 @@ var tag=document.getElementById(ringID);for(i=0,thisSite=window.location.href,th
     <tr>
       <td class="webring-prev" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="${sites[previousIndex]}">
-          <img src="https://i.imgur.com/ECXoNjS.gif" style="display: block; max-width: 100%; height: auto;">
+          <img src="https://i.imgur.com/ECXoNjS.gif" style="display: block; max-width: 100%; height: auto;" alt="Previous">
         </a>
       </td>
       <td class="webring-info" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="https://town.thecozy.cat/web-revival/freespeechwebring/">
-          <img src="https://i.imgur.com/7QmM7ej.gif" style="display: block; max-width: 100%; height: auto;">
+          <img src="https://i.imgur.com/7QmM7ej.gif" style="display: block; max-width: 100%; height: auto;" alt="Center Logo">
         </a>
       </td>
       <td class="webring-next" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="${sites[nextIndex]}">
-          <img src="https://i.imgur.com/IqW5Bz0.gif" style="display: block; max-width: 100%; height: auto;">
+          <img src="https://i.imgur.com/IqW5Bz0.gif" style="display: block; max-width: 100%; height: auto;" alt="Next">
         </a>
       </td>
     </tr>
