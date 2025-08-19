@@ -8,15 +8,15 @@ var tag=document.getElementById(ringID);for(i=0,thisSite=window.location.href,th
       <div class="webring-content">
           <!-- Previous button -->
           <a class="webring-prev" href="${sites[previousIndex]}">
-              <img src="https://milkyway.moe/onlinewire/previous.gif" alt="Previous">
+              <img loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/previous.gif" alt="Previous">
           </a>
           
           <!-- Central logo -->
-          <a class="webring-info" href="${indexPage}"><img src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/lime_logo.webp" alt="Center Logo">
+          <a class="webring-info" href="${indexPage}"><img loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/lime_logo.webp" alt="Center Logo">
           
           <!-- Next button -->
           <a class="webring-next" href="${sites[nextIndex]}">
-              <img src="https://milkyway.moe/onlinewire/next.gif" alt="Next">
+              <img loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/next.gif" alt="Next">
           </a>
       </div>
 

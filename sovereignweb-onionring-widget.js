@@ -10,7 +10,7 @@ var tag=document.getElementById(ringID);for(i=0,thisSite=window.location.href,th
     <tr>
       <td class="webring-prev" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="${sites[previousIndex]}">
-          <img src="https://i.imgur.com/ECXoNjS.gif" style="display: block; max-width: 100%; height: auto;" alt="Previous">
+          <img src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/leftarrow.gif" style="display: block; max-width: 100%; height: auto;" alt="Previous">
         </a>
       </td>
       <td class="webring-info" style="padding: 0; vertical-align: middle; text-align: center;">
@@ -20,7 +20,7 @@ var tag=document.getElementById(ringID);for(i=0,thisSite=window.location.href,th
       </td>
       <td class="webring-next" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="${sites[nextIndex]}">
-          <img src="https://i.imgur.com/IqW5Bz0.gif" style="display: block; max-width: 100%; height: auto;" alt="Next">
+          <img src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/rightarrow.gif" style="display: block; max-width: 100%; height: auto;" alt="Next">
         </a>
       </td>
     </tr>
