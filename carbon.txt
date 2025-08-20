@@ -1,12 +1,13 @@
 [org]
 disclosures = [
-	{ doc_type='web-page', url='https://alexzeecomedy.com/carbon.txt', domain='alexzeecomedy.com' }
+	{ doc_type='web-page', url='https://alexzeecomedy.com/carbon.txt', domain='alexzeecomedy.com' },
+	{ doc_type='sustainability-page', url='https://alexzeecomedy.com/pages/green', domain='alexzeecomedy.com' }
 ]
 
 [upstream]
 services = [
-	{ domain='njal.la', service_type='domain-provider' },
-	{ domain='github.io', service_type='hosting-provider' },
-    { domain='cloudflare.com', service_type='dns-provider' }
-	{ domain='jsdelivr.net', service_type='content-delivery-network' },
+	{ domain='njal.la', service_type='domain-registrar' },
+	{ domain='github.io', service_type='shared-hosting' },
+    { domain='cloudflare.com', service_type='dns, cdn' },
+	{ domain='jsdelivr.net', service_type='cdn' }
 ]

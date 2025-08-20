@@ -14,9 +14,11 @@
 
 /* SITE */
 
-        Last update: 2025/07/28
+        Last update: 2025/08/20
         Standards: HTML5, CSS3, SVG, JS
-        Software: VSCodium
+        IDE: VSCodium
+        Doctype: HTML5
+        Language: English
 
 /* CAREER */
 
