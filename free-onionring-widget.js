@@ -10,17 +10,17 @@ var tag=document.getElementById(ringID);for(i=0,thisSite=window.location.href,th
     <tr>
       <td class="webring-prev" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="${sites[previousIndex]}">
-          <img loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/leftarrow.gif" style="display: block; max-width: 100%; height: auto;" alt="Previous">
+          <img width=13 height=31 loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/leftarrow.gif" style="display: block; max-width: 100%; height: auto;" alt="Previous">
         </a>
       </td>
       <td class="webring-info" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="https://town.thecozy.cat/web-revival/freespeechwebring/">
-          <img loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/freespeech.gif" style="display: block; max-width: 100%; height: auto;" alt="Center Logo">
+          <img width=88 height=31 loading=lazy src="https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/freespeech.gif" style="display: block; max-width: 100%; height: auto;" alt="Center Logo">
         </a>
       </td>
       <td class="webring-next" style="padding: 0; vertical-align: middle; text-align: center;">
         <a href="${sites[nextIndex]}">
-          <img loading=lazy src=https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/rightarrow.gif style="display: block; max-width: 100%; height: auto;" alt="Next">
+          <img width=13 height=31 loading=lazy src=https://cdn.jsdelivr.net/gh/alexzeecomedy/alexzeecomedy.github.io@main/assets/artwork/rightarrow.gif style="display: block; max-width: 100%; height: auto;" alt="Next">
         </a>
       </td>
     </tr>
