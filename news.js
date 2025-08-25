@@ -1,0 +1,1 @@
+var target=document.getElementById("target"),titles=["Open Mic","Hoedown","Fiesta","Lunar New Year","Fiasco","Witch Trial","National Convention","Treaty of Versailles","Wetmarket",];function newTitle(){var e=Math.random()*titles.length|0;target.innerText=titles[e]}newTitle();
