@@ -4,8 +4,8 @@
   "description": "The official website of stand-up comedian Alex Zee.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#00cc33",
+  "background_color": "#282A36",
+  "theme_color": "#50FA7B",
   "lang": "en-US",
   "icons": [
     {
