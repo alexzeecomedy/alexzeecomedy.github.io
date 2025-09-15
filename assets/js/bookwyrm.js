@@ -1,0 +1,4 @@
+async function loadNowReading(){try{let e=await fetch("https://white-poetry-ace9.loliyas-previos.workers.dev/"),t=await e.json(),r=document.getElementById("now-reading");if(t.error||!t.title){r.innerText="\uD83D\uDCDA Not currently reading anything.";return}let n=t.title,o=t.subtitle?` — ${t.subtitle}`:"",a=t.authors?.length?`<br><small>by ${t.authors.join(", ")}</small>`:"";r.innerHTML=`
+        📚 Now reading: <strong>${n}${o}</strong>
+        ${a}
+      `}catch(i){console.error(i),document.getElementById("now-reading").innerText="Error loading current book."}}loadNowReading(),setInterval(loadNowReading,6e4);
