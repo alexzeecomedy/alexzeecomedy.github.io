@@ -1,0 +1,20 @@
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="https://alexzeecomedy.com/*" lastmod="2025-09-15">
+    <license>
+      <permits type="usage">all</permits>
+      <permits type="user">personal,non-commercial,commercial,education</permits>
+      <permits type="distribution">all</permits>
+      <permits type="modification">all</permits>
+      <payment type="attribution">
+        <standard>https://artlibre.org/licence/lal/en/</standard>
+      </payment>
+      <legal type="warranty">ownership,no-infringement</legal>
+      <legal type="disclaimer">as-is,no-liability</legal>
+    </license>
+    <copyright 
+      type="person" 
+      contactEmail="alex@alexzeecomedy.com"
+      contactUrl="https://alexzeecomedy.com/pages/contact">
+    </copyright>
+  </content>
+</rsl>
