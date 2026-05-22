@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
-<opml version="1.0">
+<opml version="2.0">
   <head>
     <title>Newsboat - Exported Feeds</title>
   </head>
   <body>
-    <outline type="rss" xmlUrl="https://rknight.me/subscribe/everything/rss.xml" htmlUrl="https://rknight.me/" title="Robb Knight &#x2022; Everything &#x2022; RSS Feed" text="Robb Knight &#x2022; Everything &#x2022; RSS Feed"/>
-    <outline type="rss" xmlUrl="https://fedoraplanet.org/rss20.xml" htmlUrl="https://fedoraplanet.org/fedoraplanet.org" title="Fedora People" text="Fedora People"/>
-    <outline type="rss" xmlUrl="https://solar.lowtechmagazine.com/posts/index.xml" htmlUrl="https://solar.lowtechmagazine.com/posts/" title="LOW&#x2190;TECH MAGAZINE English" text="LOW&#x2190;TECH MAGAZINE English"/>
-    <outline type="rss" xmlUrl="https://planet.gnome.org//rss20.xml" htmlUrl="https://planet.gnome.org/atom.xml" title="Planet GNOME" text="Planet GNOME"/>
-    <outline type="rss" xmlUrl="https://thisweek.gnome.org/index.xml" htmlUrl="https://thisweek.gnome.org/" title="This Week in GNOME" text="This Week in GNOME"/>
-    <outline type="rss" xmlUrl="https://sarajoy.dev/rss.xml" htmlUrl="https://sarajoy.dev/" title="Sara Joy" text="Sara Joy"/>
-    <outline type="rss" xmlUrl="https://kalechips.net/RSS.xml" htmlUrl="https://blog.kalechips.net/" title="The Chip Bag" text="The Chip Bag"/>
-    <outline type="rss" xmlUrl="https://ribo.zone/feed.xml" htmlUrl="https://ribo.zone/" title="ribo.zone" text="ribo.zone"/>
-    <outline type="rss" xmlUrl="https://planet.freedesktop.org/rss20.xml" htmlUrl="http://planet.freedesktop.org/" title="planet.freedesktop.org" text="planet.freedesktop.org"/>
-    <outline type="rss" xmlUrl="https://planet.kernel.org/rss20.xml" htmlUrl="http://planet.kernel.org/" title="Kernel Planet" text="Kernel Planet"/>
-    <outline type="rss" xmlUrl="https://aboutsignal.com/feed/" htmlUrl="https://aboutsignal.com/" title="AboutSignal" text="AboutSignal"/>
-    <outline type="rss" xmlUrl="https://shellsharks.com/feeds/all-feed.xml" htmlUrl="https://shellsharks.com/" title="shellsharks All Content" text="shellsharks All Content"/>
-    <outline type="rss" xmlUrl="https://blog.joinmastodon.org/index.xml" htmlUrl="https://blog.joinmastodon.org/" title="Mastodon Blog" text="Mastodon Blog"/>
-    <outline type="rss" xmlUrl="https://thoughts.melonking.net/rss/?section=diary" htmlUrl="https://thoughts.melonking.net/" title="Melon's Thoughts - Diary" text="Melon's Thoughts - Diary"/>
-    <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/0ajay2h7zuzx9zto8dwk.xml" htmlUrl="https://kill-the-newsletter.com/feeds/0ajay2h7zuzx9zto8dwk.xml" title="Tedium" text="Tedium"/>
-    <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/u7xbkp32zyxnr2r2p4so.xml" htmlUrl="https://kill-the-newsletter.com/feeds/u7xbkp32zyxnr2r2p4so.xml" title="~this week in security~" text="~this week in security~"/>
-    <outline type="rss" xmlUrl="https://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/" title="xkcd.com" text="xkcd.com"/>
-    <outline type="rss" xmlUrl="https://ente.com/rss.xml" htmlUrl="https://ente.com/" title="Ente - Feed" text="Ente - Feed"/>
-    <outline type="rss" xmlUrl="https://pragmaticpapers.com/feed.articles" htmlUrl="https://pragmaticpapers.com/" title="The Pragmatic Papers - Articles" text="The Pragmatic Papers - Articles"/>
-    <outline type="rss" xmlUrl="https://feed.alternativeto.net/news/all" htmlUrl="https://alternativeto.net/news/all" title="News - AlternativeTo.net" text="News - AlternativeTo.net"/>
-    <outline type="rss" xmlUrl="https://feed.itsfoss.com/" htmlUrl="https://itsfoss.com/" title="It's FOSS" text="It's FOSS"/>
-    <outline type="rss" xmlUrl="https://pbfcomics.com/feed/" htmlUrl="https://pbfcomics.com/" title="The Perry Bible Fellowship" text="The Perry Bible Fellowship"/>
-    <outline type="rss" xmlUrl="https://techlore.tech/rss/" htmlUrl="https://techlore.tech/" title="Techlore" text="Techlore"/>
-    <outline type="rss" xmlUrl="https://www.gamingonlinux.com/article_rss.php" htmlUrl="https://www.gamingonlinux.com/" title="GamingOnLinux Latest Articles" text="GamingOnLinux Latest Articles"/>
-    <outline type="rss" xmlUrl="https://tuta.com/blog/feed.xml" htmlUrl="https://tuta.com/" title="The Tuta Blog" text="The Tuta Blog"/>
-    <outline type="rss" xmlUrl="https://www.privacyguides.org/news/rss/" htmlUrl="https://www.privacyguides.org/" title="Privacy Guides" text="Privacy Guides"/>
-    <outline type="rss" xmlUrl="https://theprivacydad.com/feed/" htmlUrl="https://theprivacydad.com/" title="The Privacy Dad's Blog" text="The Privacy Dad's Blog"/>
-    <outline type="rss" xmlUrl="https://pluralistic.net/feed/" htmlUrl="https://pluralistic.net/" title="Pluralistic: Daily Links from Cory Doctorow" text="Pluralistic: Daily Links from Cory Doctorow"/>
-    <outline type="rss" xmlUrl="https://knightcolumbia.org/rss?v=2" htmlUrl="https://knightcolumbia.org/" title="Knight First Amendment Institute" text="Knight First Amendment Institute"/>
-    <outline type="rss" xmlUrl="https://masnick.com/index.xml" htmlUrl="https://masnick.com/" title="Home on MIke Masnick" text="Home on MIke Masnick"/>
-    <outline type="rss" xmlUrl="https://techdirt.com/feed/" htmlUrl="https://www.techdirt.com/" title="Techdirt" text="Techdirt"/>
-    <outline type="rss" xmlUrl="https://secure.runescape.com/m=news/latest_news.rss?oldschool=true" htmlUrl="https://secure.runescape.com/m=news" title="Old School RuneScape Recent News" text="Old School RuneScape Recent News"/>
-    <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/roagjc31ouv27e0lqbxx.xml" htmlUrl="https://kill-the-newsletter.com/feeds/roagjc31ouv27e0lqbxx.xml" title="Investopedia" text="Investopedia"/>
+    <outline type="rss" xmlUrl="https://rknight.me/subscribe/everything/rss.xml" htmlUrl="https://rknight.me/" title="Robb Knight &#x2022; Everything &#x2022; RSS Feed" text="Robb Knight &#x2022; Everything &#x2022; RSS Feed" category=""/>
+    <outline type="rss" xmlUrl="https://fedoraplanet.org/rss20.xml" htmlUrl="https://fedoraplanet.org/fedoraplanet.org" title="Fedora People" text="Fedora People" category=""/>
+    <outline type="rss" xmlUrl="https://solar.lowtechmagazine.com/posts/index.xml" htmlUrl="https://solar.lowtechmagazine.com/posts/" title="LOW&#x2190;TECH MAGAZINE English" text="LOW&#x2190;TECH MAGAZINE English" category=""/>
+    <outline type="rss" xmlUrl="https://planet.gnome.org//rss20.xml" htmlUrl="https://planet.gnome.org/atom.xml" title="Planet GNOME" text="Planet GNOME" category=""/>
+    <outline type="rss" xmlUrl="https://thisweek.gnome.org/index.xml" htmlUrl="https://thisweek.gnome.org/" title="This Week in GNOME" text="This Week in GNOME" category=""/>
+    <outline type="rss" xmlUrl="https://sarajoy.dev/rss.xml" htmlUrl="https://sarajoy.dev/" title="Sara Joy" text="Sara Joy" category=""/>
+    <outline type="rss" xmlUrl="https://kalechips.net/RSS.xml" htmlUrl="https://blog.kalechips.net/" title="The Chip Bag" text="The Chip Bag" category=""/>
+    <outline type="rss" xmlUrl="https://ribo.zone/feed.xml" htmlUrl="https://ribo.zone/" title="ribo.zone" text="ribo.zone" category=""/>
+    <outline type="rss" xmlUrl="https://planet.freedesktop.org/rss20.xml" htmlUrl="http://planet.freedesktop.org/" title="planet.freedesktop.org" text="planet.freedesktop.org" category=""/>
+    <outline type="rss" xmlUrl="https://planet.kernel.org/rss20.xml" htmlUrl="http://planet.kernel.org/" title="Kernel Planet" text="Kernel Planet" category=""/>
+    <outline type="rss" xmlUrl="https://aboutsignal.com/feed/" htmlUrl="https://aboutsignal.com/" title="AboutSignal" text="AboutSignal" category=""/>
+    <outline type="rss" xmlUrl="https://shellsharks.com/feeds/all-feed.xml" htmlUrl="https://shellsharks.com/" title="shellsharks All Content" text="shellsharks All Content" category=""/>
+    <outline type="rss" xmlUrl="https://blog.joinmastodon.org/index.xml" htmlUrl="https://blog.joinmastodon.org/" title="Mastodon Blog" text="Mastodon Blog" category=""/>
+    <outline type="rss" xmlUrl="https://thoughts.melonking.net/rss/?section=diary" htmlUrl="https://thoughts.melonking.net/" title="Melon's Thoughts - Diary" text="Melon's Thoughts - Diary" category=""/>
+    <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/0ajay2h7zuzx9zto8dwk.xml" htmlUrl="https://kill-the-newsletter.com/feeds/0ajay2h7zuzx9zto8dwk.xml" title="Tedium" text="Tedium" category=""/>
+    <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/u7xbkp32zyxnr2r2p4so.xml" htmlUrl="https://kill-the-newsletter.com/feeds/u7xbkp32zyxnr2r2p4so.xml" title="~this week in security~" text="~this week in security~" category=""/>
+    <outline type="rss" xmlUrl="https://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/" title="xkcd.com" text="xkcd.com" category=""/>
+    <outline type="rss" xmlUrl="https://ente.com/rss.xml" htmlUrl="https://ente.com/" title="Ente - Feed" text="Ente - Feed" category=""/>
+    <outline type="rss" xmlUrl="https://pragmaticpapers.com/feed.articles" htmlUrl="https://pragmaticpapers.com/" title="The Pragmatic Papers - Articles" text="The Pragmatic Papers - Articles" category=""/>
+    <outline type="rss" xmlUrl="https://feed.alternativeto.net/news/all" htmlUrl="https://alternativeto.net/news/all" title="News - AlternativeTo.net" text="News - AlternativeTo.net" category=""/>
+    <outline type="rss" xmlUrl="https://feed.itsfoss.com/" htmlUrl="https://itsfoss.com/" title="It's FOSS" text="It's FOSS" category=""/>
+    <outline type="rss" xmlUrl="https://pbfcomics.com/feed/" htmlUrl="https://pbfcomics.com/" title="The Perry Bible Fellowship" text="The Perry Bible Fellowship" category=""/>
+    <outline type="rss" xmlUrl="https://techlore.tech/rss/" htmlUrl="https://techlore.tech/" title="Techlore" text="Techlore" category=""/>
+    <outline type="rss" xmlUrl="https://www.gamingonlinux.com/article_rss.php" htmlUrl="https://www.gamingonlinux.com/" title="GamingOnLinux Latest Articles" text="GamingOnLinux Latest Articles" category=""/>
+    <outline type="rss" xmlUrl="https://tuta.com/blog/feed.xml" htmlUrl="https://tuta.com/" title="The Tuta Blog" text="The Tuta Blog" category=""/>
+    <outline type="rss" xmlUrl="https://www.privacyguides.org/news/rss/" htmlUrl="https://www.privacyguides.org/" title="Privacy Guides" text="Privacy Guides" category=""/>
+    <outline type="rss" xmlUrl="https://theprivacydad.com/feed/" htmlUrl="https://theprivacydad.com/" title="The Privacy Dad's Blog" text="The Privacy Dad's Blog" category=""/>
+    <outline type="rss" xmlUrl="https://pluralistic.net/feed/" htmlUrl="https://pluralistic.net/" title="Pluralistic: Daily Links from Cory Doctorow" text="Pluralistic: Daily Links from Cory Doctorow" category=""/>
+    <outline type="rss" xmlUrl="https://knightcolumbia.org/rss?v=2" htmlUrl="https://knightcolumbia.org/" title="Knight First Amendment Institute" text="Knight First Amendment Institute" category=""/>
+    <outline type="rss" xmlUrl="https://masnick.com/index.xml" htmlUrl="https://masnick.com/" title="Home on MIke Masnick" text="Home on MIke Masnick" category=""/>
+    <outline type="rss" xmlUrl="https://techdirt.com/feed/" htmlUrl="https://www.techdirt.com/" title="Techdirt" text="Techdirt" category=""/>
+    <outline type="rss" xmlUrl="https://secure.runescape.com/m=news/latest_news.rss?oldschool=true" htmlUrl="https://secure.runescape.com/m=news" title="Old School RuneScape Recent News" text="Old School RuneScape Recent News" category=""/>
+    <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/roagjc31ouv27e0lqbxx.xml" htmlUrl="https://kill-the-newsletter.com/feeds/roagjc31ouv27e0lqbxx.xml" title="Investopedia" text="Investopedia" category=""/>
   </body>
 </opml>
