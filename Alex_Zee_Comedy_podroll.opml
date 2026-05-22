@@ -5,6 +5,7 @@
   </head>
   <body>
     <outline text="Clown College Audio Podcast" title="Clown College Audio Podcast" type="rss" xmlUrl="https://media.rss.com/clowncollegecomedy/feed.xml" htmlUrl="https://rss.com/podcasts/clowncollegecomedy/"/>
+    <outline text="Destiny" title="Destiny" type="rss" xmlUrl="https://anchor.fm/s/10ee44c10/podcast/rss" htmlUrl="https://destiny.gg"/>
     <outline text="Clown College Video Podcast" title="Clown College Video Podcast" type="rss" xmlUrl="https://youtube.com/feeds/videos.xml?channel_id=UCywww0h4TlStVZZOwwR-TwA" htmlUrl="https://www.youtube.com/channel/UCywww0h4TlStVZZOwwR-TwA"/>
     <outline text="Radiolab" title="Radiolab" type="rss" xmlUrl="https://feeds.simplecast.com/EmVW7VGp" htmlUrl="https://radiolab.org"/>
     <outline text="Jordan, Jesse, Go!" title="Jordan, Jesse, Go!" type="rss" xmlUrl="https://feeds.simplecast.com/NDAi3mtz" htmlUrl="https://maximumfun.org/podcasts/jordan-jesse-go/"/>  
