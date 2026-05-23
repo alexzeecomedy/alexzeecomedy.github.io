@@ -37,5 +37,8 @@
     <outline type="rss" xmlUrl="https://techdirt.com/feed/" htmlUrl="https://www.techdirt.com/" title="Techdirt" text="Techdirt" category=""/>
     <outline type="rss" xmlUrl="https://secure.runescape.com/m=news/latest_news.rss?oldschool=true" htmlUrl="https://secure.runescape.com/m=news" title="Old School RuneScape Recent News" text="Old School RuneScape Recent News" category=""/>
     <outline type="rss" xmlUrl="https://kill-the-newsletter.com/feeds/roagjc31ouv27e0lqbxx.xml" htmlUrl="https://kill-the-newsletter.com/feeds/roagjc31ouv27e0lqbxx.xml" title="Investopedia" text="Investopedia" category=""/>
+    <outline type="rss" xmlUrl="https://feeds.bbci.co.uk/news/world/rss.xml" htmlUrl="https://www.bbc.co.uk/news/world" title="BBC News" text="BBC News" category=""/>
+    <outline type="rss" xmlUrl="https://rss.dw.com/rdf/rss-en-all" htmlUrl="https://www.dw.com/english/?maca=en-rss-en-all-1573-rdf" title="Deutsche Welle" text="Deutsche Welle" category=""/>
+    <outline type="rss" xmlUrl="https://feeds.npr.org/1001/rss.xml" htmlUrl="https://www.npr.org/templates/story/story.php?storyId=1001" title="NPR Topics: News" text="NPR Topics: News" category=""/>
   </body>
 </opml>
